@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { Amplify } from "aws-amplify";
-import awsExports from "./aws-exports";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
+import { Amplify } from "aws-amplify";
+import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 
 const root = ReactDOM.createRoot(
