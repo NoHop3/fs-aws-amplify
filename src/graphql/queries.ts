@@ -2,18 +2,24 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getBlog = /* GraphQL */ `
-  query GetBlog($id: ID!) {
-    getBlog(id: $id) {
+export const getManufacturer = /* GraphQL */ `
+  query GetManufacturer($id: ID!) {
+    getManufacturer(id: $id) {
       id
       name
-      posts {
+      established
+      fouder
+      headquarters
+      about
+      netWorth
+      logo
+      models {
         items {
           id
-          title
+          name
           createdAt
           updatedAt
-          blogPostsId
+          manufacturerModelsId
         }
         nextToken
       }
@@ -22,17 +28,23 @@ export const getBlog = /* GraphQL */ `
     }
   }
 `;
-export const listBlogs = /* GraphQL */ `
-  query ListBlogs(
-    $filter: ModelBlogFilterInput
+export const listManufacturers = /* GraphQL */ `
+  query ListManufacturers(
+    $filter: ModelManufacturerFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listBlogs(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listManufacturers(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         name
-        posts {
+        established
+        fouder
+        headquarters
+        about
+        netWorth
+        logo
+        models {
           nextToken
         }
         createdAt
@@ -42,110 +54,146 @@ export const listBlogs = /* GraphQL */ `
     }
   }
 `;
-export const getPost = /* GraphQL */ `
-  query GetPost($id: ID!) {
-    getPost(id: $id) {
+export const getModel = /* GraphQL */ `
+  query GetModel($id: ID!) {
+    getModel(id: $id) {
       id
-      title
-      blog {
+      name
+      manufacturer {
         id
         name
-        posts {
+        established
+        fouder
+        headquarters
+        about
+        netWorth
+        logo
+        models {
           nextToken
         }
         createdAt
         updatedAt
       }
-      comments {
+      cars {
         items {
           id
-          content
+          image
+          generation
+          power
+          torque
+          weight
+          gearbox
+          engine
           createdAt
           updatedAt
-          postCommentsId
+          modelCarsId
         }
         nextToken
       }
       createdAt
       updatedAt
-      blogPostsId
+      manufacturerModelsId
     }
   }
 `;
-export const listPosts = /* GraphQL */ `
-  query ListPosts(
-    $filter: ModelPostFilterInput
+export const listModels = /* GraphQL */ `
+  query ListModels(
+    $filter: ModelModelFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listModels(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        title
-        blog {
+        name
+        manufacturer {
           id
           name
+          established
+          fouder
+          headquarters
+          about
+          netWorth
+          logo
           createdAt
           updatedAt
         }
-        comments {
+        cars {
           nextToken
         }
         createdAt
         updatedAt
-        blogPostsId
+        manufacturerModelsId
       }
       nextToken
     }
   }
 `;
-export const getComment = /* GraphQL */ `
-  query GetComment($id: ID!) {
-    getComment(id: $id) {
+export const getCar = /* GraphQL */ `
+  query GetCar($id: ID!) {
+    getCar(id: $id) {
       id
-      post {
+      model {
         id
-        title
-        blog {
+        name
+        manufacturer {
           id
           name
+          established
+          fouder
+          headquarters
+          about
+          netWorth
+          logo
           createdAt
           updatedAt
         }
-        comments {
+        cars {
           nextToken
         }
         createdAt
         updatedAt
-        blogPostsId
+        manufacturerModelsId
       }
-      content
+      image
+      generation
+      power
+      torque
+      weight
+      gearbox
+      engine
       createdAt
       updatedAt
-      postCommentsId
+      modelCarsId
     }
   }
 `;
-export const listComments = /* GraphQL */ `
-  query ListComments(
-    $filter: ModelCommentFilterInput
+export const listCars = /* GraphQL */ `
+  query ListCars(
+    $filter: ModelCarFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listComments(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listCars(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        post {
+        model {
           id
-          title
+          name
           createdAt
           updatedAt
-          blogPostsId
+          manufacturerModelsId
         }
-        content
+        image
+        generation
+        power
+        torque
+        weight
+        gearbox
+        engine
         createdAt
         updatedAt
-        postCommentsId
+        modelCarsId
       }
       nextToken
     }

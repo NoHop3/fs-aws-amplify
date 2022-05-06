@@ -2,16 +2,28 @@
 /* eslint-disable */
 //  This file was automatically generated and should not be edited.
 
-export type CreateBlogInput = {
+export type CreateManufacturerInput = {
   id?: string | null,
   name: string,
+  established?: string | null,
+  fouder?: string | null,
+  headquarters?: string | null,
+  about?: string | null,
+  netWorth?: number | null,
+  logo?: string | null,
 };
 
-export type ModelBlogConditionInput = {
+export type ModelManufacturerConditionInput = {
   name?: ModelStringInput | null,
-  and?: Array< ModelBlogConditionInput | null > | null,
-  or?: Array< ModelBlogConditionInput | null > | null,
-  not?: ModelBlogConditionInput | null,
+  established?: ModelStringInput | null,
+  fouder?: ModelStringInput | null,
+  headquarters?: ModelStringInput | null,
+  about?: ModelStringInput | null,
+  netWorth?: ModelIntInput | null,
+  logo?: ModelStringInput | null,
+  and?: Array< ModelManufacturerConditionInput | null > | null,
+  or?: Array< ModelManufacturerConditionInput | null > | null,
+  not?: ModelManufacturerConditionInput | null,
 };
 
 export type ModelStringInput = {
@@ -54,69 +66,99 @@ export type ModelSizeInput = {
   between?: Array< number | null > | null,
 };
 
-export type Blog = {
-  __typename: "Blog",
+export type ModelIntInput = {
+  ne?: number | null,
+  eq?: number | null,
+  le?: number | null,
+  lt?: number | null,
+  ge?: number | null,
+  gt?: number | null,
+  between?: Array< number | null > | null,
+  attributeExists?: boolean | null,
+  attributeType?: ModelAttributeTypes | null,
+};
+
+export type Manufacturer = {
+  __typename: "Manufacturer",
   id: string,
   name: string,
-  posts?: ModelPostConnection | null,
+  established?: string | null,
+  fouder?: string | null,
+  headquarters?: string | null,
+  about?: string | null,
+  netWorth?: number | null,
+  logo?: string | null,
+  models?: ModelModelConnection | null,
   createdAt: string,
   updatedAt: string,
 };
 
-export type ModelPostConnection = {
-  __typename: "ModelPostConnection",
-  items:  Array<Post | null >,
+export type ModelModelConnection = {
+  __typename: "ModelModelConnection",
+  items:  Array<Model | null >,
   nextToken?: string | null,
 };
 
-export type Post = {
-  __typename: "Post",
+export type Model = {
+  __typename: "Model",
   id: string,
-  title: string,
-  blog?: Blog | null,
-  comments?: ModelCommentConnection | null,
+  name: string,
+  manufacturer?: Manufacturer | null,
+  cars?: ModelCarConnection | null,
   createdAt: string,
   updatedAt: string,
-  blogPostsId?: string | null,
+  manufacturerModelsId?: string | null,
 };
 
-export type ModelCommentConnection = {
-  __typename: "ModelCommentConnection",
-  items:  Array<Comment | null >,
+export type ModelCarConnection = {
+  __typename: "ModelCarConnection",
+  items:  Array<Car | null >,
   nextToken?: string | null,
 };
 
-export type Comment = {
-  __typename: "Comment",
+export type Car = {
+  __typename: "Car",
   id: string,
-  post?: Post | null,
-  content: string,
+  model?: Model | null,
+  image?: string | null,
+  generation?: number | null,
+  power?: number | null,
+  torque?: number | null,
+  weight?: number | null,
+  gearbox?: string | null,
+  engine?: string | null,
   createdAt: string,
   updatedAt: string,
-  postCommentsId?: string | null,
+  modelCarsId?: string | null,
 };
 
-export type UpdateBlogInput = {
+export type UpdateManufacturerInput = {
   id: string,
   name?: string | null,
+  established?: string | null,
+  fouder?: string | null,
+  headquarters?: string | null,
+  about?: string | null,
+  netWorth?: number | null,
+  logo?: string | null,
 };
 
-export type DeleteBlogInput = {
+export type DeleteManufacturerInput = {
   id: string,
 };
 
-export type CreatePostInput = {
+export type CreateModelInput = {
   id?: string | null,
-  title: string,
-  blogPostsId?: string | null,
+  name: string,
+  manufacturerModelsId?: string | null,
 };
 
-export type ModelPostConditionInput = {
-  title?: ModelStringInput | null,
-  and?: Array< ModelPostConditionInput | null > | null,
-  or?: Array< ModelPostConditionInput | null > | null,
-  not?: ModelPostConditionInput | null,
-  blogPostsId?: ModelIDInput | null,
+export type ModelModelConditionInput = {
+  name?: ModelStringInput | null,
+  and?: Array< ModelModelConditionInput | null > | null,
+  or?: Array< ModelModelConditionInput | null > | null,
+  not?: ModelModelConditionInput | null,
+  manufacturerModelsId?: ModelIDInput | null,
 };
 
 export type ModelIDInput = {
@@ -135,393 +177,519 @@ export type ModelIDInput = {
   size?: ModelSizeInput | null,
 };
 
-export type UpdatePostInput = {
+export type UpdateModelInput = {
   id: string,
-  title?: string | null,
-  blogPostsId?: string | null,
+  name?: string | null,
+  manufacturerModelsId?: string | null,
 };
 
-export type DeletePostInput = {
+export type DeleteModelInput = {
   id: string,
 };
 
-export type CreateCommentInput = {
+export type CreateCarInput = {
   id?: string | null,
-  content: string,
-  postCommentsId?: string | null,
+  image?: string | null,
+  generation?: number | null,
+  power?: number | null,
+  torque?: number | null,
+  weight?: number | null,
+  gearbox?: string | null,
+  engine?: string | null,
+  modelCarsId?: string | null,
 };
 
-export type ModelCommentConditionInput = {
-  content?: ModelStringInput | null,
-  and?: Array< ModelCommentConditionInput | null > | null,
-  or?: Array< ModelCommentConditionInput | null > | null,
-  not?: ModelCommentConditionInput | null,
-  postCommentsId?: ModelIDInput | null,
+export type ModelCarConditionInput = {
+  image?: ModelStringInput | null,
+  generation?: ModelIntInput | null,
+  power?: ModelIntInput | null,
+  torque?: ModelIntInput | null,
+  weight?: ModelIntInput | null,
+  gearbox?: ModelStringInput | null,
+  engine?: ModelStringInput | null,
+  and?: Array< ModelCarConditionInput | null > | null,
+  or?: Array< ModelCarConditionInput | null > | null,
+  not?: ModelCarConditionInput | null,
+  modelCarsId?: ModelIDInput | null,
 };
 
-export type UpdateCommentInput = {
+export type UpdateCarInput = {
   id: string,
-  content?: string | null,
-  postCommentsId?: string | null,
+  image?: string | null,
+  generation?: number | null,
+  power?: number | null,
+  torque?: number | null,
+  weight?: number | null,
+  gearbox?: string | null,
+  engine?: string | null,
+  modelCarsId?: string | null,
 };
 
-export type DeleteCommentInput = {
+export type DeleteCarInput = {
   id: string,
 };
 
-export type ModelBlogFilterInput = {
+export type ModelManufacturerFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
-  and?: Array< ModelBlogFilterInput | null > | null,
-  or?: Array< ModelBlogFilterInput | null > | null,
-  not?: ModelBlogFilterInput | null,
+  established?: ModelStringInput | null,
+  fouder?: ModelStringInput | null,
+  headquarters?: ModelStringInput | null,
+  about?: ModelStringInput | null,
+  netWorth?: ModelIntInput | null,
+  logo?: ModelStringInput | null,
+  and?: Array< ModelManufacturerFilterInput | null > | null,
+  or?: Array< ModelManufacturerFilterInput | null > | null,
+  not?: ModelManufacturerFilterInput | null,
 };
 
-export type ModelBlogConnection = {
-  __typename: "ModelBlogConnection",
-  items:  Array<Blog | null >,
+export type ModelManufacturerConnection = {
+  __typename: "ModelManufacturerConnection",
+  items:  Array<Manufacturer | null >,
   nextToken?: string | null,
 };
 
-export type ModelPostFilterInput = {
+export type ModelModelFilterInput = {
   id?: ModelIDInput | null,
-  title?: ModelStringInput | null,
-  and?: Array< ModelPostFilterInput | null > | null,
-  or?: Array< ModelPostFilterInput | null > | null,
-  not?: ModelPostFilterInput | null,
-  blogPostsId?: ModelIDInput | null,
+  name?: ModelStringInput | null,
+  and?: Array< ModelModelFilterInput | null > | null,
+  or?: Array< ModelModelFilterInput | null > | null,
+  not?: ModelModelFilterInput | null,
+  manufacturerModelsId?: ModelIDInput | null,
 };
 
-export type ModelCommentFilterInput = {
+export type ModelCarFilterInput = {
   id?: ModelIDInput | null,
-  content?: ModelStringInput | null,
-  and?: Array< ModelCommentFilterInput | null > | null,
-  or?: Array< ModelCommentFilterInput | null > | null,
-  not?: ModelCommentFilterInput | null,
-  postCommentsId?: ModelIDInput | null,
+  image?: ModelStringInput | null,
+  generation?: ModelIntInput | null,
+  power?: ModelIntInput | null,
+  torque?: ModelIntInput | null,
+  weight?: ModelIntInput | null,
+  gearbox?: ModelStringInput | null,
+  engine?: ModelStringInput | null,
+  and?: Array< ModelCarFilterInput | null > | null,
+  or?: Array< ModelCarFilterInput | null > | null,
+  not?: ModelCarFilterInput | null,
+  modelCarsId?: ModelIDInput | null,
 };
 
-export type CreateBlogMutationVariables = {
-  input: CreateBlogInput,
-  condition?: ModelBlogConditionInput | null,
+export type CreateManufacturerMutationVariables = {
+  input: CreateManufacturerInput,
+  condition?: ModelManufacturerConditionInput | null,
 };
 
-export type CreateBlogMutation = {
-  createBlog?:  {
-    __typename: "Blog",
+export type CreateManufacturerMutation = {
+  createManufacturer?:  {
+    __typename: "Manufacturer",
     id: string,
     name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
+    established?: string | null,
+    fouder?: string | null,
+    headquarters?: string | null,
+    about?: string | null,
+    netWorth?: number | null,
+    logo?: string | null,
+    models?:  {
+      __typename: "ModelModelConnection",
       items:  Array< {
-        __typename: "Post",
-        id: string,
-        title: string,
-        createdAt: string,
-        updatedAt: string,
-        blogPostsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
-};
-
-export type UpdateBlogMutationVariables = {
-  input: UpdateBlogInput,
-  condition?: ModelBlogConditionInput | null,
-};
-
-export type UpdateBlogMutation = {
-  updateBlog?:  {
-    __typename: "Blog",
-    id: string,
-    name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      items:  Array< {
-        __typename: "Post",
-        id: string,
-        title: string,
-        createdAt: string,
-        updatedAt: string,
-        blogPostsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
-};
-
-export type DeleteBlogMutationVariables = {
-  input: DeleteBlogInput,
-  condition?: ModelBlogConditionInput | null,
-};
-
-export type DeleteBlogMutation = {
-  deleteBlog?:  {
-    __typename: "Blog",
-    id: string,
-    name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      items:  Array< {
-        __typename: "Post",
-        id: string,
-        title: string,
-        createdAt: string,
-        updatedAt: string,
-        blogPostsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
-};
-
-export type CreatePostMutationVariables = {
-  input: CreatePostInput,
-  condition?: ModelPostConditionInput | null,
-};
-
-export type CreatePostMutation = {
-  createPost?:  {
-    __typename: "Post",
-    id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
-      id: string,
-      name: string,
-      posts?:  {
-        __typename: "ModelPostConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
-      items:  Array< {
-        __typename: "Comment",
-        id: string,
-        content: string,
-        createdAt: string,
-        updatedAt: string,
-        postCommentsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
-  } | null,
-};
-
-export type UpdatePostMutationVariables = {
-  input: UpdatePostInput,
-  condition?: ModelPostConditionInput | null,
-};
-
-export type UpdatePostMutation = {
-  updatePost?:  {
-    __typename: "Post",
-    id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
-      id: string,
-      name: string,
-      posts?:  {
-        __typename: "ModelPostConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
-      items:  Array< {
-        __typename: "Comment",
-        id: string,
-        content: string,
-        createdAt: string,
-        updatedAt: string,
-        postCommentsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
-  } | null,
-};
-
-export type DeletePostMutationVariables = {
-  input: DeletePostInput,
-  condition?: ModelPostConditionInput | null,
-};
-
-export type DeletePostMutation = {
-  deletePost?:  {
-    __typename: "Post",
-    id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
-      id: string,
-      name: string,
-      posts?:  {
-        __typename: "ModelPostConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
-      items:  Array< {
-        __typename: "Comment",
-        id: string,
-        content: string,
-        createdAt: string,
-        updatedAt: string,
-        postCommentsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
-  } | null,
-};
-
-export type CreateCommentMutationVariables = {
-  input: CreateCommentInput,
-  condition?: ModelCommentConditionInput | null,
-};
-
-export type CreateCommentMutation = {
-  createComment?:  {
-    __typename: "Comment",
-    id: string,
-    post?:  {
-      __typename: "Post",
-      id: string,
-      title: string,
-      blog?:  {
-        __typename: "Blog",
+        __typename: "Model",
         id: string,
         name: string,
         createdAt: string,
         updatedAt: string,
-      } | null,
-      comments?:  {
-        __typename: "ModelCommentConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      blogPostsId?: string | null,
+        manufacturerModelsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
     } | null,
-    content: string,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
   } | null,
 };
 
-export type UpdateCommentMutationVariables = {
-  input: UpdateCommentInput,
-  condition?: ModelCommentConditionInput | null,
+export type UpdateManufacturerMutationVariables = {
+  input: UpdateManufacturerInput,
+  condition?: ModelManufacturerConditionInput | null,
 };
 
-export type UpdateCommentMutation = {
-  updateComment?:  {
-    __typename: "Comment",
+export type UpdateManufacturerMutation = {
+  updateManufacturer?:  {
+    __typename: "Manufacturer",
     id: string,
-    post?:  {
-      __typename: "Post",
-      id: string,
-      title: string,
-      blog?:  {
-        __typename: "Blog",
+    name: string,
+    established?: string | null,
+    fouder?: string | null,
+    headquarters?: string | null,
+    about?: string | null,
+    netWorth?: number | null,
+    logo?: string | null,
+    models?:  {
+      __typename: "ModelModelConnection",
+      items:  Array< {
+        __typename: "Model",
         id: string,
         name: string,
         createdAt: string,
         updatedAt: string,
-      } | null,
-      comments?:  {
-        __typename: "ModelCommentConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      blogPostsId?: string | null,
+        manufacturerModelsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
     } | null,
-    content: string,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
   } | null,
 };
 
-export type DeleteCommentMutationVariables = {
-  input: DeleteCommentInput,
-  condition?: ModelCommentConditionInput | null,
+export type DeleteManufacturerMutationVariables = {
+  input: DeleteManufacturerInput,
+  condition?: ModelManufacturerConditionInput | null,
 };
 
-export type DeleteCommentMutation = {
-  deleteComment?:  {
-    __typename: "Comment",
+export type DeleteManufacturerMutation = {
+  deleteManufacturer?:  {
+    __typename: "Manufacturer",
     id: string,
-    post?:  {
-      __typename: "Post",
-      id: string,
-      title: string,
-      blog?:  {
-        __typename: "Blog",
+    name: string,
+    established?: string | null,
+    fouder?: string | null,
+    headquarters?: string | null,
+    about?: string | null,
+    netWorth?: number | null,
+    logo?: string | null,
+    models?:  {
+      __typename: "ModelModelConnection",
+      items:  Array< {
+        __typename: "Model",
         id: string,
         name: string,
         createdAt: string,
         updatedAt: string,
-      } | null,
-      comments?:  {
-        __typename: "ModelCommentConnection",
+        manufacturerModelsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
+    } | null,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type CreateModelMutationVariables = {
+  input: CreateModelInput,
+  condition?: ModelModelConditionInput | null,
+};
+
+export type CreateModelMutation = {
+  createModel?:  {
+    __typename: "Model",
+    id: string,
+    name: string,
+    manufacturer?:  {
+      __typename: "Manufacturer",
+      id: string,
+      name: string,
+      established?: string | null,
+      fouder?: string | null,
+      headquarters?: string | null,
+      about?: string | null,
+      netWorth?: number | null,
+      logo?: string | null,
+      models?:  {
+        __typename: "ModelModelConnection",
         nextToken?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
-      blogPostsId?: string | null,
     } | null,
-    content: string,
+    cars?:  {
+      __typename: "ModelCarConnection",
+      items:  Array< {
+        __typename: "Car",
+        id: string,
+        image?: string | null,
+        generation?: number | null,
+        power?: number | null,
+        torque?: number | null,
+        weight?: number | null,
+        gearbox?: string | null,
+        engine?: string | null,
+        createdAt: string,
+        updatedAt: string,
+        modelCarsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
+    } | null,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
+    manufacturerModelsId?: string | null,
   } | null,
 };
 
-export type GetBlogQueryVariables = {
+export type UpdateModelMutationVariables = {
+  input: UpdateModelInput,
+  condition?: ModelModelConditionInput | null,
+};
+
+export type UpdateModelMutation = {
+  updateModel?:  {
+    __typename: "Model",
+    id: string,
+    name: string,
+    manufacturer?:  {
+      __typename: "Manufacturer",
+      id: string,
+      name: string,
+      established?: string | null,
+      fouder?: string | null,
+      headquarters?: string | null,
+      about?: string | null,
+      netWorth?: number | null,
+      logo?: string | null,
+      models?:  {
+        __typename: "ModelModelConnection",
+        nextToken?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+    cars?:  {
+      __typename: "ModelCarConnection",
+      items:  Array< {
+        __typename: "Car",
+        id: string,
+        image?: string | null,
+        generation?: number | null,
+        power?: number | null,
+        torque?: number | null,
+        weight?: number | null,
+        gearbox?: string | null,
+        engine?: string | null,
+        createdAt: string,
+        updatedAt: string,
+        modelCarsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
+    } | null,
+    createdAt: string,
+    updatedAt: string,
+    manufacturerModelsId?: string | null,
+  } | null,
+};
+
+export type DeleteModelMutationVariables = {
+  input: DeleteModelInput,
+  condition?: ModelModelConditionInput | null,
+};
+
+export type DeleteModelMutation = {
+  deleteModel?:  {
+    __typename: "Model",
+    id: string,
+    name: string,
+    manufacturer?:  {
+      __typename: "Manufacturer",
+      id: string,
+      name: string,
+      established?: string | null,
+      fouder?: string | null,
+      headquarters?: string | null,
+      about?: string | null,
+      netWorth?: number | null,
+      logo?: string | null,
+      models?:  {
+        __typename: "ModelModelConnection",
+        nextToken?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+    cars?:  {
+      __typename: "ModelCarConnection",
+      items:  Array< {
+        __typename: "Car",
+        id: string,
+        image?: string | null,
+        generation?: number | null,
+        power?: number | null,
+        torque?: number | null,
+        weight?: number | null,
+        gearbox?: string | null,
+        engine?: string | null,
+        createdAt: string,
+        updatedAt: string,
+        modelCarsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
+    } | null,
+    createdAt: string,
+    updatedAt: string,
+    manufacturerModelsId?: string | null,
+  } | null,
+};
+
+export type CreateCarMutationVariables = {
+  input: CreateCarInput,
+  condition?: ModelCarConditionInput | null,
+};
+
+export type CreateCarMutation = {
+  createCar?:  {
+    __typename: "Car",
+    id: string,
+    model?:  {
+      __typename: "Model",
+      id: string,
+      name: string,
+      manufacturer?:  {
+        __typename: "Manufacturer",
+        id: string,
+        name: string,
+        established?: string | null,
+        fouder?: string | null,
+        headquarters?: string | null,
+        about?: string | null,
+        netWorth?: number | null,
+        logo?: string | null,
+        createdAt: string,
+        updatedAt: string,
+      } | null,
+      cars?:  {
+        __typename: "ModelCarConnection",
+        nextToken?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      manufacturerModelsId?: string | null,
+    } | null,
+    image?: string | null,
+    generation?: number | null,
+    power?: number | null,
+    torque?: number | null,
+    weight?: number | null,
+    gearbox?: string | null,
+    engine?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    modelCarsId?: string | null,
+  } | null,
+};
+
+export type UpdateCarMutationVariables = {
+  input: UpdateCarInput,
+  condition?: ModelCarConditionInput | null,
+};
+
+export type UpdateCarMutation = {
+  updateCar?:  {
+    __typename: "Car",
+    id: string,
+    model?:  {
+      __typename: "Model",
+      id: string,
+      name: string,
+      manufacturer?:  {
+        __typename: "Manufacturer",
+        id: string,
+        name: string,
+        established?: string | null,
+        fouder?: string | null,
+        headquarters?: string | null,
+        about?: string | null,
+        netWorth?: number | null,
+        logo?: string | null,
+        createdAt: string,
+        updatedAt: string,
+      } | null,
+      cars?:  {
+        __typename: "ModelCarConnection",
+        nextToken?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      manufacturerModelsId?: string | null,
+    } | null,
+    image?: string | null,
+    generation?: number | null,
+    power?: number | null,
+    torque?: number | null,
+    weight?: number | null,
+    gearbox?: string | null,
+    engine?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    modelCarsId?: string | null,
+  } | null,
+};
+
+export type DeleteCarMutationVariables = {
+  input: DeleteCarInput,
+  condition?: ModelCarConditionInput | null,
+};
+
+export type DeleteCarMutation = {
+  deleteCar?:  {
+    __typename: "Car",
+    id: string,
+    model?:  {
+      __typename: "Model",
+      id: string,
+      name: string,
+      manufacturer?:  {
+        __typename: "Manufacturer",
+        id: string,
+        name: string,
+        established?: string | null,
+        fouder?: string | null,
+        headquarters?: string | null,
+        about?: string | null,
+        netWorth?: number | null,
+        logo?: string | null,
+        createdAt: string,
+        updatedAt: string,
+      } | null,
+      cars?:  {
+        __typename: "ModelCarConnection",
+        nextToken?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      manufacturerModelsId?: string | null,
+    } | null,
+    image?: string | null,
+    generation?: number | null,
+    power?: number | null,
+    torque?: number | null,
+    weight?: number | null,
+    gearbox?: string | null,
+    engine?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    modelCarsId?: string | null,
+  } | null,
+};
+
+export type GetManufacturerQueryVariables = {
   id: string,
 };
 
-export type GetBlogQuery = {
-  getBlog?:  {
-    __typename: "Blog",
+export type GetManufacturerQuery = {
+  getManufacturer?:  {
+    __typename: "Manufacturer",
     id: string,
     name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
+    established?: string | null,
+    fouder?: string | null,
+    headquarters?: string | null,
+    about?: string | null,
+    netWorth?: number | null,
+    logo?: string | null,
+    models?:  {
+      __typename: "ModelModelConnection",
       items:  Array< {
-        __typename: "Post",
+        __typename: "Model",
         id: string,
-        title: string,
+        name: string,
         createdAt: string,
         updatedAt: string,
-        blogPostsId?: string | null,
+        manufacturerModelsId?: string | null,
       } | null >,
       nextToken?: string | null,
     } | null,
@@ -530,21 +698,27 @@ export type GetBlogQuery = {
   } | null,
 };
 
-export type ListBlogsQueryVariables = {
-  filter?: ModelBlogFilterInput | null,
+export type ListManufacturersQueryVariables = {
+  filter?: ModelManufacturerFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type ListBlogsQuery = {
-  listBlogs?:  {
-    __typename: "ModelBlogConnection",
+export type ListManufacturersQuery = {
+  listManufacturers?:  {
+    __typename: "ModelManufacturerConnection",
     items:  Array< {
-      __typename: "Blog",
+      __typename: "Manufacturer",
       id: string,
       name: string,
-      posts?:  {
-        __typename: "ModelPostConnection",
+      established?: string | null,
+      fouder?: string | null,
+      headquarters?: string | null,
+      about?: string | null,
+      netWorth?: number | null,
+      logo?: string | null,
+      models?:  {
+        __typename: "ModelModelConnection",
         nextToken?: string | null,
       } | null,
       createdAt: string,
@@ -554,393 +728,519 @@ export type ListBlogsQuery = {
   } | null,
 };
 
-export type GetPostQueryVariables = {
+export type GetModelQueryVariables = {
   id: string,
 };
 
-export type GetPostQuery = {
-  getPost?:  {
-    __typename: "Post",
+export type GetModelQuery = {
+  getModel?:  {
+    __typename: "Model",
     id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
+    name: string,
+    manufacturer?:  {
+      __typename: "Manufacturer",
       id: string,
       name: string,
-      posts?:  {
-        __typename: "ModelPostConnection",
+      established?: string | null,
+      fouder?: string | null,
+      headquarters?: string | null,
+      about?: string | null,
+      netWorth?: number | null,
+      logo?: string | null,
+      models?:  {
+        __typename: "ModelModelConnection",
         nextToken?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
     } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
+    cars?:  {
+      __typename: "ModelCarConnection",
       items:  Array< {
-        __typename: "Comment",
+        __typename: "Car",
         id: string,
-        content: string,
+        image?: string | null,
+        generation?: number | null,
+        power?: number | null,
+        torque?: number | null,
+        weight?: number | null,
+        gearbox?: string | null,
+        engine?: string | null,
         createdAt: string,
         updatedAt: string,
-        postCommentsId?: string | null,
+        modelCarsId?: string | null,
       } | null >,
       nextToken?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
-    blogPostsId?: string | null,
+    manufacturerModelsId?: string | null,
   } | null,
 };
 
-export type ListPostsQueryVariables = {
-  filter?: ModelPostFilterInput | null,
+export type ListModelsQueryVariables = {
+  filter?: ModelModelFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type ListPostsQuery = {
-  listPosts?:  {
-    __typename: "ModelPostConnection",
+export type ListModelsQuery = {
+  listModels?:  {
+    __typename: "ModelModelConnection",
     items:  Array< {
-      __typename: "Post",
+      __typename: "Model",
       id: string,
-      title: string,
-      blog?:  {
-        __typename: "Blog",
+      name: string,
+      manufacturer?:  {
+        __typename: "Manufacturer",
         id: string,
         name: string,
+        established?: string | null,
+        fouder?: string | null,
+        headquarters?: string | null,
+        about?: string | null,
+        netWorth?: number | null,
+        logo?: string | null,
         createdAt: string,
         updatedAt: string,
       } | null,
-      comments?:  {
-        __typename: "ModelCommentConnection",
+      cars?:  {
+        __typename: "ModelCarConnection",
         nextToken?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
-      blogPostsId?: string | null,
+      manufacturerModelsId?: string | null,
     } | null >,
     nextToken?: string | null,
   } | null,
 };
 
-export type GetCommentQueryVariables = {
+export type GetCarQueryVariables = {
   id: string,
 };
 
-export type GetCommentQuery = {
-  getComment?:  {
-    __typename: "Comment",
+export type GetCarQuery = {
+  getCar?:  {
+    __typename: "Car",
     id: string,
-    post?:  {
-      __typename: "Post",
+    model?:  {
+      __typename: "Model",
       id: string,
-      title: string,
-      blog?:  {
-        __typename: "Blog",
+      name: string,
+      manufacturer?:  {
+        __typename: "Manufacturer",
         id: string,
         name: string,
+        established?: string | null,
+        fouder?: string | null,
+        headquarters?: string | null,
+        about?: string | null,
+        netWorth?: number | null,
+        logo?: string | null,
         createdAt: string,
         updatedAt: string,
       } | null,
-      comments?:  {
-        __typename: "ModelCommentConnection",
+      cars?:  {
+        __typename: "ModelCarConnection",
         nextToken?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
-      blogPostsId?: string | null,
+      manufacturerModelsId?: string | null,
     } | null,
-    content: string,
+    image?: string | null,
+    generation?: number | null,
+    power?: number | null,
+    torque?: number | null,
+    weight?: number | null,
+    gearbox?: string | null,
+    engine?: string | null,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
+    modelCarsId?: string | null,
   } | null,
 };
 
-export type ListCommentsQueryVariables = {
-  filter?: ModelCommentFilterInput | null,
+export type ListCarsQueryVariables = {
+  filter?: ModelCarFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type ListCommentsQuery = {
-  listComments?:  {
-    __typename: "ModelCommentConnection",
+export type ListCarsQuery = {
+  listCars?:  {
+    __typename: "ModelCarConnection",
     items:  Array< {
-      __typename: "Comment",
+      __typename: "Car",
       id: string,
-      post?:  {
-        __typename: "Post",
+      model?:  {
+        __typename: "Model",
         id: string,
-        title: string,
+        name: string,
         createdAt: string,
         updatedAt: string,
-        blogPostsId?: string | null,
+        manufacturerModelsId?: string | null,
       } | null,
-      content: string,
+      image?: string | null,
+      generation?: number | null,
+      power?: number | null,
+      torque?: number | null,
+      weight?: number | null,
+      gearbox?: string | null,
+      engine?: string | null,
       createdAt: string,
       updatedAt: string,
-      postCommentsId?: string | null,
+      modelCarsId?: string | null,
     } | null >,
     nextToken?: string | null,
   } | null,
 };
 
-export type OnCreateBlogSubscription = {
-  onCreateBlog?:  {
-    __typename: "Blog",
+export type OnCreateManufacturerSubscription = {
+  onCreateManufacturer?:  {
+    __typename: "Manufacturer",
     id: string,
     name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
+    established?: string | null,
+    fouder?: string | null,
+    headquarters?: string | null,
+    about?: string | null,
+    netWorth?: number | null,
+    logo?: string | null,
+    models?:  {
+      __typename: "ModelModelConnection",
       items:  Array< {
-        __typename: "Post",
-        id: string,
-        title: string,
-        createdAt: string,
-        updatedAt: string,
-        blogPostsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
-};
-
-export type OnUpdateBlogSubscription = {
-  onUpdateBlog?:  {
-    __typename: "Blog",
-    id: string,
-    name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      items:  Array< {
-        __typename: "Post",
-        id: string,
-        title: string,
-        createdAt: string,
-        updatedAt: string,
-        blogPostsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
-};
-
-export type OnDeleteBlogSubscription = {
-  onDeleteBlog?:  {
-    __typename: "Blog",
-    id: string,
-    name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      items:  Array< {
-        __typename: "Post",
-        id: string,
-        title: string,
-        createdAt: string,
-        updatedAt: string,
-        blogPostsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
-};
-
-export type OnCreatePostSubscription = {
-  onCreatePost?:  {
-    __typename: "Post",
-    id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
-      id: string,
-      name: string,
-      posts?:  {
-        __typename: "ModelPostConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
-      items:  Array< {
-        __typename: "Comment",
-        id: string,
-        content: string,
-        createdAt: string,
-        updatedAt: string,
-        postCommentsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
-  } | null,
-};
-
-export type OnUpdatePostSubscription = {
-  onUpdatePost?:  {
-    __typename: "Post",
-    id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
-      id: string,
-      name: string,
-      posts?:  {
-        __typename: "ModelPostConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
-      items:  Array< {
-        __typename: "Comment",
-        id: string,
-        content: string,
-        createdAt: string,
-        updatedAt: string,
-        postCommentsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
-  } | null,
-};
-
-export type OnDeletePostSubscription = {
-  onDeletePost?:  {
-    __typename: "Post",
-    id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
-      id: string,
-      name: string,
-      posts?:  {
-        __typename: "ModelPostConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
-      items:  Array< {
-        __typename: "Comment",
-        id: string,
-        content: string,
-        createdAt: string,
-        updatedAt: string,
-        postCommentsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
-  } | null,
-};
-
-export type OnCreateCommentSubscription = {
-  onCreateComment?:  {
-    __typename: "Comment",
-    id: string,
-    post?:  {
-      __typename: "Post",
-      id: string,
-      title: string,
-      blog?:  {
-        __typename: "Blog",
+        __typename: "Model",
         id: string,
         name: string,
         createdAt: string,
         updatedAt: string,
-      } | null,
-      comments?:  {
-        __typename: "ModelCommentConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      blogPostsId?: string | null,
+        manufacturerModelsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
     } | null,
-    content: string,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
   } | null,
 };
 
-export type OnUpdateCommentSubscription = {
-  onUpdateComment?:  {
-    __typename: "Comment",
+export type OnUpdateManufacturerSubscription = {
+  onUpdateManufacturer?:  {
+    __typename: "Manufacturer",
     id: string,
-    post?:  {
-      __typename: "Post",
-      id: string,
-      title: string,
-      blog?:  {
-        __typename: "Blog",
+    name: string,
+    established?: string | null,
+    fouder?: string | null,
+    headquarters?: string | null,
+    about?: string | null,
+    netWorth?: number | null,
+    logo?: string | null,
+    models?:  {
+      __typename: "ModelModelConnection",
+      items:  Array< {
+        __typename: "Model",
         id: string,
         name: string,
         createdAt: string,
         updatedAt: string,
-      } | null,
-      comments?:  {
-        __typename: "ModelCommentConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      blogPostsId?: string | null,
+        manufacturerModelsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
     } | null,
-    content: string,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
   } | null,
 };
 
-export type OnDeleteCommentSubscription = {
-  onDeleteComment?:  {
-    __typename: "Comment",
+export type OnDeleteManufacturerSubscription = {
+  onDeleteManufacturer?:  {
+    __typename: "Manufacturer",
     id: string,
-    post?:  {
-      __typename: "Post",
-      id: string,
-      title: string,
-      blog?:  {
-        __typename: "Blog",
+    name: string,
+    established?: string | null,
+    fouder?: string | null,
+    headquarters?: string | null,
+    about?: string | null,
+    netWorth?: number | null,
+    logo?: string | null,
+    models?:  {
+      __typename: "ModelModelConnection",
+      items:  Array< {
+        __typename: "Model",
         id: string,
         name: string,
         createdAt: string,
         updatedAt: string,
-      } | null,
-      comments?:  {
-        __typename: "ModelCommentConnection",
+        manufacturerModelsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
+    } | null,
+    createdAt: string,
+    updatedAt: string,
+  } | null,
+};
+
+export type OnCreateModelSubscription = {
+  onCreateModel?:  {
+    __typename: "Model",
+    id: string,
+    name: string,
+    manufacturer?:  {
+      __typename: "Manufacturer",
+      id: string,
+      name: string,
+      established?: string | null,
+      fouder?: string | null,
+      headquarters?: string | null,
+      about?: string | null,
+      netWorth?: number | null,
+      logo?: string | null,
+      models?:  {
+        __typename: "ModelModelConnection",
         nextToken?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
-      blogPostsId?: string | null,
     } | null,
-    content: string,
+    cars?:  {
+      __typename: "ModelCarConnection",
+      items:  Array< {
+        __typename: "Car",
+        id: string,
+        image?: string | null,
+        generation?: number | null,
+        power?: number | null,
+        torque?: number | null,
+        weight?: number | null,
+        gearbox?: string | null,
+        engine?: string | null,
+        createdAt: string,
+        updatedAt: string,
+        modelCarsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
+    } | null,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
+    manufacturerModelsId?: string | null,
+  } | null,
+};
+
+export type OnUpdateModelSubscription = {
+  onUpdateModel?:  {
+    __typename: "Model",
+    id: string,
+    name: string,
+    manufacturer?:  {
+      __typename: "Manufacturer",
+      id: string,
+      name: string,
+      established?: string | null,
+      fouder?: string | null,
+      headquarters?: string | null,
+      about?: string | null,
+      netWorth?: number | null,
+      logo?: string | null,
+      models?:  {
+        __typename: "ModelModelConnection",
+        nextToken?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+    cars?:  {
+      __typename: "ModelCarConnection",
+      items:  Array< {
+        __typename: "Car",
+        id: string,
+        image?: string | null,
+        generation?: number | null,
+        power?: number | null,
+        torque?: number | null,
+        weight?: number | null,
+        gearbox?: string | null,
+        engine?: string | null,
+        createdAt: string,
+        updatedAt: string,
+        modelCarsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
+    } | null,
+    createdAt: string,
+    updatedAt: string,
+    manufacturerModelsId?: string | null,
+  } | null,
+};
+
+export type OnDeleteModelSubscription = {
+  onDeleteModel?:  {
+    __typename: "Model",
+    id: string,
+    name: string,
+    manufacturer?:  {
+      __typename: "Manufacturer",
+      id: string,
+      name: string,
+      established?: string | null,
+      fouder?: string | null,
+      headquarters?: string | null,
+      about?: string | null,
+      netWorth?: number | null,
+      logo?: string | null,
+      models?:  {
+        __typename: "ModelModelConnection",
+        nextToken?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+    cars?:  {
+      __typename: "ModelCarConnection",
+      items:  Array< {
+        __typename: "Car",
+        id: string,
+        image?: string | null,
+        generation?: number | null,
+        power?: number | null,
+        torque?: number | null,
+        weight?: number | null,
+        gearbox?: string | null,
+        engine?: string | null,
+        createdAt: string,
+        updatedAt: string,
+        modelCarsId?: string | null,
+      } | null >,
+      nextToken?: string | null,
+    } | null,
+    createdAt: string,
+    updatedAt: string,
+    manufacturerModelsId?: string | null,
+  } | null,
+};
+
+export type OnCreateCarSubscription = {
+  onCreateCar?:  {
+    __typename: "Car",
+    id: string,
+    model?:  {
+      __typename: "Model",
+      id: string,
+      name: string,
+      manufacturer?:  {
+        __typename: "Manufacturer",
+        id: string,
+        name: string,
+        established?: string | null,
+        fouder?: string | null,
+        headquarters?: string | null,
+        about?: string | null,
+        netWorth?: number | null,
+        logo?: string | null,
+        createdAt: string,
+        updatedAt: string,
+      } | null,
+      cars?:  {
+        __typename: "ModelCarConnection",
+        nextToken?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      manufacturerModelsId?: string | null,
+    } | null,
+    image?: string | null,
+    generation?: number | null,
+    power?: number | null,
+    torque?: number | null,
+    weight?: number | null,
+    gearbox?: string | null,
+    engine?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    modelCarsId?: string | null,
+  } | null,
+};
+
+export type OnUpdateCarSubscription = {
+  onUpdateCar?:  {
+    __typename: "Car",
+    id: string,
+    model?:  {
+      __typename: "Model",
+      id: string,
+      name: string,
+      manufacturer?:  {
+        __typename: "Manufacturer",
+        id: string,
+        name: string,
+        established?: string | null,
+        fouder?: string | null,
+        headquarters?: string | null,
+        about?: string | null,
+        netWorth?: number | null,
+        logo?: string | null,
+        createdAt: string,
+        updatedAt: string,
+      } | null,
+      cars?:  {
+        __typename: "ModelCarConnection",
+        nextToken?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      manufacturerModelsId?: string | null,
+    } | null,
+    image?: string | null,
+    generation?: number | null,
+    power?: number | null,
+    torque?: number | null,
+    weight?: number | null,
+    gearbox?: string | null,
+    engine?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    modelCarsId?: string | null,
+  } | null,
+};
+
+export type OnDeleteCarSubscription = {
+  onDeleteCar?:  {
+    __typename: "Car",
+    id: string,
+    model?:  {
+      __typename: "Model",
+      id: string,
+      name: string,
+      manufacturer?:  {
+        __typename: "Manufacturer",
+        id: string,
+        name: string,
+        established?: string | null,
+        fouder?: string | null,
+        headquarters?: string | null,
+        about?: string | null,
+        netWorth?: number | null,
+        logo?: string | null,
+        createdAt: string,
+        updatedAt: string,
+      } | null,
+      cars?:  {
+        __typename: "ModelCarConnection",
+        nextToken?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      manufacturerModelsId?: string | null,
+    } | null,
+    image?: string | null,
+    generation?: number | null,
+    power?: number | null,
+    torque?: number | null,
+    weight?: number | null,
+    gearbox?: string | null,
+    engine?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    modelCarsId?: string | null,
   } | null,
 };

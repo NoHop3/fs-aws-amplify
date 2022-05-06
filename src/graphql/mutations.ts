@@ -2,261 +2,351 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createBlog = /* GraphQL */ `
-  mutation CreateBlog(
-    $input: CreateBlogInput!
-    $condition: ModelBlogConditionInput
+export const createManufacturer = /* GraphQL */ `
+  mutation CreateManufacturer(
+    $input: CreateManufacturerInput!
+    $condition: ModelManufacturerConditionInput
   ) {
-    createBlog(input: $input, condition: $condition) {
+    createManufacturer(input: $input, condition: $condition) {
       id
       name
-      posts {
+      established
+      fouder
+      headquarters
+      about
+      netWorth
+      logo
+      models {
         items {
-          id
-          title
-          createdAt
-          updatedAt
-          blogPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const updateBlog = /* GraphQL */ `
-  mutation UpdateBlog(
-    $input: UpdateBlogInput!
-    $condition: ModelBlogConditionInput
-  ) {
-    updateBlog(input: $input, condition: $condition) {
-      id
-      name
-      posts {
-        items {
-          id
-          title
-          createdAt
-          updatedAt
-          blogPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const deleteBlog = /* GraphQL */ `
-  mutation DeleteBlog(
-    $input: DeleteBlogInput!
-    $condition: ModelBlogConditionInput
-  ) {
-    deleteBlog(input: $input, condition: $condition) {
-      id
-      name
-      posts {
-        items {
-          id
-          title
-          createdAt
-          updatedAt
-          blogPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const createPost = /* GraphQL */ `
-  mutation CreatePost(
-    $input: CreatePostInput!
-    $condition: ModelPostConditionInput
-  ) {
-    createPost(input: $input, condition: $condition) {
-      id
-      title
-      blog {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-      }
-      comments {
-        items {
-          id
-          content
-          createdAt
-          updatedAt
-          postCommentsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      blogPostsId
-    }
-  }
-`;
-export const updatePost = /* GraphQL */ `
-  mutation UpdatePost(
-    $input: UpdatePostInput!
-    $condition: ModelPostConditionInput
-  ) {
-    updatePost(input: $input, condition: $condition) {
-      id
-      title
-      blog {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-      }
-      comments {
-        items {
-          id
-          content
-          createdAt
-          updatedAt
-          postCommentsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      blogPostsId
-    }
-  }
-`;
-export const deletePost = /* GraphQL */ `
-  mutation DeletePost(
-    $input: DeletePostInput!
-    $condition: ModelPostConditionInput
-  ) {
-    deletePost(input: $input, condition: $condition) {
-      id
-      title
-      blog {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-      }
-      comments {
-        items {
-          id
-          content
-          createdAt
-          updatedAt
-          postCommentsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      blogPostsId
-    }
-  }
-`;
-export const createComment = /* GraphQL */ `
-  mutation CreateComment(
-    $input: CreateCommentInput!
-    $condition: ModelCommentConditionInput
-  ) {
-    createComment(input: $input, condition: $condition) {
-      id
-      post {
-        id
-        title
-        blog {
           id
           name
           createdAt
           updatedAt
+          manufacturerModelsId
         }
-        comments {
-          nextToken
-        }
-        createdAt
-        updatedAt
-        blogPostsId
+        nextToken
       }
-      content
       createdAt
       updatedAt
-      postCommentsId
     }
   }
 `;
-export const updateComment = /* GraphQL */ `
-  mutation UpdateComment(
-    $input: UpdateCommentInput!
-    $condition: ModelCommentConditionInput
+export const updateManufacturer = /* GraphQL */ `
+  mutation UpdateManufacturer(
+    $input: UpdateManufacturerInput!
+    $condition: ModelManufacturerConditionInput
   ) {
-    updateComment(input: $input, condition: $condition) {
+    updateManufacturer(input: $input, condition: $condition) {
       id
-      post {
-        id
-        title
-        blog {
+      name
+      established
+      fouder
+      headquarters
+      about
+      netWorth
+      logo
+      models {
+        items {
           id
           name
           createdAt
           updatedAt
+          manufacturerModelsId
         }
-        comments {
-          nextToken
-        }
-        createdAt
-        updatedAt
-        blogPostsId
+        nextToken
       }
-      content
       createdAt
       updatedAt
-      postCommentsId
     }
   }
 `;
-export const deleteComment = /* GraphQL */ `
-  mutation DeleteComment(
-    $input: DeleteCommentInput!
-    $condition: ModelCommentConditionInput
+export const deleteManufacturer = /* GraphQL */ `
+  mutation DeleteManufacturer(
+    $input: DeleteManufacturerInput!
+    $condition: ModelManufacturerConditionInput
   ) {
-    deleteComment(input: $input, condition: $condition) {
+    deleteManufacturer(input: $input, condition: $condition) {
       id
-      post {
-        id
-        title
-        blog {
+      name
+      established
+      fouder
+      headquarters
+      about
+      netWorth
+      logo
+      models {
+        items {
           id
           name
           createdAt
           updatedAt
+          manufacturerModelsId
         }
-        comments {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const createModel = /* GraphQL */ `
+  mutation CreateModel(
+    $input: CreateModelInput!
+    $condition: ModelModelConditionInput
+  ) {
+    createModel(input: $input, condition: $condition) {
+      id
+      name
+      manufacturer {
+        id
+        name
+        established
+        fouder
+        headquarters
+        about
+        netWorth
+        logo
+        models {
           nextToken
         }
         createdAt
         updatedAt
-        blogPostsId
       }
-      content
+      cars {
+        items {
+          id
+          image
+          generation
+          power
+          torque
+          weight
+          gearbox
+          engine
+          createdAt
+          updatedAt
+          modelCarsId
+        }
+        nextToken
+      }
       createdAt
       updatedAt
-      postCommentsId
+      manufacturerModelsId
+    }
+  }
+`;
+export const updateModel = /* GraphQL */ `
+  mutation UpdateModel(
+    $input: UpdateModelInput!
+    $condition: ModelModelConditionInput
+  ) {
+    updateModel(input: $input, condition: $condition) {
+      id
+      name
+      manufacturer {
+        id
+        name
+        established
+        fouder
+        headquarters
+        about
+        netWorth
+        logo
+        models {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      cars {
+        items {
+          id
+          image
+          generation
+          power
+          torque
+          weight
+          gearbox
+          engine
+          createdAt
+          updatedAt
+          modelCarsId
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+      manufacturerModelsId
+    }
+  }
+`;
+export const deleteModel = /* GraphQL */ `
+  mutation DeleteModel(
+    $input: DeleteModelInput!
+    $condition: ModelModelConditionInput
+  ) {
+    deleteModel(input: $input, condition: $condition) {
+      id
+      name
+      manufacturer {
+        id
+        name
+        established
+        fouder
+        headquarters
+        about
+        netWorth
+        logo
+        models {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      cars {
+        items {
+          id
+          image
+          generation
+          power
+          torque
+          weight
+          gearbox
+          engine
+          createdAt
+          updatedAt
+          modelCarsId
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+      manufacturerModelsId
+    }
+  }
+`;
+export const createCar = /* GraphQL */ `
+  mutation CreateCar(
+    $input: CreateCarInput!
+    $condition: ModelCarConditionInput
+  ) {
+    createCar(input: $input, condition: $condition) {
+      id
+      model {
+        id
+        name
+        manufacturer {
+          id
+          name
+          established
+          fouder
+          headquarters
+          about
+          netWorth
+          logo
+          createdAt
+          updatedAt
+        }
+        cars {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        manufacturerModelsId
+      }
+      image
+      generation
+      power
+      torque
+      weight
+      gearbox
+      engine
+      createdAt
+      updatedAt
+      modelCarsId
+    }
+  }
+`;
+export const updateCar = /* GraphQL */ `
+  mutation UpdateCar(
+    $input: UpdateCarInput!
+    $condition: ModelCarConditionInput
+  ) {
+    updateCar(input: $input, condition: $condition) {
+      id
+      model {
+        id
+        name
+        manufacturer {
+          id
+          name
+          established
+          fouder
+          headquarters
+          about
+          netWorth
+          logo
+          createdAt
+          updatedAt
+        }
+        cars {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        manufacturerModelsId
+      }
+      image
+      generation
+      power
+      torque
+      weight
+      gearbox
+      engine
+      createdAt
+      updatedAt
+      modelCarsId
+    }
+  }
+`;
+export const deleteCar = /* GraphQL */ `
+  mutation DeleteCar(
+    $input: DeleteCarInput!
+    $condition: ModelCarConditionInput
+  ) {
+    deleteCar(input: $input, condition: $condition) {
+      id
+      model {
+        id
+        name
+        manufacturer {
+          id
+          name
+          established
+          fouder
+          headquarters
+          about
+          netWorth
+          logo
+          createdAt
+          updatedAt
+        }
+        cars {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        manufacturerModelsId
+      }
+      image
+      generation
+      power
+      torque
+      weight
+      gearbox
+      engine
+      createdAt
+      updatedAt
+      modelCarsId
     }
   }
 `;

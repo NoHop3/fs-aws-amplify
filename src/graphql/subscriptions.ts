@@ -2,234 +2,324 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateBlog = /* GraphQL */ `
-  subscription OnCreateBlog {
-    onCreateBlog {
+export const onCreateManufacturer = /* GraphQL */ `
+  subscription OnCreateManufacturer {
+    onCreateManufacturer {
       id
       name
-      posts {
+      established
+      fouder
+      headquarters
+      about
+      netWorth
+      logo
+      models {
         items {
-          id
-          title
-          createdAt
-          updatedAt
-          blogPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onUpdateBlog = /* GraphQL */ `
-  subscription OnUpdateBlog {
-    onUpdateBlog {
-      id
-      name
-      posts {
-        items {
-          id
-          title
-          createdAt
-          updatedAt
-          blogPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onDeleteBlog = /* GraphQL */ `
-  subscription OnDeleteBlog {
-    onDeleteBlog {
-      id
-      name
-      posts {
-        items {
-          id
-          title
-          createdAt
-          updatedAt
-          blogPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onCreatePost = /* GraphQL */ `
-  subscription OnCreatePost {
-    onCreatePost {
-      id
-      title
-      blog {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-      }
-      comments {
-        items {
-          id
-          content
-          createdAt
-          updatedAt
-          postCommentsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      blogPostsId
-    }
-  }
-`;
-export const onUpdatePost = /* GraphQL */ `
-  subscription OnUpdatePost {
-    onUpdatePost {
-      id
-      title
-      blog {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-      }
-      comments {
-        items {
-          id
-          content
-          createdAt
-          updatedAt
-          postCommentsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      blogPostsId
-    }
-  }
-`;
-export const onDeletePost = /* GraphQL */ `
-  subscription OnDeletePost {
-    onDeletePost {
-      id
-      title
-      blog {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-      }
-      comments {
-        items {
-          id
-          content
-          createdAt
-          updatedAt
-          postCommentsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      blogPostsId
-    }
-  }
-`;
-export const onCreateComment = /* GraphQL */ `
-  subscription OnCreateComment {
-    onCreateComment {
-      id
-      post {
-        id
-        title
-        blog {
           id
           name
           createdAt
           updatedAt
+          manufacturerModelsId
         }
-        comments {
-          nextToken
-        }
-        createdAt
-        updatedAt
-        blogPostsId
+        nextToken
       }
-      content
       createdAt
       updatedAt
-      postCommentsId
     }
   }
 `;
-export const onUpdateComment = /* GraphQL */ `
-  subscription OnUpdateComment {
-    onUpdateComment {
+export const onUpdateManufacturer = /* GraphQL */ `
+  subscription OnUpdateManufacturer {
+    onUpdateManufacturer {
       id
-      post {
-        id
-        title
-        blog {
+      name
+      established
+      fouder
+      headquarters
+      about
+      netWorth
+      logo
+      models {
+        items {
           id
           name
           createdAt
           updatedAt
+          manufacturerModelsId
         }
-        comments {
-          nextToken
-        }
-        createdAt
-        updatedAt
-        blogPostsId
+        nextToken
       }
-      content
       createdAt
       updatedAt
-      postCommentsId
     }
   }
 `;
-export const onDeleteComment = /* GraphQL */ `
-  subscription OnDeleteComment {
-    onDeleteComment {
+export const onDeleteManufacturer = /* GraphQL */ `
+  subscription OnDeleteManufacturer {
+    onDeleteManufacturer {
       id
-      post {
-        id
-        title
-        blog {
+      name
+      established
+      fouder
+      headquarters
+      about
+      netWorth
+      logo
+      models {
+        items {
           id
           name
           createdAt
           updatedAt
+          manufacturerModelsId
         }
-        comments {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateModel = /* GraphQL */ `
+  subscription OnCreateModel {
+    onCreateModel {
+      id
+      name
+      manufacturer {
+        id
+        name
+        established
+        fouder
+        headquarters
+        about
+        netWorth
+        logo
+        models {
           nextToken
         }
         createdAt
         updatedAt
-        blogPostsId
       }
-      content
+      cars {
+        items {
+          id
+          image
+          generation
+          power
+          torque
+          weight
+          gearbox
+          engine
+          createdAt
+          updatedAt
+          modelCarsId
+        }
+        nextToken
+      }
       createdAt
       updatedAt
-      postCommentsId
+      manufacturerModelsId
+    }
+  }
+`;
+export const onUpdateModel = /* GraphQL */ `
+  subscription OnUpdateModel {
+    onUpdateModel {
+      id
+      name
+      manufacturer {
+        id
+        name
+        established
+        fouder
+        headquarters
+        about
+        netWorth
+        logo
+        models {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      cars {
+        items {
+          id
+          image
+          generation
+          power
+          torque
+          weight
+          gearbox
+          engine
+          createdAt
+          updatedAt
+          modelCarsId
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+      manufacturerModelsId
+    }
+  }
+`;
+export const onDeleteModel = /* GraphQL */ `
+  subscription OnDeleteModel {
+    onDeleteModel {
+      id
+      name
+      manufacturer {
+        id
+        name
+        established
+        fouder
+        headquarters
+        about
+        netWorth
+        logo
+        models {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      cars {
+        items {
+          id
+          image
+          generation
+          power
+          torque
+          weight
+          gearbox
+          engine
+          createdAt
+          updatedAt
+          modelCarsId
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+      manufacturerModelsId
+    }
+  }
+`;
+export const onCreateCar = /* GraphQL */ `
+  subscription OnCreateCar {
+    onCreateCar {
+      id
+      model {
+        id
+        name
+        manufacturer {
+          id
+          name
+          established
+          fouder
+          headquarters
+          about
+          netWorth
+          logo
+          createdAt
+          updatedAt
+        }
+        cars {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        manufacturerModelsId
+      }
+      image
+      generation
+      power
+      torque
+      weight
+      gearbox
+      engine
+      createdAt
+      updatedAt
+      modelCarsId
+    }
+  }
+`;
+export const onUpdateCar = /* GraphQL */ `
+  subscription OnUpdateCar {
+    onUpdateCar {
+      id
+      model {
+        id
+        name
+        manufacturer {
+          id
+          name
+          established
+          fouder
+          headquarters
+          about
+          netWorth
+          logo
+          createdAt
+          updatedAt
+        }
+        cars {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        manufacturerModelsId
+      }
+      image
+      generation
+      power
+      torque
+      weight
+      gearbox
+      engine
+      createdAt
+      updatedAt
+      modelCarsId
+    }
+  }
+`;
+export const onDeleteCar = /* GraphQL */ `
+  subscription OnDeleteCar {
+    onDeleteCar {
+      id
+      model {
+        id
+        name
+        manufacturer {
+          id
+          name
+          established
+          fouder
+          headquarters
+          about
+          netWorth
+          logo
+          createdAt
+          updatedAt
+        }
+        cars {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        manufacturerModelsId
+      }
+      image
+      generation
+      power
+      torque
+      weight
+      gearbox
+      engine
+      createdAt
+      updatedAt
+      modelCarsId
     }
   }
 `;
