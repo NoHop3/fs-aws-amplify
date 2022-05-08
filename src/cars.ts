@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 
 export const carsData = [
+  //
   /*********************************** Abarth ***************************************/
   //Abarth 596 Esseesse
   {
@@ -50,6 +51,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //
   /*********************************** Acura ***************************************/
   //Acura Integra Type-R
   {
@@ -87,6 +89,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //
   /*********************************** Alfa Romeo ***************************************/
   //Alfa Romeo 33 Stradale
   {
@@ -112,7 +115,8 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //Alfa Romeo Giulia TZ2
+  //!Alfa Romeo Giulia
+  //TZ2
   {
     id: uuidv4(),
     modelCarsId: "d144db08-4b6d-4292-a6a0-149d5cabc6bd",
@@ -124,6 +128,31 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //Quadrifoglio
+  {
+    id: uuidv4(),
+    modelCarsId: "d144db08-4b6d-4292-a6a0-149d5cabc6bd",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //Sprint GTA Stradale
+  {
+    id: uuidv4(),
+    modelCarsId: "d144db08-4b6d-4292-a6a0-149d5cabc6bd",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //
   /*********************************** Alpine ***************************************/
   //!Alpine A110
   {
@@ -149,6 +178,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //
   /*********************************** Apollo ***************************************/
   // Apollo Intensa Emozione
   {
@@ -162,6 +192,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //
   /*********************************** Ariel ***************************************/
   // Ariel Atom 500 V8
   {
@@ -187,6 +218,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //
   /*********************************** Aston Martin ***************************************/
   // Aston Martin DB11
   {
@@ -236,9 +268,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-
+  //
   /*********************************** Audi ***************************************/
-  // Audi R8
+  //! Audi R8
+  //V10 Coupe (2013)
   {
     id: uuidv4(),
     modelCarsId: "87c71c34-d688-416d-8c9d-e68568a325a7",
@@ -250,10 +283,22 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Audi RS 2 Avant
+  //V10 Coupe (2016)
   {
     id: uuidv4(),
-    modelCarsId: "4644f6aa-3eb2-4fad-91dd-be52996b8edc",
+    modelCarsId: "87c71c34-d688-416d-8c9d-e68568a325a7",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Audi Sport quattro
+  {
+    id: uuidv4(),
+    modelCarsId: "60c7d949-7f64-4d96-b506-3b93ff33a1cd",
     image: "",
     engine: "",
     gearbox: "",
@@ -263,6 +308,18 @@ export const carsData = [
     weight: 0,
   },
   //! Audi RS
+  //2 Avant
+  {
+    id: uuidv4(),
+    modelCarsId: "c7e8e8bd-7421-4f34-9617-73782debb9f6",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
   // 4
   {
     id: uuidv4(),
@@ -287,10 +344,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Audi RS 5 Coupé
+  // 5 Coupé
   {
     id: uuidv4(),
-    modelCarsId: "8768c8d9-9f3d-4ff9-9a18-cb8d77baeeac",
+    modelCarsId: "c7e8e8bd-7421-4f34-9617-73782debb9f6",
     image: "",
     engine: "",
     gearbox: "",
@@ -299,10 +356,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Audi Sport quattro
+  // TT Coupé
   {
     id: uuidv4(),
-    modelCarsId: "60c7d949-7f64-4d96-b506-3b93ff33a1cd",
+    modelCarsId: "c7e8e8bd-7421-4f34-9617-73782debb9f6",
     image: "",
     engine: "",
     gearbox: "",
@@ -311,18 +368,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Audi TT RS Coupé
-  {
-    id: uuidv4(),
-    modelCarsId: "33e1287e-4805-4cfc-9a5a-cce7de438911",
-    image: "",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
-  },
+  //
   /*********************************** Austin-Healey ***************************************/
   // Austin-Healey 3000 MkIII
   {
@@ -348,6 +394,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //
   /*********************************** Bentley ***************************************/
   // Bentley 8-Liter
   {
@@ -386,6 +433,18 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //GT3
+  {
+    id: uuidv4(),
+    modelCarsId: "0a697a41-0924-4130-b9d4-a0708f00965f",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
   // Supersports
   {
     id: uuidv4(),
@@ -398,6 +457,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //
   /*********************************** BMW ***************************************/
   // BMW i8
   {
@@ -423,7 +483,8 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // BMW M3
+  //! BMW M3
+  //1991
   {
     id: uuidv4(),
     modelCarsId: "138f65a8-2b9f-4036-95c3-7113a72c3ba9",
@@ -435,7 +496,104 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // BMW M5
+  //1997
+  {
+    id: uuidv4(),
+    modelCarsId: "138f65a8-2b9f-4036-95c3-7113a72c3ba9",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //2003
+  {
+    id: uuidv4(),
+    modelCarsId: "138f65a8-2b9f-4036-95c3-7113a72c3ba9",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //2005
+  {
+    id: uuidv4(),
+    modelCarsId: "138f65a8-2b9f-4036-95c3-7113a72c3ba9",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //2008
+  {
+    id: uuidv4(),
+    modelCarsId: "138f65a8-2b9f-4036-95c3-7113a72c3ba9",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! BMW M5
+  // 1988
+  {
+    id: uuidv4(),
+    modelCarsId: "ccbff8b6-b423-4f50-8fac-5b75fa308e79",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 1995
+  {
+    id: uuidv4(),
+    modelCarsId: "ccbff8b6-b423-4f50-8fac-5b75fa308e79",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 2003
+  {
+    id: uuidv4(),
+    modelCarsId: "ccbff8b6-b423-4f50-8fac-5b75fa308e79",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 2009
+  {
+    id: uuidv4(),
+    modelCarsId: "ccbff8b6-b423-4f50-8fac-5b75fa308e79",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 2012
   {
     id: uuidv4(),
     modelCarsId: "ccbff8b6-b423-4f50-8fac-5b75fa308e79",
@@ -459,6 +617,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //
   /*********************************** Bugatti ***************************************/
   // Bugatti Chiron
   {
@@ -496,7 +655,8 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Bugatti Veyron
+  //!Bugatti Veyron
+  // 16.4
   {
     id: uuidv4(),
     modelCarsId: "84295f9c-d330-4ebe-a247-f4a737570479",
@@ -508,6 +668,19 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  // SuperSport
+  {
+    id: uuidv4(),
+    modelCarsId: "84295f9c-d330-4ebe-a247-f4a737570479",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //
   /*********************************** Buick ***************************************/
   // Buick GSX
   {
@@ -533,6 +706,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
+  //
   /*********************************** Cadillac ***************************************/
   // Cadillac 6 Team Cadillac Northstar LMP-02
   {

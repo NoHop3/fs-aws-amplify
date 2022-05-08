@@ -47,7 +47,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "5a619a1f-c801-4585-a0a2-dbd3dc3816ce",
-    name: "Alfa Romeo Giulia TZ2",
+    name: "Alfa Romeo Giulia",
   },
   {
     id: uuidv4(),
@@ -97,17 +97,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "5b8716ab-76d4-4e2b-a43f-024088da0fcf",
-    name: "Audi RS 4",
-  },
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "5b8716ab-76d4-4e2b-a43f-024088da0fcf",
-    name: "Audi RS 5 Coupé",
-  },
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "5b8716ab-76d4-4e2b-a43f-024088da0fcf",
-    name: "Audi TT RS Coupé",
+    name: "Audi RS",
   },
   {
     id: uuidv4(),
@@ -118,11 +108,6 @@ export const modelsData = [
     id: uuidv4(),
     manufacturerModelsId: "5b8716ab-76d4-4e2b-a43f-024088da0fcf",
     name: "Audi Sport quattro",
-  },
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "5b8716ab-76d4-4e2b-a43f-024088da0fcf",
-    name: "Audi RS 2 Avant",
   },
   // Austin-Healey
   {
