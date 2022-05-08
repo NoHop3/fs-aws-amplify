@@ -8,10 +8,10 @@ type Manufacturer @model
   id: ID!
   name: String!
   established: String
-  fouder: String
+  founder: String
   headquarters: String
   about: String
-  netWorth: Int
+  netWorth: String
   logo: String
   models: [Model] @hasMany
 }

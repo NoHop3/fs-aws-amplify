@@ -8,7 +8,7 @@ export const getManufacturer = /* GraphQL */ `
       id
       name
       established
-      fouder
+      founder
       headquarters
       about
       netWorth
@@ -39,14 +39,14 @@ export const listManufacturers = /* GraphQL */ `
         id
         name
         established
-        fouder
+        founder
         headquarters
         about
         netWorth
         logo
-        # models {
-        #   nextToken
-        # }
+        models {
+          nextToken
+        }
         createdAt
         updatedAt
       }
@@ -63,7 +63,7 @@ export const getModel = /* GraphQL */ `
         id
         name
         established
-        fouder
+        founder
         headquarters
         about
         netWorth
@@ -109,21 +109,21 @@ export const listModels = /* GraphQL */ `
         manufacturer {
           id
           name
+          established
+          founder
+          headquarters
+          about
+          netWorth
           logo
-          # established
-          # fouder
-          # headquarters
-          # about
-          # netWorth
-          # createdAt
-          # updatedAt
-          # manufacturerModelsId
+          createdAt
+          updatedAt
         }
-        # cars {
-        #   nextToken
-        # }
+        cars {
+          nextToken
+        }
         createdAt
         updatedAt
+        manufacturerModelsId
       }
       nextToken
     }
@@ -140,7 +140,7 @@ export const getCar = /* GraphQL */ `
           id
           name
           established
-          fouder
+          founder
           headquarters
           about
           netWorth
@@ -180,6 +180,9 @@ export const listCars = /* GraphQL */ `
         model {
           id
           name
+          createdAt
+          updatedAt
+          manufacturerModelsId
         }
         image
         generation
@@ -190,6 +193,7 @@ export const listCars = /* GraphQL */ `
         engine
         createdAt
         updatedAt
+        modelCarsId
       }
       nextToken
     }

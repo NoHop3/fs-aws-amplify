@@ -1,9 +1,15 @@
-import React, { Key, useEffect, useState } from "react";
+import React, { Key, useCallback, useEffect, useState } from "react";
 import { API, graphqlOperation } from "aws-amplify";
 import { listManufacturers, listModels, listCars } from "./graphql/queries";
+import { createManufacturer } from "./graphql/mutations";
 
 import "@aws-amplify/ui-react/styles.css";
 import { Manufacturer, Model, Car } from "./typescript/types";
+
+import { v4 as uuidv4 } from "uuid";
+import { manufacturersData } from "./manufacturers";
+
+
 
 function App() {
   const [manufacturers, setManufacturers] = useState([]);
@@ -45,6 +51,35 @@ function App() {
       console.error(error);
     }
   };
+  console.log(manufacturersData);
+
+  const [values, setValues] = useState({
+    name: "",
+    established: "",
+    headquarters: "",
+    founder: "",
+    about: "",
+    id: "",
+    netWorth: 0,
+  });
+  const handleChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setValues({ ...values, [e.target.name]: e.target.value });
+    },
+    [values]
+  );
+
+  const handleCreateClick = async () => {
+    try {
+      const manufacturer = values;
+      console.log(manufacturer);
+      await API.graphql(
+        graphqlOperation(createManufacturer, { input: manufacturer })
+      );
+    } catch (err) {
+      console.log("error creating todo:", err);
+    }
+  };
 
   useEffect(() => {
     fetchManufacturers();
@@ -55,11 +90,48 @@ function App() {
   return (
     <div className='App'>
       <div>
+        <div>
+          <label htmlFor='text'>Name</label>
+          <input type='text' name='name' onChange={handleChange} />
+        </div>
+        <div>
+          <label htmlFor='established'>established</label>
+          <input type='text' name='established' onChange={handleChange} />
+        </div>
+        <div>
+          <label htmlFor='headquarters'>headquarters</label>
+          <input type='text' name='headquarters' onChange={handleChange} />
+        </div>
+        <div>
+          <label htmlFor='founder'>founder</label>
+          <input type='text' name='founder' onChange={handleChange} />
+        </div>
+        <div>
+          <label htmlFor='about'>about</label>
+          <input type='text' name='about' onChange={handleChange} />
+        </div>
+        <div>
+          <label htmlFor='netWorth'>net worth</label>
+          <input type='number' name='netWorth' onChange={handleChange} />
+        </div>
+        <button
+          onClick={() => {
+            setValues({ ...values, id: uuidv4() });
+          }}>
+          Generate ID
+        </button>
+        <button onClick={handleCreateClick}>Create manufacturerr</button>
+        <div>
+          <>{JSON.stringify(values)}</>
+        </div>
+      </div>
+      <div>
         <h1>Hello manufacturers!</h1>
         {manufacturers.map((manufacturer: Manufacturer) => (
           <div key={manufacturer.id as Key}>{manufacturer.name}</div>
         ))}
       </div>
+      {/*
       <div>
         <h1>Hello models!</h1>
         {models.map((model: Model) => (
@@ -75,7 +147,7 @@ function App() {
             </>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

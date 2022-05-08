@@ -11,7 +11,7 @@ export const createManufacturer = /* GraphQL */ `
       id
       name
       established
-      fouder
+      founder
       headquarters
       about
       netWorth
@@ -40,7 +40,7 @@ export const updateManufacturer = /* GraphQL */ `
       id
       name
       established
-      fouder
+      founder
       headquarters
       about
       netWorth
@@ -69,7 +69,7 @@ export const deleteManufacturer = /* GraphQL */ `
       id
       name
       established
-      fouder
+      founder
       headquarters
       about
       netWorth
@@ -101,7 +101,7 @@ export const createModel = /* GraphQL */ `
         id
         name
         established
-        fouder
+        founder
         headquarters
         about
         netWorth
@@ -146,7 +146,7 @@ export const updateModel = /* GraphQL */ `
         id
         name
         established
-        fouder
+        founder
         headquarters
         about
         netWorth
@@ -191,7 +191,7 @@ export const deleteModel = /* GraphQL */ `
         id
         name
         established
-        fouder
+        founder
         headquarters
         about
         netWorth
@@ -238,7 +238,7 @@ export const createCar = /* GraphQL */ `
           id
           name
           established
-          fouder
+          founder
           headquarters
           about
           netWorth
@@ -280,7 +280,7 @@ export const updateCar = /* GraphQL */ `
           id
           name
           established
-          fouder
+          founder
           headquarters
           about
           netWorth
@@ -322,7 +322,7 @@ export const deleteCar = /* GraphQL */ `
           id
           name
           established
-          fouder
+          founder
           headquarters
           about
           netWorth
