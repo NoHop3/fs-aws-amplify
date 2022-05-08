@@ -1479,11 +1479,11 @@ export const carsData = [
     weight: 0,
   },
   //
-  /***********************************  ***************************************/
-  // Mazda
+  /*********************************** Mazda ***************************************/
+  // Mazda MX-5
   {
     id: uuidv4(),
-    modelCarsId: "3511aaa6-1dc9-4108-b5d5-36163439b567",
+    modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
     image: "",
     engine: "",
     gearbox: "",
@@ -1492,10 +1492,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Mazda RX-7
   {
     id: uuidv4(),
-    modelCarsId: "3511aaa6-1dc9-4108-b5d5-36163439b567",
+    modelCarsId: "d54415e9-b6e1-4e33-ac75-7538123e6ad2",
     image: "",
     engine: "",
     gearbox: "",
@@ -1504,10 +1504,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Mazda RX-8
   {
     id: uuidv4(),
-    modelCarsId: "3511aaa6-1dc9-4108-b5d5-36163439b567",
+    modelCarsId: "481f2286-5cb0-40d2-9675-8dafed9cfb63",
     image: "",
     engine: "",
     gearbox: "",
@@ -1517,11 +1517,11 @@ export const carsData = [
     weight: 0,
   },
   //
-  /***********************************  ***************************************/
-  // McLaren
+  /*********************************** McLaren ***************************************/
+  // McLaren 12C
   {
     id: uuidv4(),
-    modelCarsId: "e7b38e3c-44cf-4077-89ef-6c1c94a5ae06",
+    modelCarsId: "8b5ee543-69d8-4567-94e8-4a1a9d987b04",
     image: "",
     engine: "",
     gearbox: "",
@@ -1530,10 +1530,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // McLaren F1 GT
   {
     id: uuidv4(),
-    modelCarsId: "e7b38e3c-44cf-4077-89ef-6c1c94a5ae06",
+    modelCarsId: "897266c5-3eeb-4192-8657-52cda75972cf",
     image: "",
     engine: "",
     gearbox: "",
@@ -1542,10 +1542,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // McLaren P1
   {
     id: uuidv4(),
-    modelCarsId: "e7b38e3c-44cf-4077-89ef-6c1c94a5ae06",
+    modelCarsId: "ae02e62e-1ad7-4957-ac58-ccaaaa36e71d",
     image: "",
     engine: "",
     gearbox: "",
@@ -1554,10 +1554,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // McLaren Senna
   {
     id: uuidv4(),
-    modelCarsId: "e7b38e3c-44cf-4077-89ef-6c1c94a5ae06",
+    modelCarsId: "71f7e0e4-3f29-428a-a5a4-b48f557c4cd2",
     image: "",
     engine: "",
     gearbox: "",
@@ -1567,11 +1567,12 @@ export const carsData = [
     weight: 0,
   },
   //
-  /***********************************  ***************************************/
-  // Mercedes-Benz
+  /*********************************** Mercedes-Benz ***************************************/
+  //! Mercedes-AMG GT
+  //R
   {
     id: uuidv4(),
-    modelCarsId: "061ef426-1371-4fa1-96e3-98479ba65b88",
+    modelCarsId: "ca0c5fbe-b635-42c5-adab-5b838e6f5d5c",
     image: "",
     engine: "",
     gearbox: "",
@@ -1580,10 +1581,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  //S
   {
     id: uuidv4(),
-    modelCarsId: "061ef426-1371-4fa1-96e3-98479ba65b88",
+    modelCarsId: "ca0c5fbe-b635-42c5-adab-5b838e6f5d5c",
     image: "",
     engine: "",
     gearbox: "",
@@ -1592,10 +1593,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Mercedes-AMG One
   {
     id: uuidv4(),
-    modelCarsId: "061ef426-1371-4fa1-96e3-98479ba65b88",
+    modelCarsId: "7270e04a-ae26-41e0-aa4b-8e14ded2be64",
     image: "",
     engine: "",
     gearbox: "",
@@ -1604,10 +1605,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Mercedes-Benz 300 SL
   {
     id: uuidv4(),
-    modelCarsId: "061ef426-1371-4fa1-96e3-98479ba65b88",
+    modelCarsId: "bf6af862-f9ff-4ea8-bcc7-fe7e25387cd6",
     image: "",
     engine: "",
     gearbox: "",
@@ -1616,10 +1617,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Mercedes-Benz C 63
   {
     id: uuidv4(),
-    modelCarsId: "061ef426-1371-4fa1-96e3-98479ba65b88",
+    modelCarsId: "ae3b001b-0446-4ac2-a187-cbfeb0b735ab",
     image: "",
     engine: "",
     gearbox: "",
@@ -1628,10 +1629,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Mercedes-Benz CLK
   {
     id: uuidv4(),
-    modelCarsId: "061ef426-1371-4fa1-96e3-98479ba65b88",
+    modelCarsId: "4ea6bb17-1a50-4e52-90da-85c1500cea8d",
     image: "",
     engine: "",
     gearbox: "",
@@ -1640,12 +1641,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Mini
+  // Mercedes-Benz SL 65
   {
     id: uuidv4(),
-    modelCarsId: "552e5568-8296-45de-9c5b-e570248ef91e",
+    modelCarsId: "12f36c26-1943-4493-bd67-6db6429a7054",
     image: "",
     engine: "",
     gearbox: "",
@@ -1654,10 +1653,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Mercedes-Benz SLS
   {
     id: uuidv4(),
-    modelCarsId: "552e5568-8296-45de-9c5b-e570248ef91e",
+    modelCarsId: "39724303-60be-4fb6-ab96-35f70350066c",
     image: "",
     engine: "",
     gearbox: "",
@@ -1667,11 +1666,11 @@ export const carsData = [
     weight: 0,
   },
   //
-  /***********************************  ***************************************/
-  // Mitsubishi
+  /*********************************** Mini ***************************************/
+  // Mini Cooper
   {
     id: uuidv4(),
-    modelCarsId: "7274bf9a-f5db-4270-9634-6935feeb8639",
+    modelCarsId: "6a2d0ead-c3b6-4aef-be45-6a862be485ce",
     image: "",
     engine: "",
     gearbox: "",
@@ -1680,10 +1679,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Mini X-Raid
   {
     id: uuidv4(),
-    modelCarsId: "7274bf9a-f5db-4270-9634-6935feeb8639",
+    modelCarsId: "2bb933be-896f-44d2-bb8b-9f972884fb2c",
     image: "",
     engine: "",
     gearbox: "",
@@ -1693,11 +1692,11 @@ export const carsData = [
     weight: 0,
   },
   //
-  /***********************************  ***************************************/
-  // Nissan
+  /*********************************** Mitsubishi ***************************************/
+  // Mitsubishi Eclipse
   {
     id: uuidv4(),
-    modelCarsId: "bead5104-0030-40b5-8975-abec4bc845ef",
+    modelCarsId: "d102c02b-30ce-467a-bb33-2b976c954ebb",
     image: "",
     engine: "",
     gearbox: "",
@@ -1706,10 +1705,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Mitsubishi Lancer Evolution
   {
     id: uuidv4(),
-    modelCarsId: "bead5104-0030-40b5-8975-abec4bc845ef",
+    modelCarsId: "56705b4e-926c-44c8-b04f-84b200fa7594",
     image: "",
     engine: "",
     gearbox: "",
@@ -1719,9 +1718,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Nissan ***************************************/
+  // Nissan Fairlady
   {
     id: uuidv4(),
-    modelCarsId: "bead5104-0030-40b5-8975-abec4bc845ef",
+    modelCarsId: "5433a0d9-ac82-483e-b876-bac80e764a23",
     image: "",
     engine: "",
     gearbox: "",
@@ -1730,10 +1731,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Nissan Nismo GT-R
   {
     id: uuidv4(),
-    modelCarsId: "bead5104-0030-40b5-8975-abec4bc845ef",
+    modelCarsId: "63d90216-d713-4451-8467-54f46b691197",
     image: "",
     engine: "",
     gearbox: "",
@@ -1742,12 +1743,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Opel
+  // Nissan Silvia
   {
     id: uuidv4(),
-    modelCarsId: "13b2ed36-d684-47e6-9e0d-5873b271c90e",
+    modelCarsId: "6e4c5a77-ba75-4c21-a7cf-f19ed8047a18",
     image: "",
     engine: "",
     gearbox: "",
@@ -1756,10 +1755,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Nissan Skyline GT-R
   {
     id: uuidv4(),
-    modelCarsId: "13b2ed36-d684-47e6-9e0d-5873b271c90e",
+    modelCarsId: "7f6ec6e3-43a2-427c-b1fa-7b1ed5dce104",
     image: "",
     engine: "",
     gearbox: "",
@@ -1769,9 +1768,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Opel ***************************************/
+  // Opel GT
   {
     id: uuidv4(),
-    modelCarsId: "13b2ed36-d684-47e6-9e0d-5873b271c90e",
+    modelCarsId: "f5513eec-563a-428a-8dd0-409c7685d8ed",
     image: "",
     engine: "",
     gearbox: "",
@@ -1780,12 +1781,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Pagani
+  // Opel Kadett
   {
     id: uuidv4(),
-    modelCarsId: "2c4f23a5-6b13-49ea-a0bf-6a9d3721bd6c",
+    modelCarsId: "dc85a720-05c8-4cfe-ae83-66530e2d5f22",
     image: "",
     engine: "",
     gearbox: "",
@@ -1794,10 +1793,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Opel Manta
   {
     id: uuidv4(),
-    modelCarsId: "2c4f23a5-6b13-49ea-a0bf-6a9d3721bd6c",
+    modelCarsId: "ff205224-1a7d-452a-afd1-154eba22ff7a",
     image: "",
     engine: "",
     gearbox: "",
@@ -1807,11 +1806,11 @@ export const carsData = [
     weight: 0,
   },
   //
-  /***********************************  ***************************************/
-  // Peugeot
+  /*********************************** Pagani ***************************************/
+  // Pagani Huayra
   {
     id: uuidv4(),
-    modelCarsId: "d2c8dedf-84ac-435f-86eb-8585bc642a81",
+    modelCarsId: "9a9efa25-696d-4ffd-878a-ed61bd60e6c9",
     image: "",
     engine: "",
     gearbox: "",
@@ -1820,10 +1819,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Pagani Zonda
   {
     id: uuidv4(),
-    modelCarsId: "d2c8dedf-84ac-435f-86eb-8585bc642a81",
+    modelCarsId: "8e5182b0-d6af-4df8-a004-7493d79cdf7d",
     image: "",
     engine: "",
     gearbox: "",
@@ -1833,9 +1832,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Peugeot ***************************************/
+  // Peugeot 205
   {
     id: uuidv4(),
-    modelCarsId: "d2c8dedf-84ac-435f-86eb-8585bc642a81",
+    modelCarsId: "4028c594-cd9b-4e66-9dbc-7f54f365209c",
     image: "",
     engine: "",
     gearbox: "",
@@ -1844,10 +1845,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Peugeot 207
   {
     id: uuidv4(),
-    modelCarsId: "d2c8dedf-84ac-435f-86eb-8585bc642a81",
+    modelCarsId: "c962664d-f28f-4455-8765-fc3eda24e83e",
     image: "",
     engine: "",
     gearbox: "",
@@ -1856,10 +1857,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Peugeot 308
   {
     id: uuidv4(),
-    modelCarsId: "d2c8dedf-84ac-435f-86eb-8585bc642a81",
+    modelCarsId: "429a5bc0-1cd9-4dab-9697-37e6e8a15f2b",
     image: "",
     engine: "",
     gearbox: "",
@@ -1868,12 +1869,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Pontiac
+  // Peugeot 908
   {
     id: uuidv4(),
-    modelCarsId: "841f8aed-dc32-4f31-958b-b2f0d497e2e8",
+    modelCarsId: "523ddde8-482d-4fd5-8b7a-43df1e15b417",
     image: "",
     engine: "",
     gearbox: "",
@@ -1883,9 +1882,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Pontiac ***************************************/
+  // Pontiac Firebird
   {
     id: uuidv4(),
-    modelCarsId: "841f8aed-dc32-4f31-958b-b2f0d497e2e8",
+    modelCarsId: "b9de8e99-0e74-4e58-8e9c-dc9ed2fdadc6",
     image: "",
     engine: "",
     gearbox: "",
@@ -1894,10 +1895,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Pontiac G8
   {
     id: uuidv4(),
-    modelCarsId: "841f8aed-dc32-4f31-958b-b2f0d497e2e8",
+    modelCarsId: "51f70c7e-3fa2-45f3-853c-276c494fe190",
     image: "",
     engine: "",
     gearbox: "",
@@ -1906,12 +1907,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Porsche
+  // Pontiac GTO
   {
     id: uuidv4(),
-    modelCarsId: "54663dda-685f-4ff9-a921-929e51603daf",
+    modelCarsId: "f5ec402d-5d30-4b12-b029-2be7bda3ff3c",
     image: "",
     engine: "",
     gearbox: "",
@@ -1921,9 +1920,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Porsche ***************************************/
+  // Porsche 911
   {
     id: uuidv4(),
-    modelCarsId: "54663dda-685f-4ff9-a921-929e51603daf",
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
     image: "",
     engine: "",
     gearbox: "",
@@ -1932,10 +1933,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Porsche 959
   {
     id: uuidv4(),
-    modelCarsId: "54663dda-685f-4ff9-a921-929e51603daf",
+    modelCarsId: "1335c65b-b34f-4fb2-a475-afe541297b39",
     image: "",
     engine: "",
     gearbox: "",
@@ -1944,10 +1945,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Porsche Carrera GT
   {
     id: uuidv4(),
-    modelCarsId: "54663dda-685f-4ff9-a921-929e51603daf",
+    modelCarsId: "293985cd-693c-4f02-bc00-d07fadca1cec",
     image: "",
     engine: "",
     gearbox: "",
@@ -1956,12 +1957,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // RAM
+  // Porsche Cayenne
   {
     id: uuidv4(),
-    modelCarsId: "c50b08f6-62ae-4338-8384-25ca0b738c0f",
+    modelCarsId: "63647e4c-e9fe-4ea6-857c-2e9820355b10",
     image: "",
     engine: "",
     gearbox: "",
@@ -1971,9 +1970,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** RAM ***************************************/
+  // RAM 1500 Rebel
   {
     id: uuidv4(),
-    modelCarsId: "c50b08f6-62ae-4338-8384-25ca0b738c0f",
+    modelCarsId: "2e083b7f-d8e6-4aae-bc5b-86152e1a5fcd",
     image: "",
     engine: "",
     gearbox: "",
@@ -1982,10 +1983,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // RAM 2500
   {
     id: uuidv4(),
-    modelCarsId: "c50b08f6-62ae-4338-8384-25ca0b738c0f",
+    modelCarsId: "f2d69398-59d8-4977-9066-42c2affd905d",
     image: "",
     engine: "",
     gearbox: "",
@@ -1994,10 +1995,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // RAM Ramiro Luiz Miron
   {
     id: uuidv4(),
-    modelCarsId: "c50b08f6-62ae-4338-8384-25ca0b738c0f",
+    modelCarsId: "a107c3a2-7a34-4106-b3d3-e5b130c8dbfa",
     image: "",
     engine: "",
     gearbox: "",
@@ -2006,12 +2007,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Renault
+  // RAM Runner
   {
     id: uuidv4(),
-    modelCarsId: "38f0f958-5d64-42fc-a267-2513ac5c3fe7",
+    modelCarsId: "e740dddc-ea69-4359-905d-1306f23b39ee",
     image: "",
     engine: "",
     gearbox: "",
@@ -2021,9 +2020,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Renault ***************************************/
+  // Renault 5
   {
     id: uuidv4(),
-    modelCarsId: "38f0f958-5d64-42fc-a267-2513ac5c3fe7",
+    modelCarsId: "d25389eb-8206-433a-8fcb-1b41a6c53f69",
     image: "",
     engine: "",
     gearbox: "",
@@ -2032,10 +2033,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Renault Alpine
   {
     id: uuidv4(),
-    modelCarsId: "38f0f958-5d64-42fc-a267-2513ac5c3fe7",
+    modelCarsId: "47f6bedf-e75a-4236-96f7-2ad6a3cb51d2",
     image: "",
     engine: "",
     gearbox: "",
@@ -2044,10 +2045,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Renault Clio
   {
     id: uuidv4(),
-    modelCarsId: "38f0f958-5d64-42fc-a267-2513ac5c3fe7",
+    modelCarsId: "ce77fcdf-04df-4a18-b5df-1cb53d68986d",
     image: "",
     engine: "",
     gearbox: "",
@@ -2056,12 +2057,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  //Rolls-Royce
+  // Renault Megane
   {
     id: uuidv4(),
-    modelCarsId: "6e3c40ce-9afc-45ec-8cbe-f93ab2422333",
+    modelCarsId: "c1d87b10-11ac-4363-ad5c-3690b7afad60",
     image: "",
     engine: "",
     gearbox: "",
@@ -2071,9 +2070,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Rolls-Royce ***************************************/
+  // Rolls-Royce Dawn
   {
     id: uuidv4(),
-    modelCarsId: "6e3c40ce-9afc-45ec-8cbe-f93ab2422333",
+    modelCarsId: "d51f4fec-a970-4a2f-95b2-0ea76ed2f703",
     image: "",
     engine: "",
     gearbox: "",
@@ -2082,12 +2083,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Rover
+  // Rolls-Royce Wraith
   {
     id: uuidv4(),
-    modelCarsId: "cb2987de-09bc-45cd-a420-248f1310c322",
+    modelCarsId: "037c6a8f-ebcd-4cdf-ab95-d078257467df",
     image: "",
     engine: "",
     gearbox: "",
@@ -2097,11 +2096,11 @@ export const carsData = [
     weight: 0,
   },
   //
-  /***********************************  ***************************************/
-  // Saab
+  /*********************************** Rover ***************************************/
+  // Rover SD1 Vitesse
   {
     id: uuidv4(),
-    modelCarsId: "1c582c16-3792-471e-b289-f3c3b27dfa7b",
+    modelCarsId: "9db11393-84e4-4063-a3be-94ce1fe6d9e9",
     image: "",
     engine: "",
     gearbox: "",
@@ -2111,9 +2110,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Saab ***************************************/
+  // Saab 9-3
   {
     id: uuidv4(),
-    modelCarsId: "1c582c16-3792-471e-b289-f3c3b27dfa7b",
+    modelCarsId: "88386294-4647-4849-8992-f8ac6378696d",
     image: "",
     engine: "",
     gearbox: "",
@@ -2122,12 +2123,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Seat
+  // Saab 99
   {
     id: uuidv4(),
-    modelCarsId: "1e6977d9-f7a4-44c0-b18e-be69f5fcef1c",
+    modelCarsId: "a1ed6a58-32c0-4eaf-aa3e-9bb6e9158ad9",
     image: "",
     engine: "",
     gearbox: "",
@@ -2137,9 +2136,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Seat ***************************************/
+  // Seat Cupra
   {
     id: uuidv4(),
-    modelCarsId: "1e6977d9-f7a4-44c0-b18e-be69f5fcef1c",
+    modelCarsId: "e0429d31-6b0f-444d-9579-abe6a489344d",
     image: "",
     engine: "",
     gearbox: "",
@@ -2148,10 +2149,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Seat Ibiza
   {
     id: uuidv4(),
-    modelCarsId: "1e6977d9-f7a4-44c0-b18e-be69f5fcef1c",
+    modelCarsId: "0e00b177-3ac5-4ef3-ad0d-4c227ade0d39",
     image: "",
     engine: "",
     gearbox: "",
@@ -2160,12 +2161,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Subaru
+  // Seat Leon
   {
     id: uuidv4(),
-    modelCarsId: "0e6067d8-4c03-4222-a05e-2efc22a84c35",
+    modelCarsId: "5123e290-c74b-4443-8c20-4adba794b768",
     image: "",
     engine: "",
     gearbox: "",
@@ -2175,9 +2174,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Subaru ***************************************/
+  // Subaru BRZ
   {
     id: uuidv4(),
-    modelCarsId: "0e6067d8-4c03-4222-a05e-2efc22a84c35",
+    modelCarsId: "7ed56574-ff8d-4724-92ae-1f75341ce708",
     image: "",
     engine: "",
     gearbox: "",
@@ -2186,10 +2187,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Subaru Impreza
   {
     id: uuidv4(),
-    modelCarsId: "0e6067d8-4c03-4222-a05e-2efc22a84c35",
+    modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
     image: "",
     engine: "",
     gearbox: "",
@@ -2198,12 +2199,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Suzuki
+  // Subaru WRX STI
   {
     id: uuidv4(),
-    modelCarsId: "4ea7047c-c8ff-423e-85e9-fb632f78115f",
+    modelCarsId: "96390e11-573e-40cb-9195-2eac6fa9c667",
     image: "",
     engine: "",
     gearbox: "",
@@ -2213,9 +2212,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Suzuki ***************************************/
+  // Suzuki Liana
   {
     id: uuidv4(),
-    modelCarsId: "4ea7047c-c8ff-423e-85e9-fb632f78115f",
+    modelCarsId: "e79c8986-c3e1-4ac3-b8c4-571b78c26621",
     image: "",
     engine: "",
     gearbox: "",
@@ -2224,12 +2225,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Tesla
+  // Suzuki SX4
   {
     id: uuidv4(),
-    modelCarsId: "cfd62a53-5dfc-43fc-8932-7a36a653d4a2",
+    modelCarsId: "aa6aabcb-e2e7-4189-bc11-6e942ed04dc8",
     image: "",
     engine: "",
     gearbox: "",
@@ -2239,9 +2238,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Tesla ***************************************/
+  // Tesla Model S
   {
     id: uuidv4(),
-    modelCarsId: "cfd62a53-5dfc-43fc-8932-7a36a653d4a2",
+    modelCarsId: "63197517-8b64-4850-9bc9-57949650b66c",
     image: "",
     engine: "",
     gearbox: "",
@@ -2250,12 +2251,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Toyota
+  // Tesla Roadster
   {
     id: uuidv4(),
-    modelCarsId: "c943fe32-1d3c-4ddc-b751-d8231d36155d",
+    modelCarsId: "6a2702b9-ddea-45dc-a3c4-2b259eb2eb1f",
     image: "",
     engine: "",
     gearbox: "",
@@ -2265,9 +2264,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Toyota ***************************************/
+  // Toyota Celica
   {
     id: uuidv4(),
-    modelCarsId: "c943fe32-1d3c-4ddc-b751-d8231d36155d",
+    modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
     image: "",
     engine: "",
     gearbox: "",
@@ -2276,10 +2277,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Toyota GT86
   {
     id: uuidv4(),
-    modelCarsId: "c943fe32-1d3c-4ddc-b751-d8231d36155d",
+    modelCarsId: "acacf848-d22a-4965-8a5f-cec1d597341b",
     image: "",
     engine: "",
     gearbox: "",
@@ -2288,10 +2289,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Toyota Hilux
   {
     id: uuidv4(),
-    modelCarsId: "c943fe32-1d3c-4ddc-b751-d8231d36155d",
+    modelCarsId: "9a4f5e6e-af89-4ec8-a51c-436d4551d350",
     image: "",
     engine: "",
     gearbox: "",
@@ -2300,10 +2301,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Toyota Sprinter
   {
     id: uuidv4(),
-    modelCarsId: "c943fe32-1d3c-4ddc-b751-d8231d36155d",
+    modelCarsId: "b77578b5-e716-487c-b4be-2d66b9a27d3e",
     image: "",
     engine: "",
     gearbox: "",
@@ -2312,12 +2313,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Volkswagen
+  // Toyota Supra
   {
     id: uuidv4(),
-    modelCarsId: "b56bdb8f-0e5a-44be-ace1-6b7ac0ecb0eb",
+    modelCarsId: "92c2b7a5-5f6d-4d80-b3ae-975e1c21a130",
     image: "",
     engine: "",
     gearbox: "",
@@ -2327,9 +2326,11 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Volkswagen ***************************************/
+  // Volkswagen Beetle
   {
     id: uuidv4(),
-    modelCarsId: "b56bdb8f-0e5a-44be-ace1-6b7ac0ecb0eb",
+    modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
     image: "",
     engine: "",
     gearbox: "",
@@ -2338,10 +2339,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Volkswagen Corrado
   {
     id: uuidv4(),
-    modelCarsId: "b56bdb8f-0e5a-44be-ace1-6b7ac0ecb0eb",
+    modelCarsId: "1e565560-7aa8-4aae-b793-358032543bcd",
     image: "",
     engine: "",
     gearbox: "",
@@ -2350,12 +2351,11 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
-  /***********************************  ***************************************/
-  // Volvo
+
+  //! Volkswagen Golf R
   {
     id: uuidv4(),
-    modelCarsId: "aa5cec90-333c-4ea6-bf29-7baa64c0c43a",
+    modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
     image: "",
     engine: "",
     gearbox: "",
@@ -2364,10 +2364,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Volkswagen Rabbit
   {
     id: uuidv4(),
-    modelCarsId: "aa5cec90-333c-4ea6-bf29-7baa64c0c43a",
+    modelCarsId: "ed3487dc-ef87-45ff-84bc-e1b6f4d08874",
     image: "",
     engine: "",
     gearbox: "",
@@ -2376,10 +2376,10 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  //
+  // Volkswagen Scirocco R
   {
     id: uuidv4(),
-    modelCarsId: "aa5cec90-333c-4ea6-bf29-7baa64c0c43a",
+    modelCarsId: "15cfc310-7510-4aa1-8a79-f0440677ad84",
     image: "",
     engine: "",
     gearbox: "",
@@ -2389,9 +2389,47 @@ export const carsData = [
     weight: 0,
   },
   //
+  /*********************************** Volvo ***************************************/
+  // Volvo 242
+  {
+    id: uuidv4(),
+    modelCarsId: "b0ce5ab2-cf3b-485a-a9b9-a2c21b0f5975",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Volvo 850
+  {
+    id: uuidv4(),
+    modelCarsId: "0c1ce1a0-8838-4c59-852d-c75e61baf621",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Volvo S60
+  {
+    id: uuidv4(),
+    modelCarsId: "b645e035-0d73-40ad-aea1-e8936e50bdcc",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Volvo V60
   {
     id: uuidv4(),
-    modelCarsId: "aa5cec90-333c-4ea6-bf29-7baa64c0c43a",
+    modelCarsId: "dffee83f-ef61-482b-b6e4-1f030d78f34e",
     image: "",
     engine: "",
     gearbox: "",

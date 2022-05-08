@@ -638,7 +638,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "061ef426-1371-4fa1-96e3-98479ba65b88",
-    name: "Mercedes-AMG GT S",
+    name: "Mercedes-AMG GT",
   },
   {
     id: uuidv4(),
@@ -755,11 +755,6 @@ export const modelsData = [
     id: uuidv4(),
     manufacturerModelsId: "d2c8dedf-84ac-435f-86eb-8585bc642a81",
     name: "Peugeot 207",
-  },
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "d2c8dedf-84ac-435f-86eb-8585bc642a81",
-    name: "Peugeot 205",
   },
   // Pontiac
   {
