@@ -97,37 +97,37 @@ export const createModel = /* GraphQL */ `
     createModel(input: $input, condition: $condition) {
       id
       name
-      manufacturer {
-        id
-        name
-        established
-        founder
-        headquarters
-        about
-        netWorth
-        logo
-        models {
-          nextToken
-        }
-        createdAt
-        updatedAt
-      }
-      cars {
-        items {
-          id
-          image
-          generation
-          power
-          torque
-          weight
-          gearbox
-          engine
-          createdAt
-          updatedAt
-          modelCarsId
-        }
-        nextToken
-      }
+      # manufacturer {
+      #   id
+      #   name
+      #   established
+      #   founder
+      #   headquarters
+      #   about
+      #   netWorth
+      #   logo
+      #   models {
+      #     nextToken
+      #   }
+      #   createdAt
+      #   updatedAt
+      # }
+      # cars {
+      #   items {
+      #     id
+      #     image
+      #     generation
+      #     power
+      #     torque
+      #     weight
+      #     gearbox
+      #     engine
+      #     createdAt
+      #     updatedAt
+      #     modelCarsId
+      #   }
+      #   nextToken
+      # }
       createdAt
       updatedAt
       manufacturerModelsId
