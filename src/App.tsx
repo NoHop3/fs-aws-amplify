@@ -76,7 +76,6 @@ function App() {
     [values]
   );
 
-    console.log(models)
 
   const handleBulkClick = async (model: Partial<Model>) => {
     try {
@@ -108,8 +107,8 @@ function App() {
 
   useEffect(() => {
     // fetchManufacturers();
-    fetchModels();
-    // fetchCars();
+    // fetchModels();
+    fetchCars();
   }, []);
 
   return (
@@ -137,25 +136,26 @@ function App() {
           <>{JSON.stringify(values)}</>
         </div>
       </div> */}
-        <button onClick={handleBulkAdd}>Add models</button>
+      <button onClick={handleBulkAdd}>Add models</button>
 
-      <div>
+      {/* <div>
         <h1>Hello models!</h1>
         {models.map((model: Model) => (
           <div key={model.id as Key}>{model.name}</div>
         ))}
-      </div>
-      {/*
+      </div> */}
+
       <div>
         <h1>Hello cars!</h1>
         {cars.map((car: Car) => (
           <div key={car.id as Key}>
             <>
-              {car.model.name} {car.generation} {car.power}hp {car.torque}N·m {car.engine} {car.engine}
+              {car.model.name} {car.generation} {car.power}hp {car.torque}N·m{" "}
+              {car.engine} {car.engine}
             </>
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }

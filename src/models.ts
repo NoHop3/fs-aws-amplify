@@ -58,11 +58,6 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "18f9e778-0cd3-4f04-aeff-623500100a7c",
-    name: "Alpine A110 1600S",
-  },
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "18f9e778-0cd3-4f04-aeff-623500100a7c",
     name: "Alpine A110",
   },
   // Apollo
@@ -98,17 +93,7 @@ export const modelsData = [
     manufacturerModelsId: "677debc9-1ee3-44a2-bfe2-14385667aaf0",
     name: "Aston Martin DB5",
   },
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "677debc9-1ee3-44a2-bfe2-14385667aaf0",
-    name: "Aston Martin Vulcan AMR Pro",
-  },
   // Audi
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "5b8716ab-76d4-4e2b-a43f-024088da0fcf",
-    name: "Audi RS 4 Avant",
-  },
   {
     id: uuidv4(),
     manufacturerModelsId: "5b8716ab-76d4-4e2b-a43f-024088da0fcf",
@@ -127,7 +112,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "5b8716ab-76d4-4e2b-a43f-024088da0fcf",
-    name: "Audi R8 Coupé V10 plus 5.2 FSI quattro",
+    name: "Audi R8",
   },
   {
     id: uuidv4(),
@@ -159,17 +144,12 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "9863a9f2-d9b3-4424-85f7-f6c64fb67e19",
-    name: "Bentley Continental Supersports",
+    name: "Bentley Continental",
   },
   {
     id: uuidv4(),
     manufacturerModelsId: "9863a9f2-d9b3-4424-85f7-f6c64fb67e19",
     name: "Bentley Bentayga",
-  },
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "9863a9f2-d9b3-4424-85f7-f6c64fb67e19",
-    name: "Bentley Continental GT Speed",
   },
   // BMW
   {

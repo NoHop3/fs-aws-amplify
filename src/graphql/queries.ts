@@ -168,8 +168,6 @@ export const listCars = /* GraphQL */ `
         model {
           id
           name
-          createdAt
-          updatedAt
           manufacturerModelsId
         }
         image
@@ -179,8 +177,6 @@ export const listCars = /* GraphQL */ `
         weight
         gearbox
         engine
-        createdAt
-        updatedAt
         modelCarsId
       }
       nextToken
