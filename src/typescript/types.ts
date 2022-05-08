@@ -8,7 +8,7 @@ export type Manufacturer = {
   logo: String;
   createdAt: String;
   updatedAt: String;
-  netWorth: Number;
+  netWorth: String;
 };
 
 export type Model = {

@@ -109,21 +109,9 @@ export const listModels = /* GraphQL */ `
         manufacturer {
           id
           name
-          established
-          founder
-          headquarters
-          about
-          netWorth
-          logo
-          createdAt
-          updatedAt
-        }
-        cars {
-          nextToken
         }
         createdAt
         updatedAt
-        manufacturerModelsId
       }
       nextToken
     }
