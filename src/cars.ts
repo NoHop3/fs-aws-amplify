@@ -732,7 +732,44 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Cadillac CTS-V
+  //! Cadillac CTS-V
+  // 2004
+  {
+    id: uuidv4(),
+    modelCarsId: "b148a654-8a2c-43ec-8d98-df9cae71964d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 2009
+  {
+    id: uuidv4(),
+    modelCarsId: "b148a654-8a2c-43ec-8d98-df9cae71964d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Coupe
+  {
+    id: uuidv4(),
+    modelCarsId: "b148a654-8a2c-43ec-8d98-df9cae71964d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Sedan
   {
     id: uuidv4(),
     modelCarsId: "b148a654-8a2c-43ec-8d98-df9cae71964d",
@@ -758,7 +795,8 @@ export const carsData = [
   },
   //
   /*********************************** Chevrolet ***************************************/
-  // Chevrolet C8 Corvette
+  //! Chevrolet Corvette
+  // C8 Stingray
   {
     id: uuidv4(),
     modelCarsId: "c472820b-e1a2-483c-9632-2c6d528c1a4c",
@@ -770,7 +808,116 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Chevrolet Camaro
+  // ZR-1
+  {
+    id: uuidv4(),
+    modelCarsId: "c472820b-e1a2-483c-9632-2c6d528c1a4c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // ZR-1 1995
+  {
+    id: uuidv4(),
+    modelCarsId: "c472820b-e1a2-483c-9632-2c6d528c1a4c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 1953
+  {
+    id: uuidv4(),
+    modelCarsId: "c472820b-e1a2-483c-9632-2c6d528c1a4c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 1960
+  {
+    id: uuidv4(),
+    modelCarsId: "c472820b-e1a2-483c-9632-2c6d528c1a4c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Z06
+  {
+    id: uuidv4(),
+    modelCarsId: "c472820b-e1a2-483c-9632-2c6d528c1a4c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Stingray 427
+  {
+    id: uuidv4(),
+    modelCarsId: "c472820b-e1a2-483c-9632-2c6d528c1a4c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Chevrolet Camaro
+  //ZL1
+  {
+    id: uuidv4(),
+    modelCarsId: "241f07a7-3e66-4f14-ad8e-facd9ec4f0dd",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //Supersport coupe
+  {
+    id: uuidv4(),
+    modelCarsId: "241f07a7-3e66-4f14-ad8e-facd9ec4f0dd",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //Z28
+  {
+    id: uuidv4(),
+    modelCarsId: "241f07a7-3e66-4f14-ad8e-facd9ec4f0dd",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //Z/28
   {
     id: uuidv4(),
     modelCarsId: "241f07a7-3e66-4f14-ad8e-facd9ec4f0dd",
@@ -870,7 +1017,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Citroën C2
+  // Citroën 2CV
   {
     id: uuidv4(),
     modelCarsId: "47d5554d-d4fc-4adb-94b3-9a5075a66279",
@@ -882,7 +1029,7 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Citroën C3
+  // Citroën DS3
   {
     id: uuidv4(),
     modelCarsId: "5bf09b65-c849-43fe-8ee0-5e06665c2b51",
@@ -908,7 +1055,8 @@ export const carsData = [
   },
   //
   /*********************************** Dodge ***************************************/
-  // Dodge Challenger SRT
+  //! Dodge Challenger
+  // R/T
   {
     id: uuidv4(),
     modelCarsId: "ddaf2af5-7ade-492f-9265-d143c04a6038",
@@ -920,7 +1068,44 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Dodge Charger
+  // SRT Hellcat
+  {
+    id: uuidv4(),
+    modelCarsId: "ddaf2af5-7ade-492f-9265-d143c04a6038",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // SRT Demon
+  {
+    id: uuidv4(),
+    modelCarsId: "ddaf2af5-7ade-492f-9265-d143c04a6038",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // SRT8 392
+  {
+    id: uuidv4(),
+    modelCarsId: "ddaf2af5-7ade-492f-9265-d143c04a6038",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Dodge Charger
+  // R/T
   {
     id: uuidv4(),
     modelCarsId: "d9140908-d62a-43f9-8b89-7fe13011c9ad",
@@ -932,7 +1117,44 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Dodge Viper
+  // Daytona HEMI
+  {
+    id: uuidv4(),
+    modelCarsId: "d9140908-d62a-43f9-8b89-7fe13011c9ad",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Dodge Viper
+  // SRT10 ACR
+  {
+    id: uuidv4(),
+    modelCarsId: "3288c664-90e2-4d37-99f6-69a69e60f01c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // SRT GTS
+  {
+    id: uuidv4(),
+    modelCarsId: "3288c664-90e2-4d37-99f6-69a69e60f01c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GTS ACR
   {
     id: uuidv4(),
     modelCarsId: "3288c664-90e2-4d37-99f6-69a69e60f01c",
@@ -946,7 +1168,8 @@ export const carsData = [
   },
   //
   /*********************************** Ferrari ***************************************/
-  // Ferrari 458
+  //! Ferrari 458
+  // Speciale
   {
     id: uuidv4(),
     modelCarsId: "e6dd2583-6661-45fb-9343-e04352167ae8",
@@ -958,7 +1181,32 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Ferrari 488
+  // Italia
+  {
+    id: uuidv4(),
+    modelCarsId: "e6dd2583-6661-45fb-9343-e04352167ae8",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Ferrari 488
+  // Pista
+  {
+    id: uuidv4(),
+    modelCarsId: "0f74dc22-ab71-4053-8b50-2aef865b2fbb",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GBT
   {
     id: uuidv4(),
     modelCarsId: "0f74dc22-ab71-4053-8b50-2aef865b2fbb",
@@ -1008,7 +1256,8 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Fiat Dino
+  //! Fiat Dino
+  // Dino 2.4 Coupe
   {
     id: uuidv4(),
     modelCarsId: "bfcba281-7643-4c5c-9dea-61ac814ae059",
@@ -1020,7 +1269,8 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Fiat Punto
+  //! Fiat Punto
+  // Evo Sport
   {
     id: uuidv4(),
     modelCarsId: "c5381098-1956-41a4-9318-ead93261f12a",
@@ -1034,7 +1284,8 @@ export const carsData = [
   },
   //
   /*********************************** Ford ***************************************/
-  // Ford Focus
+  //! Ford Focus
+  // RS 2009
   {
     id: uuidv4(),
     modelCarsId: "f3614969-2d7b-433a-8beb-f884bd790f09",
@@ -1046,7 +1297,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Ford GT
+  // RS 2017
+  {
+    id: uuidv4(),
+    modelCarsId: "f3614969-2d7b-433a-8beb-f884bd790f09",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Ford GT
+  // 2005
   {
     id: uuidv4(),
     modelCarsId: "1d0c7754-1c22-45b4-aad6-e1dc1ebb3ed0",
@@ -1058,7 +1322,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Ford Mustang
+  // 2017
+  {
+    id: uuidv4(),
+    modelCarsId: "1d0c7754-1c22-45b4-aad6-e1dc1ebb3ed0",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Ford Mustang
+  // Mach 1
   {
     id: uuidv4(),
     modelCarsId: "b7a515b6-64b1-4697-8e36-2215137b7bd1",
@@ -1070,7 +1347,32 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Ford RS200
+  // RTR Spec 5
+  {
+    id: uuidv4(),
+    modelCarsId: "b7a515b6-64b1-4697-8e36-2215137b7bd1",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 2+2 Fastback
+  {
+    id: uuidv4(),
+    modelCarsId: "b7a515b6-64b1-4697-8e36-2215137b7bd1",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Ford RS200
+  // Evolution
   {
     id: uuidv4(),
     modelCarsId: "7cdf097e-6e4e-4000-84c8-226e3ab97443",
@@ -1110,7 +1412,8 @@ export const carsData = [
   },
   //
   /*********************************** Honda ***************************************/
-  // Honda Civic
+  //! Honda Civic
+  // Type R 1997
   {
     id: uuidv4(),
     modelCarsId: "b49e78c8-1133-4781-ab56-4525cf3a7b78",
@@ -1122,7 +1425,80 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Honda NSX-R
+  // Type R 2004
+  {
+    id: uuidv4(),
+    modelCarsId: "b49e78c8-1133-4781-ab56-4525cf3a7b78",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Type R 2007
+  {
+    id: uuidv4(),
+    modelCarsId: "b49e78c8-1133-4781-ab56-4525cf3a7b78",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Type R 2015
+  {
+    id: uuidv4(),
+    modelCarsId: "b49e78c8-1133-4781-ab56-4525cf3a7b78",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Type R 2018
+  {
+    id: uuidv4(),
+    modelCarsId: "b49e78c8-1133-4781-ab56-4525cf3a7b78",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Si 1986
+  {
+    id: uuidv4(),
+    modelCarsId: "b49e78c8-1133-4781-ab56-4525cf3a7b78",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Si 2014
+  {
+    id: uuidv4(),
+    modelCarsId: "b49e78c8-1133-4781-ab56-4525cf3a7b78",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Honda NSX-R
+  // GT
   {
     id: uuidv4(),
     modelCarsId: "c5a1a422-d8a6-42c7-858a-993809e1ce56",
@@ -1134,7 +1510,43 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Honda S2000
+  // 1992
+  {
+    id: uuidv4(),
+    modelCarsId: "c5a1a422-d8a6-42c7-858a-993809e1ce56",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 2005
+  {
+    id: uuidv4(),
+    modelCarsId: "c5a1a422-d8a6-42c7-858a-993809e1ce56",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Honda S2000
+  {
+    id: uuidv4(),
+    modelCarsId: "ec8a4040-f83c-4293-b9aa-6e8e4c91c543",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // CR
   {
     id: uuidv4(),
     modelCarsId: "ec8a4040-f83c-4293-b9aa-6e8e4c91c543",
@@ -1160,7 +1572,20 @@ export const carsData = [
   },
   //
   /*********************************** Hummer ***************************************/
-  // Hummer H1
+  //! Hummer H1
+  // Alpha
+  {
+    id: uuidv4(),
+    modelCarsId: "5e9490d6-4ff8-4f80-90ec-2e4bebdc57a7",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Alpha Open top
   {
     id: uuidv4(),
     modelCarsId: "5e9490d6-4ff8-4f80-90ec-2e4bebdc57a7",
@@ -1174,7 +1599,8 @@ export const carsData = [
   },
   //
   /*********************************** Hyundai ***************************************/
-  // Hyundai Genesis
+  //! Hyundai Genesis
+  // Coupe
   {
     id: uuidv4(),
     modelCarsId: "83a4843e-55e6-4354-9594-96bbe2e2ad8b",
@@ -1186,7 +1612,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Hyundai Tuscani
+  // Coupe 3.8 Track
+  {
+    id: uuidv4(),
+    modelCarsId: "83a4843e-55e6-4354-9594-96bbe2e2ad8b",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Hyundai Tuscani
+  // Elisa
   {
     id: uuidv4(),
     modelCarsId: "8eae2b0e-28fe-4e32-b260-9d182d8a0be8",
@@ -1198,7 +1637,32 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Hyundai Veloster
+  //! Hyundai Veloster
+  // N
+  {
+    id: uuidv4(),
+    modelCarsId: "9f275410-2ac5-4737-a195-84f8e7390b9d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Turbo 2013
+  {
+    id: uuidv4(),
+    modelCarsId: "9f275410-2ac5-4737-a195-84f8e7390b9d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Turbo 2019
   {
     id: uuidv4(),
     modelCarsId: "9f275410-2ac5-4737-a195-84f8e7390b9d",
@@ -1224,7 +1688,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Infiniti Q50
+  //! Infiniti Q50
+  // Eau Rouge
+  {
+    id: uuidv4(),
+    modelCarsId: "e762c982-099e-43d3-9187-78a34c4a2cce",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // S
   {
     id: uuidv4(),
     modelCarsId: "e762c982-099e-43d3-9187-78a34c4a2cce",
@@ -1274,7 +1751,32 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Jaguar F-Type
+  //! Jaguar F-Type
+  // R Coupe
+  {
+    id: uuidv4(),
+    modelCarsId: "28a7c553-4646-4233-bc2c-1a9587f7df0e",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Project 7
+  {
+    id: uuidv4(),
+    modelCarsId: "28a7c553-4646-4233-bc2c-1a9587f7df0e",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // R COUPE FAST & FURIOUS EDITION
   {
     id: uuidv4(),
     modelCarsId: "28a7c553-4646-4233-bc2c-1a9587f7df0e",
@@ -1300,7 +1802,44 @@ export const carsData = [
   },
   //
   /*********************************** Jeep ***************************************/
-  // Jeep Grand Cherokee
+  //! Jeep Grand Cherokee
+  //Trackhawk
+  {
+    id: uuidv4(),
+    modelCarsId: "c76a268a-9fee-4729-92bf-dbc07545d7db",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //SRT8 2009
+  {
+    id: uuidv4(),
+    modelCarsId: "c76a268a-9fee-4729-92bf-dbc07545d7db",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //SRT8 2012
+  {
+    id: uuidv4(),
+    modelCarsId: "c76a268a-9fee-4729-92bf-dbc07545d7db",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //SRT 2014
   {
     id: uuidv4(),
     modelCarsId: "c76a268a-9fee-4729-92bf-dbc07545d7db",
@@ -1324,7 +1863,32 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Jeep Wrangler
+  //! Jeep Wrangler
+  // Rubicon
+  {
+    id: uuidv4(),
+    modelCarsId: "4e63dc67-3279-40fe-9f90-a93db2700a0d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Unlimited DeBerti Design
+  {
+    id: uuidv4(),
+    modelCarsId: "4e63dc67-3279-40fe-9f90-a93db2700a0d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Unlimited Fast & Furious Edition
   {
     id: uuidv4(),
     modelCarsId: "4e63dc67-3279-40fe-9f90-a93db2700a0d",
@@ -1364,7 +1928,19 @@ export const carsData = [
   },
   //
   /*********************************** Koenigsegg ***************************************/
-  // Koenigsegg Agera
+  //! Koenigsegg Agera
+  {
+    id: uuidv4(),
+    modelCarsId: "3c08634b-b79b-44a0-b36b-347dae913e05",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // RS
   {
     id: uuidv4(),
     modelCarsId: "3c08634b-b79b-44a0-b36b-347dae913e05",
@@ -1402,10 +1978,48 @@ export const carsData = [
   },
   //
   /*********************************** Lamborghini ***************************************/
-  // Lamborghini Aventador
+  //! Lamborghini Aventador
+  //LP700-4
   {
     id: uuidv4(),
     modelCarsId: "35473862-5963-43c7-a349-420dba0e2216",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //Superveloce
+  {
+    id: uuidv4(),
+    modelCarsId: "35473862-5963-43c7-a349-420dba0e2216",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Lamborghini Huracán
+  //LP 610-4
+  {
+    id: uuidv4(),
+    modelCarsId: "ba241ceb-2462-456c-b875-2a8a159b649a",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //Performante
+  {
+    id: uuidv4(),
+    modelCarsId: "ba241ceb-2462-456c-b875-2a8a159b649a",
     image: "",
     engine: "",
     gearbox: "",
@@ -1418,18 +2032,6 @@ export const carsData = [
   {
     id: uuidv4(),
     modelCarsId: "7f5f398d-7e04-4ad9-866c-89995e917674",
-    image: "",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
-  },
-  // Lamborghini Huracán
-  {
-    id: uuidv4(),
-    modelCarsId: "ba241ceb-2462-456c-b875-2a8a159b649a",
     image: "",
     engine: "",
     gearbox: "",
@@ -1464,7 +2066,20 @@ export const carsData = [
   },
   //
   /*********************************** Lancia ***************************************/
-  // Lancia Delta
+  //! Lancia Delta
+  //HF Integrale Evo
+  {
+    id: uuidv4(),
+    modelCarsId: "0ef1b299-2338-4978-945b-33c7daf96c06",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //S4
   {
     id: uuidv4(),
     modelCarsId: "0ef1b299-2338-4978-945b-33c7daf96c06",
@@ -1514,7 +2129,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Land Rover Range Rover
+  // Land Rover Series III
+  {
+    id: uuidv4(),
+    modelCarsId: "45383f4f-779d-4da4-856f-30b15c3ac9aa",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Land Rover Range Rover
+  // Sport SVR
   {
     id: uuidv4(),
     modelCarsId: "5eba5c2c-0a9a-457b-9ed6-ad1b391ca0d1",
@@ -1526,10 +2154,46 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Land Rover Series III
+  // Supercharged 2008
   {
     id: uuidv4(),
-    modelCarsId: "45383f4f-779d-4da4-856f-30b15c3ac9aa",
+    modelCarsId: "5eba5c2c-0a9a-457b-9ed6-ad1b391ca0d1",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Supercharged 2012
+  {
+    id: uuidv4(),
+    modelCarsId: "5eba5c2c-0a9a-457b-9ed6-ad1b391ca0d1",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Supercharged 2014
+  {
+    id: uuidv4(),
+    modelCarsId: "5eba5c2c-0a9a-457b-9ed6-ad1b391ca0d1",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Velar First Edition
+  {
+    id: uuidv4(),
+    modelCarsId: "5eba5c2c-0a9a-457b-9ed6-ad1b391ca0d1",
     image: "",
     engine: "",
     gearbox: "",
@@ -1590,7 +2254,20 @@ export const carsData = [
   },
   //
   /*********************************** Lincoln ***************************************/
-  // Lincoln Continental
+  //! Lincoln Continental
+  // 1962
+  {
+    id: uuidv4(),
+    modelCarsId: "3ed07738-5402-40a9-bbab-db6fb7484503",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 2017
   {
     id: uuidv4(),
     modelCarsId: "3ed07738-5402-40a9-bbab-db6fb7484503",
@@ -1616,7 +2293,8 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Maserati Gran Turismo S
+  //! Maserati Gran Turismo
+  // Stock
   {
     id: uuidv4(),
     modelCarsId: "a2efbf1c-38db-4e17-9ded-9d93f411047f",
@@ -1628,7 +2306,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Maserati MC12
+  // S
+  {
+    id: uuidv4(),
+    modelCarsId: "a2efbf1c-38db-4e17-9ded-9d93f411047f",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Maserati MC12
+  // Stock
   {
     id: uuidv4(),
     modelCarsId: "cfa40f18-c0b8-4787-b6c5-88d2a9d7f299",
@@ -1640,10 +2331,22 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Maserati MC12 Versione Corsa
+  // Versione Corsa
   {
     id: uuidv4(),
-    modelCarsId: "32c027dd-81b0-4a2b-b5b3-bd926031c31b",
+    modelCarsId: "cfa40f18-c0b8-4787-b6c5-88d2a9d7f299",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT1
+  {
+    id: uuidv4(),
+    modelCarsId: "cfa40f18-c0b8-4787-b6c5-88d2a9d7f299",
     image: "",
     engine: "",
     gearbox: "",
@@ -1654,7 +2357,8 @@ export const carsData = [
   },
   //
   /*********************************** Mazda ***************************************/
-  // Mazda MX-5
+  //! Mazda MX-5
+  // 2013
   {
     id: uuidv4(),
     modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
@@ -1666,7 +2370,68 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Mazda RX-7
+  // 2016
+  {
+    id: uuidv4(),
+    modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Miata (1990)
+  {
+    id: uuidv4(),
+    modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Mazdaspeed
+  {
+    id: uuidv4(),
+    modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Miata (1994)
+  {
+    id: uuidv4(),
+    modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Cup
+  {
+    id: uuidv4(),
+    modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Mazda RX-7
+  // Stock
   {
     id: uuidv4(),
     modelCarsId: "d54415e9-b6e1-4e33-ac75-7538123e6ad2",
@@ -1678,7 +2443,56 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Mazda RX-8
+  // Savanna
+  {
+    id: uuidv4(),
+    modelCarsId: "d54415e9-b6e1-4e33-ac75-7538123e6ad2",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GSL-SE
+  {
+    id: uuidv4(),
+    modelCarsId: "d54415e9-b6e1-4e33-ac75-7538123e6ad2",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Spirit R Type-A
+  {
+    id: uuidv4(),
+    modelCarsId: "d54415e9-b6e1-4e33-ac75-7538123e6ad2",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Mazda RX-8
+  // R3
+  {
+    id: uuidv4(),
+    modelCarsId: "481f2286-5cb0-40d2-9675-8dafed9cfb63",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Mazdaspeed
   {
     id: uuidv4(),
     modelCarsId: "481f2286-5cb0-40d2-9675-8dafed9cfb63",
@@ -1692,7 +2506,8 @@ export const carsData = [
   },
   //
   /*********************************** McLaren ***************************************/
-  // McLaren 12C
+  //! McLaren 12C
+  // Coupe
   {
     id: uuidv4(),
     modelCarsId: "8b5ee543-69d8-4567-94e8-4a1a9d987b04",
@@ -1704,7 +2519,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // McLaren F1 GT
+  // GT3
+  {
+    id: uuidv4(),
+    modelCarsId: "8b5ee543-69d8-4567-94e8-4a1a9d987b04",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! McLaren F1
+  // Stock
   {
     id: uuidv4(),
     modelCarsId: "897266c5-3eeb-4192-8657-52cda75972cf",
@@ -1716,7 +2544,32 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // McLaren P1
+  // GT
+  {
+    id: uuidv4(),
+    modelCarsId: "897266c5-3eeb-4192-8657-52cda75972cf",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! McLaren P1
+  // Stock
+  {
+    id: uuidv4(),
+    modelCarsId: "ae02e62e-1ad7-4957-ac58-ccaaaa36e71d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GTR
   {
     id: uuidv4(),
     modelCarsId: "ae02e62e-1ad7-4957-ac58-ccaaaa36e71d",
@@ -1827,7 +2680,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Mercedes-Benz SLS
+  //! Mercedes-Benz SLS
+  // AMG
+  {
+    id: uuidv4(),
+    modelCarsId: "39724303-60be-4fb6-ab96-35f70350066c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // AMG GT3
   {
     id: uuidv4(),
     modelCarsId: "39724303-60be-4fb6-ab96-35f70350066c",
@@ -1841,7 +2707,8 @@ export const carsData = [
   },
   //
   /*********************************** Mini ***************************************/
-  // Mini Cooper
+  //! Mini Cooper
+  // S 1965
   {
     id: uuidv4(),
     modelCarsId: "6a2d0ead-c3b6-4aef-be45-6a862be485ce",
@@ -1853,7 +2720,44 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Mini X-Raid
+  // S 2003
+  {
+    id: uuidv4(),
+    modelCarsId: "6a2d0ead-c3b6-4aef-be45-6a862be485ce",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // S 2011
+  {
+    id: uuidv4(),
+    modelCarsId: "6a2d0ead-c3b6-4aef-be45-6a862be485ce",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Mini X-Raid
+  // All4 Racing Countryman
+  {
+    id: uuidv4(),
+    modelCarsId: "2bb933be-896f-44d2-bb8b-9f972884fb2c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // John Cooper Works Buggy
   {
     id: uuidv4(),
     modelCarsId: "2bb933be-896f-44d2-bb8b-9f972884fb2c",
@@ -1867,7 +2771,8 @@ export const carsData = [
   },
   //
   /*********************************** Mitsubishi ***************************************/
-  // Mitsubishi Eclipse
+  //! Mitsubishi Eclipse
+  // GSX
   {
     id: uuidv4(),
     modelCarsId: "d102c02b-30ce-467a-bb33-2b976c954ebb",
@@ -1879,7 +2784,68 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Mitsubishi Lancer Evolution
+  // GTS
+  {
+    id: uuidv4(),
+    modelCarsId: "d102c02b-30ce-467a-bb33-2b976c954ebb",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GS Fast & Furious Edition
+  {
+    id: uuidv4(),
+    modelCarsId: "d102c02b-30ce-467a-bb33-2b976c954ebb",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Mitsubishi Lancer Evolution
+  // X GSR
+  {
+    id: uuidv4(),
+    modelCarsId: "56705b4e-926c-44c8-b04f-84b200fa7594",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // VIII MR
+  {
+    id: uuidv4(),
+    modelCarsId: "56705b4e-926c-44c8-b04f-84b200fa7594",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // VI GSR
+  {
+    id: uuidv4(),
+    modelCarsId: "56705b4e-926c-44c8-b04f-84b200fa7594",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // IX MR
   {
     id: uuidv4(),
     modelCarsId: "56705b4e-926c-44c8-b04f-84b200fa7594",
@@ -1893,7 +2859,8 @@ export const carsData = [
   },
   //
   /*********************************** Nissan ***************************************/
-  // Nissan Fairlady
+  //! Nissan Fairlady
+  //Z 432
   {
     id: uuidv4(),
     modelCarsId: "5433a0d9-ac82-483e-b876-bac80e764a23",
@@ -1905,7 +2872,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Nissan Nismo GT-R
+  //Z Version
+  {
+    id: uuidv4(),
+    modelCarsId: "5433a0d9-ac82-483e-b876-bac80e764a23",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Nissan Nismo GT-R
+  // MOTUL AUTECH
   {
     id: uuidv4(),
     modelCarsId: "63d90216-d713-4451-8467-54f46b691197",
@@ -1917,7 +2897,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Nissan Silvia
+  // LM
+  {
+    id: uuidv4(),
+    modelCarsId: "63d90216-d713-4451-8467-54f46b691197",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Nissan Silvia
+  // Spec-R
   {
     id: uuidv4(),
     modelCarsId: "6e4c5a77-ba75-4c21-a7cf-f19ed8047a18",
@@ -1929,7 +2922,80 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Nissan Skyline GT-R
+  // K's
+  {
+    id: uuidv4(),
+    modelCarsId: "6e4c5a77-ba75-4c21-a7cf-f19ed8047a18",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // CLUB K's
+  {
+    id: uuidv4(),
+    modelCarsId: "6e4c5a77-ba75-4c21-a7cf-f19ed8047a18",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Nissan Skyline GT-R
+  // V-Spec (1993)
+  {
+    id: uuidv4(),
+    modelCarsId: "7f6ec6e3-43a2-427c-b1fa-7b1ed5dce104",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // V-Spec (1997)
+  {
+    id: uuidv4(),
+    modelCarsId: "7f6ec6e3-43a2-427c-b1fa-7b1ed5dce104",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // V-Spec II
+  {
+    id: uuidv4(),
+    modelCarsId: "7f6ec6e3-43a2-427c-b1fa-7b1ed5dce104",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // H/T 2000
+  {
+    id: uuidv4(),
+    modelCarsId: "7f6ec6e3-43a2-427c-b1fa-7b1ed5dce104",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GTS-R (R31)
   {
     id: uuidv4(),
     modelCarsId: "7f6ec6e3-43a2-427c-b1fa-7b1ed5dce104",
@@ -1955,7 +3021,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Opel Kadett
+  //! Opel Kadett
+  // A
+  {
+    id: uuidv4(),
+    modelCarsId: "dc85a720-05c8-4cfe-ae83-66530e2d5f22",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // C GT/E
   {
     id: uuidv4(),
     modelCarsId: "dc85a720-05c8-4cfe-ae83-66530e2d5f22",
@@ -1981,7 +3060,8 @@ export const carsData = [
   },
   //
   /*********************************** Pagani ***************************************/
-  // Pagani Huayra
+  //! Pagani Huayra
+  // Stock
   {
     id: uuidv4(),
     modelCarsId: "9a9efa25-696d-4ffd-878a-ed61bd60e6c9",
@@ -1993,7 +3073,44 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Pagani Zonda
+  // BC
+  {
+    id: uuidv4(),
+    modelCarsId: "9a9efa25-696d-4ffd-878a-ed61bd60e6c9",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Pagani Zonda
+  // R
+  {
+    id: uuidv4(),
+    modelCarsId: "8e5182b0-d6af-4df8-a004-7493d79cdf7d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Cinque Roadster
+  {
+    id: uuidv4(),
+    modelCarsId: "8e5182b0-d6af-4df8-a004-7493d79cdf7d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // C12
   {
     id: uuidv4(),
     modelCarsId: "8e5182b0-d6af-4df8-a004-7493d79cdf7d",
@@ -2007,7 +3124,8 @@ export const carsData = [
   },
   //
   /*********************************** Peugeot ***************************************/
-  // Peugeot 205
+  //! Peugeot 205
+  // T16
   {
     id: uuidv4(),
     modelCarsId: "4028c594-cd9b-4e66-9dbc-7f54f365209c",
@@ -2019,7 +3137,32 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Peugeot 207
+  // Rallye
+  {
+    id: uuidv4(),
+    modelCarsId: "4028c594-cd9b-4e66-9dbc-7f54f365209c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Peugeot 207
+  // Super 2000
+  {
+    id: uuidv4(),
+    modelCarsId: "c962664d-f28f-4455-8765-fc3eda24e83e",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // RC
   {
     id: uuidv4(),
     modelCarsId: "c962664d-f28f-4455-8765-fc3eda24e83e",
@@ -2057,7 +3200,68 @@ export const carsData = [
   },
   //
   /*********************************** Pontiac ***************************************/
-  // Pontiac Firebird
+  //! Pontiac Firebird
+  // Stock
+  {
+    id: uuidv4(),
+    modelCarsId: "b9de8e99-0e74-4e58-8e9c-dc9ed2fdadc6",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Trans Am (1969)
+  {
+    id: uuidv4(),
+    modelCarsId: "b9de8e99-0e74-4e58-8e9c-dc9ed2fdadc6",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Trans Am (1977)
+  {
+    id: uuidv4(),
+    modelCarsId: "b9de8e99-0e74-4e58-8e9c-dc9ed2fdadc6",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Trans Am Ram Air
+  {
+    id: uuidv4(),
+    modelCarsId: "b9de8e99-0e74-4e58-8e9c-dc9ed2fdadc6",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Trans Am SD-455
+  {
+    id: uuidv4(),
+    modelCarsId: "b9de8e99-0e74-4e58-8e9c-dc9ed2fdadc6",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Trans Am GTA
   {
     id: uuidv4(),
     modelCarsId: "b9de8e99-0e74-4e58-8e9c-dc9ed2fdadc6",
@@ -2081,7 +3285,56 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Pontiac GTO
+  //! Pontiac GTO
+  // Judge
+  {
+    id: uuidv4(),
+    modelCarsId: "f5ec402d-5d30-4b12-b029-2be7bda3ff3c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 1965
+  {
+    id: uuidv4(),
+    modelCarsId: "f5ec402d-5d30-4b12-b029-2be7bda3ff3c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 2004
+  {
+    id: uuidv4(),
+    modelCarsId: "f5ec402d-5d30-4b12-b029-2be7bda3ff3c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 2006
+  {
+    id: uuidv4(),
+    modelCarsId: "f5ec402d-5d30-4b12-b029-2be7bda3ff3c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Hardtop
   {
     id: uuidv4(),
     modelCarsId: "f5ec402d-5d30-4b12-b029-2be7bda3ff3c",
@@ -2095,7 +3348,152 @@ export const carsData = [
   },
   //
   /*********************************** Porsche ***************************************/
-  // Porsche 911
+  //! Porsche 911
+  // GT3 RS (2019)
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Turbo 3.3
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT3 RS 4.0
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT3 (2004)
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT2 (1995)
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT3 RS (2016)
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT2 RS (2012)
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Carrera RS
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Turbo S
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT2 RS (2018)
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT1 Strassenversion
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT3-RSR (996)
+  {
+    id: uuidv4(),
+    modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT3 RSR (2011)
   {
     id: uuidv4(),
     modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
@@ -2169,18 +3567,6 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // RAM Ramiro Luiz Miron
-  {
-    id: uuidv4(),
-    modelCarsId: "a107c3a2-7a34-4106-b3d3-e5b130c8dbfa",
-    image: "",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
-  },
   // RAM Runner
   {
     id: uuidv4(),
@@ -2207,19 +3593,8 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Renault Alpine
-  {
-    id: uuidv4(),
-    modelCarsId: "47f6bedf-e75a-4236-96f7-2ad6a3cb51d2",
-    image: "",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
-  },
-  // Renault Clio
+  //! Renault Clio
+  // Williams
   {
     id: uuidv4(),
     modelCarsId: "ce77fcdf-04df-4a18-b5df-1cb53d68986d",
@@ -2231,7 +3606,92 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Renault Megane
+  // V6
+  {
+    id: uuidv4(),
+    modelCarsId: "ce77fcdf-04df-4a18-b5df-1cb53d68986d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // R.S.
+  {
+    id: uuidv4(),
+    modelCarsId: "ce77fcdf-04df-4a18-b5df-1cb53d68986d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // R.S. 200 EDC
+  {
+    id: uuidv4(),
+    modelCarsId: "ce77fcdf-04df-4a18-b5df-1cb53d68986d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // RS 197
+  {
+    id: uuidv4(),
+    modelCarsId: "ce77fcdf-04df-4a18-b5df-1cb53d68986d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // R.S. 16 Concept
+  {
+    id: uuidv4(),
+    modelCarsId: "ce77fcdf-04df-4a18-b5df-1cb53d68986d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Renault Megane
+  // RS
+  {
+    id: uuidv4(),
+    modelCarsId: "c1d87b10-11ac-4363-ad5c-3690b7afad60",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // R.S. 250
+  {
+    id: uuidv4(),
+    modelCarsId: "c1d87b10-11ac-4363-ad5c-3690b7afad60",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // R26.R
   {
     id: uuidv4(),
     modelCarsId: "c1d87b10-11ac-4363-ad5c-3690b7afad60",
@@ -2285,7 +3745,32 @@ export const carsData = [
   },
   //
   /*********************************** Saab ***************************************/
-  // Saab 9-3
+  //! Saab 9-3
+  // Aero
+  {
+    id: uuidv4(),
+    modelCarsId: "88386294-4647-4849-8992-f8ac6378696d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Turbo
+  {
+    id: uuidv4(),
+    modelCarsId: "88386294-4647-4849-8992-f8ac6378696d",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Viggen
   {
     id: uuidv4(),
     modelCarsId: "88386294-4647-4849-8992-f8ac6378696d",
@@ -2311,7 +3796,8 @@ export const carsData = [
   },
   //
   /*********************************** Seat ***************************************/
-  // Seat Cupra
+  //! Seat Cupra
+  //GT Prototype
   {
     id: uuidv4(),
     modelCarsId: "e0429d31-6b0f-444d-9579-abe6a489344d",
@@ -2323,7 +3809,8 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Seat Ibiza
+  //! Seat Ibiza
+  // CUPRA
   {
     id: uuidv4(),
     modelCarsId: "0e00b177-3ac5-4ef3-ad0d-4c227ade0d39",
@@ -2335,7 +3822,32 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Seat Leon
+  //! Seat Leon
+  // CUPRA R (2010)
+  {
+    id: uuidv4(),
+    modelCarsId: "5123e290-c74b-4443-8c20-4adba794b768",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Supercup
+  {
+    id: uuidv4(),
+    modelCarsId: "5123e290-c74b-4443-8c20-4adba794b768",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Cupra R (2003)
   {
     id: uuidv4(),
     modelCarsId: "5123e290-c74b-4443-8c20-4adba794b768",
@@ -2349,7 +3861,8 @@ export const carsData = [
   },
   //
   /*********************************** Subaru ***************************************/
-  // Subaru BRZ
+  //! Subaru BRZ
+  // Stock
   {
     id: uuidv4(),
     modelCarsId: "7ed56574-ff8d-4724-92ae-1f75341ce708",
@@ -2361,7 +3874,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Subaru Impreza
+  // Fast & Furious Edition
+  {
+    id: uuidv4(),
+    modelCarsId: "7ed56574-ff8d-4724-92ae-1f75341ce708",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Subaru Impreza
+  //22B STi
   {
     id: uuidv4(),
     modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
@@ -2373,7 +3899,68 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Subaru WRX STI
+  //WRX STi (2004)
+  {
+    id: uuidv4(),
+    modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //WRX STi (2005)
+  {
+    id: uuidv4(),
+    modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //WRX STi (2008)
+  {
+    id: uuidv4(),
+    modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Subaru WRX STI
+  // 2011
+  {
+    id: uuidv4(),
+    modelCarsId: "96390e11-573e-40cb-9195-2eac6fa9c667",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // VT15R Rally Car
+  {
+    id: uuidv4(),
+    modelCarsId: "96390e11-573e-40cb-9195-2eac6fa9c667",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Fast & Furious Edition
   {
     id: uuidv4(),
     modelCarsId: "96390e11-573e-40cb-9195-2eac6fa9c667",
@@ -2413,7 +4000,32 @@ export const carsData = [
   },
   //
   /*********************************** Tesla ***************************************/
-  // Tesla Model S
+  //! Tesla Model S
+  // Stock
+  {
+    id: uuidv4(),
+    modelCarsId: "63197517-8b64-4850-9bc9-57949650b66c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // P85D
+  {
+    id: uuidv4(),
+    modelCarsId: "63197517-8b64-4850-9bc9-57949650b66c",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // P90D
   {
     id: uuidv4(),
     modelCarsId: "63197517-8b64-4850-9bc9-57949650b66c",
@@ -2439,7 +4051,56 @@ export const carsData = [
   },
   //
   /*********************************** Toyota ***************************************/
-  // Toyota Celica
+  //! Toyota Celica
+  // SS-I
+  {
+    id: uuidv4(),
+    modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT
+  {
+    id: uuidv4(),
+    modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Supra
+  {
+    id: uuidv4(),
+    modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT-Four ST205
+  {
+    id: uuidv4(),
+    modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT-Four RC ST185
   {
     id: uuidv4(),
     modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
@@ -2487,7 +4148,32 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Toyota Supra
+  //! Toyota Supra
+  // RZ
+  {
+    id: uuidv4(),
+    modelCarsId: "92c2b7a5-5f6d-4d80-b3ae-975e1c21a130",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 2.0 GT
+  {
+    id: uuidv4(),
+    modelCarsId: "92c2b7a5-5f6d-4d80-b3ae-975e1c21a130",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GT500
   {
     id: uuidv4(),
     modelCarsId: "92c2b7a5-5f6d-4d80-b3ae-975e1c21a130",
@@ -2501,7 +4187,44 @@ export const carsData = [
   },
   //
   /*********************************** Volkswagen ***************************************/
-  // Volkswagen Beetle
+  //! Volkswagen Beetle
+  // Stock
+  {
+    id: uuidv4(),
+    modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Global RallyCross
+  {
+    id: uuidv4(),
+    modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // 34 Andretti Rallycross
+  {
+    id: uuidv4(),
+    modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Beetle (2004)
   {
     id: uuidv4(),
     modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
@@ -2526,7 +4249,80 @@ export const carsData = [
     weight: 0,
   },
 
-  //! Volkswagen Golf R
+  //! Volkswagen Golf
+  // R (2010)
+  {
+    id: uuidv4(),
+    modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // R32
+  {
+    id: uuidv4(),
+    modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // Gti 16v Mk2
+  {
+    id: uuidv4(),
+    modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // R (2014)
+  {
+    id: uuidv4(),
+    modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GTI
+  {
+    id: uuidv4(),
+    modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GTI 2016
+  {
+    id: uuidv4(),
+    modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // GTI VR6 Mk3
   {
     id: uuidv4(),
     modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
@@ -2550,7 +4346,20 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Volkswagen Scirocco R
+  //! Volkswagen Scirocco
+  // R
+  {
+    id: uuidv4(),
+    modelCarsId: "15cfc310-7510-4aa1-8a79-f0440677ad84",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // S
   {
     id: uuidv4(),
     modelCarsId: "15cfc310-7510-4aa1-8a79-f0440677ad84",
@@ -2588,7 +4397,8 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Volvo S60
+  //! Volvo S60
+  // STCC
   {
     id: uuidv4(),
     modelCarsId: "b645e035-0d73-40ad-aea1-e8936e50bdcc",
@@ -2600,7 +4410,44 @@ export const carsData = [
     torque: 0,
     weight: 0,
   },
-  // Volvo V60
+  // Polestar
+  {
+    id: uuidv4(),
+    modelCarsId: "b645e035-0d73-40ad-aea1-e8936e50bdcc",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // R
+  {
+    id: uuidv4(),
+    modelCarsId: "b645e035-0d73-40ad-aea1-e8936e50bdcc",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  // R-Design
+  {
+    id: uuidv4(),
+    modelCarsId: "b645e035-0d73-40ad-aea1-e8936e50bdcc",
+    image: "",
+    engine: "",
+    gearbox: "",
+    generation: 0,
+    power: 0,
+    torque: 0,
+    weight: 0,
+  },
+  //! Volvo V60
+  // Polestar
   {
     id: uuidv4(),
     modelCarsId: "dffee83f-ef61-482b-b6e4-1f030d78f34e",

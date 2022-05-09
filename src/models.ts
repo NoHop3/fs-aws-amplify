@@ -234,7 +234,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "0deb715d-7add-418e-aa77-b5bef40729d6",
-    name: "Chevrolet C8 Corvette",
+    name: "Chevrolet Corvette",
   },
   // Chrysler
   {
@@ -266,12 +266,12 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "3d7266cb-86ec-4602-9df1-b371ed8ad0a9",
-    name: "Citroën C3",
+    name: "Citroën DS3",
   },
   {
     id: uuidv4(),
     manufacturerModelsId: "3d7266cb-86ec-4602-9df1-b371ed8ad0a9",
-    name: "Citroën C2",
+    name: "Citroën 2CV",
   },
   {
     id: uuidv4(),
@@ -287,7 +287,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "7eb41c77-bf62-42a7-81d2-407fc2b89f38",
-    name: "Dodge Challenger SRT",
+    name: "Dodge Challenger",
   },
   {
     id: uuidv4(),
@@ -565,11 +565,6 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "b10407fb-20d3-4ba8-9662-c47870291483",
-    name: "Maserati MC12 Versione Corsa",
-  },
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "b10407fb-20d3-4ba8-9662-c47870291483",
     name: "Maserati 8CTF",
   },
   {
@@ -580,7 +575,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "b10407fb-20d3-4ba8-9662-c47870291483",
-    name: "Maserati Gran Turismo S",
+    name: "Maserati Gran Turismo",
   },
   // Mazda
   {
@@ -612,7 +607,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "e7b38e3c-44cf-4077-89ef-6c1c94a5ae06",
-    name: "McLaren F1 GT",
+    name: "McLaren F1",
   },
   {
     id: uuidv4(),
@@ -787,11 +782,6 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "c50b08f6-62ae-4338-8384-25ca0b738c0f",
-    name: "Ramiro Luiz Miron",
-  },
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "c50b08f6-62ae-4338-8384-25ca0b738c0f",
     name: "RAM 2500",
   },
   {
@@ -800,11 +790,6 @@ export const modelsData = [
     name: "RAM Runner",
   },
   // Renault
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "38f0f958-5d64-42fc-a267-2513ac5c3fe7",
-    name: "Renault Alpine",
-  },
   {
     id: uuidv4(),
     manufacturerModelsId: "38f0f958-5d64-42fc-a267-2513ac5c3fe7",
@@ -943,6 +928,11 @@ export const modelsData = [
     id: uuidv4(),
     manufacturerModelsId: "b56bdb8f-0e5a-44be-ace1-6b7ac0ecb0eb",
     name: "Volkswagen Beetle",
+  },
+  {
+    id: uuidv4(),
+    manufacturerModelsId: "b56bdb8f-0e5a-44be-ace1-6b7ac0ecb0eb",
+    name: "Volkswagen Golf",
   },
   // Volvo
   {
