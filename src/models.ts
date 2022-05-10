@@ -15,18 +15,13 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "baa8c1b2-c7cb-4f06-b62c-c7ae22ebf56a",
-    name: "Abarth 596 Esseesse",
-  },
-  {
-    id: uuidv4(),
-    manufacturerModelsId: "baa8c1b2-c7cb-4f06-b62c-c7ae22ebf56a",
-    name: "Abarth 500 Esseesse",
+    name: "Abarth Esseesse",
   },
   //Acura
   {
     id: uuidv4(),
     manufacturerModelsId: "0c6bdef2-053c-49d6-8199-e325a2f6afa4",
-    name: "Acura RSX Type-S",
+    name: "Acura RSX",
   },
   {
     id: uuidv4(),
@@ -36,13 +31,13 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "0c6bdef2-053c-49d6-8199-e325a2f6afa4",
-    name: "Acura Integra Type-R",
+    name: "Acura Integra",
   },
   //Alfa Romeo
   {
     id: uuidv4(),
     manufacturerModelsId: "5a619a1f-c801-4585-a0a2-dbd3dc3816ce",
-    name: "Alfa Romeo 33 Stradale",
+    name: "Alfa Romeo 33",
   },
   {
     id: uuidv4(),
@@ -52,7 +47,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "5a619a1f-c801-4585-a0a2-dbd3dc3816ce",
-    name: "Alfa Romeo 8C Competizione",
+    name: "Alfa Romeo 8C",
   },
   // Alpine
   {
@@ -75,7 +70,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "ffaeda4a-0a16-43b5-956a-ff6dd6cdd932",
-    name: "Ariel Atom 500 V8",
+    name: "Ariel Atom",
   },
   // Aston Martin
   {
@@ -113,12 +108,12 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "260e4cc3-732d-42d8-a29d-56ae33830ca8",
-    name: "Austin-Healey 3000 MkIII",
+    name: "Austin-Healey 3000",
   },
   {
     id: uuidv4(),
     manufacturerModelsId: "260e4cc3-732d-42d8-a29d-56ae33830ca8",
-    name: "Austin-Healey Sprite MkI",
+    name: "Austin-Healey Sprite",
   },
   // Bentley
   {
@@ -198,7 +193,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "d812fb9a-c1d8-4bfe-be3f-0fcb6271e61c",
-    name: "Cadillac 6 Team Cadillac Northstar LMP-02",
+    name: "Cadillac Northstar LMP-02",
   },
   {
     id: uuidv4(),
