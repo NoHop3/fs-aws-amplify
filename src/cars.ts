@@ -2322,7 +2322,7 @@ export const carsData = [
   //LP700-4
   {
     id: uuidv4(),
-    name: "P700-4",
+    name: "LP700-4",
     modelCarsId: "35473862-5963-43c7-a349-420dba0e2216",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lambo_Aventador.webp",
@@ -2336,7 +2336,7 @@ export const carsData = [
   //Superveloce
   {
     id: uuidv4(),
-    name: "uperveloce",
+    name: "Superveloce",
     modelCarsId: "35473862-5963-43c7-a349-420dba0e2216",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lambo_Aventador_SV.webp",
@@ -2351,7 +2351,7 @@ export const carsData = [
   //LP 610-4
   {
     id: uuidv4(),
-    name: "P 610-4",
+    name: "LP 610-4",
     modelCarsId: "ba241ceb-2462-456c-b875-2a8a159b649a",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lambo_Huracan.webp",
@@ -2365,7 +2365,7 @@ export const carsData = [
   //Performante
   {
     id: uuidv4(),
-    name: "erformante",
+    name: "Performante",
     modelCarsId: "ba241ceb-2462-456c-b875-2a8a159b649a",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lambo_Huracan_18.webp",
@@ -2379,7 +2379,7 @@ export const carsData = [
   // Lamborghini Centenario
   {
     id: uuidv4(),
-    name: "Lamborghini Centenario",
+    name: "",
     modelCarsId: "7f5f398d-7e04-4ad9-866c-89995e917674",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lambo_Centenario.webp",
@@ -2393,7 +2393,7 @@ export const carsData = [
   // Lamborghini Sesto Elemento
   {
     id: uuidv4(),
-    name: "Lamborghini Sesto Elemento",
+    name: "",
     modelCarsId: "db83c9e9-1375-4f24-a939-9173911d7ad8",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lambo_Sesto.webp",
@@ -2407,7 +2407,7 @@ export const carsData = [
   // Lamborghini Veneno
   {
     id: uuidv4(),
-    name: "Lamborghini Veneno",
+    name: "",
     modelCarsId: "bfd56b5b-5453-4011-8aa8-a705414dae03",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lambo_Veneno.webp",
@@ -2424,7 +2424,7 @@ export const carsData = [
   //HF Integrale Evo
   {
     id: uuidv4(),
-    name: "F Integrale Evo",
+    name: "HF Integrale Evo",
     modelCarsId: "0ef1b299-2338-4978-945b-33c7daf96c06",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lancia_Delta_92.webp",
@@ -2438,7 +2438,7 @@ export const carsData = [
   //S4
   {
     id: uuidv4(),
-    name: "4",
+    name: "S4",
     modelCarsId: "0ef1b299-2338-4978-945b-33c7daf96c06",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lancia_Delta_86.webp",
@@ -2452,7 +2452,7 @@ export const carsData = [
   // Lancia Fulvia
   {
     id: uuidv4(),
-    name: "Lancia Fulvia",
+    name: "",
     modelCarsId: "569ced4d-6097-4b81-9463-36ec0ead694f",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/Hor_lan_fulvia.webp",
@@ -2466,7 +2466,7 @@ export const carsData = [
   // Lancia Stratos
   {
     id: uuidv4(),
-    name: "Lancia Stratos",
+    name: "",
     modelCarsId: "c4fed1ae-8033-46ed-9747-d44cf78c618c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/Hor_lan_stratos.webp",
@@ -2482,7 +2482,7 @@ export const carsData = [
   // Land Rover Defender
   {
     id: uuidv4(),
-    name: "Land Rover Defender",
+    name: "",
     modelCarsId: "1b7ee937-f9c9-4a09-a14f-dc764d753ecf",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_LR_Defender.webp",
@@ -2496,7 +2496,7 @@ export const carsData = [
   // Land Rover Series III
   {
     id: uuidv4(),
-    name: "Land Rover Series III",
+    name: "",
     modelCarsId: "45383f4f-779d-4da4-856f-30b15c3ac9aa",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_LR_Series.webp",
@@ -2525,7 +2525,7 @@ export const carsData = [
   // Supercharged 2008
   {
     id: uuidv4(),
-    name: "Supercharged 2008",
+    name: "Supercharged",
     modelCarsId: "5eba5c2c-0a9a-457b-9ed6-ad1b391ca0d1",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Land_Rover_08Fix.webp",
@@ -2539,7 +2539,7 @@ export const carsData = [
   // Supercharged 2012
   {
     id: uuidv4(),
-    name: "Supercharged 2012",
+    name: "Supercharged",
     modelCarsId: "5eba5c2c-0a9a-457b-9ed6-ad1b391ca0d1",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_LR_Range_12.webp",
@@ -2553,7 +2553,7 @@ export const carsData = [
   // Supercharged 2014
   {
     id: uuidv4(),
-    name: "Supercharged 2014",
+    name: "Supercharged",
     modelCarsId: "5eba5c2c-0a9a-457b-9ed6-ad1b391ca0d1",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_LR_Range_14.webp",
@@ -2583,7 +2583,7 @@ export const carsData = [
   // Lexus GS350 F
   {
     id: uuidv4(),
-    name: "Lexus GS350 F",
+    name: "",
     modelCarsId: "807dfd61-8fbd-4dfc-bfa3-364e74c7f50a",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lexus_GS350.webp",
@@ -2597,7 +2597,7 @@ export const carsData = [
   // Lexus IS F
   {
     id: uuidv4(),
-    name: "Lexus IS F",
+    name: "",
     modelCarsId: "7123f159-c7be-44cd-a83c-00e8aa3b8c11",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lexus_IS_F_FH4.webp",
@@ -2611,7 +2611,7 @@ export const carsData = [
   // Lexus LFA
   {
     id: uuidv4(),
-    name: "Lexus LFA",
+    name: "",
     modelCarsId: "b47f93ac-8ab6-41bc-816d-3511a162d9e7",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lexus_LFA_FH4.webp",
@@ -2625,7 +2625,7 @@ export const carsData = [
   // Lexus RC F
   {
     id: uuidv4(),
-    name: "Lexus RC F",
+    name: "",
     modelCarsId: "9ff7c3f9-a165-4b7a-b5d4-38a702f9510c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Lexus_RC_F_FH4.webp",
@@ -2642,7 +2642,7 @@ export const carsData = [
   // 1962
   {
     id: uuidv4(),
-    name: "1962",
+    name: "",
     modelCarsId: "3ed07738-5402-40a9-bbab-db6fb7484503",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_Lincoln_Continental.webp",
@@ -2656,7 +2656,7 @@ export const carsData = [
   // 2017
   {
     id: uuidv4(),
-    name: "2017",
+    name: "",
     modelCarsId: "3ed07738-5402-40a9-bbab-db6fb7484503",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_Lincoln_Continental.webp",
@@ -2672,7 +2672,7 @@ export const carsData = [
   // Maserati 8CTF
   {
     id: uuidv4(),
-    name: "Maserati 8CTF",
+    name: "",
     modelCarsId: "770052aa-88c7-4aea-b820-f9a5455387cb",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Maserati_8CTF.webp",
@@ -2687,7 +2687,7 @@ export const carsData = [
   // Stock
   {
     id: uuidv4(),
-    name: "Stock",
+    name: "",
     modelCarsId: "a2efbf1c-38db-4e17-9ded-9d93f411047f",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/Maserati_Grand_Turismo.webp",
@@ -2716,7 +2716,7 @@ export const carsData = [
   // Stock
   {
     id: uuidv4(),
-    name: "Stock",
+    name: "",
     modelCarsId: "cfa40f18-c0b8-4787-b6c5-88d2a9d7f299",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Maserati_MC12.webp",
@@ -2761,7 +2761,7 @@ export const carsData = [
   // 2013
   {
     id: uuidv4(),
-    name: "2013",
+    name: "",
     modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Mazda_MX-5_13.webp",
@@ -2775,7 +2775,7 @@ export const carsData = [
   // 2016
   {
     id: uuidv4(),
-    name: "2016",
+    name: "",
     modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Mazda_MX-5_16.webp",
@@ -2789,7 +2789,7 @@ export const carsData = [
   // Miata (1990)
   {
     id: uuidv4(),
-    name: "Miata (1990)",
+    name: "Miata",
     modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_Mazda_MX-5_90.webp",
@@ -2817,7 +2817,7 @@ export const carsData = [
   // Miata (1994)
   {
     id: uuidv4(),
-    name: "Miata (1994)",
+    name: "Miata",
     modelCarsId: "4865b5ab-cb15-46ab-91a0-1b7ef3d01ca1",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Mazda_MX-5_94.webp",
@@ -2846,7 +2846,7 @@ export const carsData = [
   // Stock
   {
     id: uuidv4(),
-    name: "Stock",
+    name: "",
     modelCarsId: "d54415e9-b6e1-4e33-ac75-7538123e6ad2",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Mazda_RX-7_97.webp",
@@ -2963,7 +2963,7 @@ export const carsData = [
   // Stock
   {
     id: uuidv4(),
-    name: "Stock",
+    name: "",
     modelCarsId: "897266c5-3eeb-4192-8657-52cda75972cf",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_McLaren_F1.webp",
@@ -2992,7 +2992,7 @@ export const carsData = [
   // Stock
   {
     id: uuidv4(),
-    name: "Stock",
+    name: "",
     modelCarsId: "ae02e62e-1ad7-4957-ac58-ccaaaa36e71d",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_McLaren_P1.webp",
@@ -3020,7 +3020,7 @@ export const carsData = [
   // McLaren Senna
   {
     id: uuidv4(),
-    name: "McLaren Senna",
+    name: "",
     modelCarsId: "71f7e0e4-3f29-428a-a5a4-b48f557c4cd2",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_McLaren_Senna.webp",
@@ -3037,7 +3037,7 @@ export const carsData = [
   //R
   {
     id: uuidv4(),
-    name: "  //R",
+    name: "R",
     modelCarsId: "ca0c5fbe-b635-42c5-adab-5b838e6f5d5c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_M-B_AMG_GT_R.webp",
@@ -3051,7 +3051,7 @@ export const carsData = [
   //S
   {
     id: uuidv4(),
-    name: "  //S",
+    name: "S",
     modelCarsId: "ca0c5fbe-b635-42c5-adab-5b838e6f5d5c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_M-B_AMG_GT_S.webp",
@@ -3065,7 +3065,7 @@ export const carsData = [
   // Mercedes-AMG One
   {
     id: uuidv4(),
-    name: "Mercedes-AMG One",
+    name: "",
     modelCarsId: "7270e04a-ae26-41e0-aa4b-8e14ded2be64",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/Mercedes-AMG_One.webp",
@@ -3079,7 +3079,7 @@ export const carsData = [
   // Mercedes-Benz 300 SL
   {
     id: uuidv4(),
-    name: "Mercedes-Benz 300 SL",
+    name: "",
     modelCarsId: "bf6af862-f9ff-4ea8-bcc7-fe7e25387cd6",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_M-B_300_SL.webp",
@@ -3093,7 +3093,7 @@ export const carsData = [
   // Mercedes-Benz C 63
   {
     id: uuidv4(),
-    name: "Mercedes-Benz C 63",
+    name: "",
     modelCarsId: "ae3b001b-0446-4ac2-a187-cbfeb0b735ab",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_M-B_C_63_12.webp",
@@ -3107,7 +3107,7 @@ export const carsData = [
   // Mercedes-Benz CLK
   {
     id: uuidv4(),
-    name: "Mercedes-Benz CLK",
+    name: "",
     modelCarsId: "4ea6bb17-1a50-4e52-90da-85c1500cea8d",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Merceses_CLK55.webp",
@@ -3121,7 +3121,7 @@ export const carsData = [
   // Mercedes-Benz SL 65
   {
     id: uuidv4(),
-    name: "Mercedes-Benz SL 65",
+    name: "",
     modelCarsId: "12f36c26-1943-4493-bd67-6db6429a7054",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_M-B_SL_65.webp",
@@ -3167,7 +3167,7 @@ export const carsData = [
   // S 1965
   {
     id: uuidv4(),
-    name: "S 1965",
+    name: "S",
     modelCarsId: "6a2d0ead-c3b6-4aef-be45-6a862be485ce",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_MINI_Cooper.webp",
@@ -3181,7 +3181,7 @@ export const carsData = [
   // S 2003
   {
     id: uuidv4(),
-    name: "S 2003",
+    name: "S",
     modelCarsId: "6a2d0ead-c3b6-4aef-be45-6a862be485ce",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_MINI_Cooper_03.webp",
@@ -3195,7 +3195,7 @@ export const carsData = [
   // S 2011
   {
     id: uuidv4(),
-    name: "S 2011",
+    name: "S",
     modelCarsId: "6a2d0ead-c3b6-4aef-be45-6a862be485ce",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_X360_MINI_Cooper_11.webp",
@@ -3224,7 +3224,7 @@ export const carsData = [
   // John Cooper Works Buggy
   {
     id: uuidv4(),
-    name: "John Cooper Works Buggy",
+    name: "",
     modelCarsId: "2bb933be-896f-44d2-bb8b-9f972884fb2c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_MINI_X-Raid.webp",
@@ -3269,7 +3269,7 @@ export const carsData = [
   // GS Fast & Furious Edition
   {
     id: uuidv4(),
-    name: "GS Fast & Furious Edition",
+    name: "",
     modelCarsId: "d102c02b-30ce-467a-bb33-2b976c954ebb",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Mitsubishi_Eclipse_F%26F.webp",
@@ -3343,7 +3343,7 @@ export const carsData = [
   //Z 432
   {
     id: uuidv4(),
-    name: " 432",
+    name: "Z 432",
     modelCarsId: "5433a0d9-ac82-483e-b876-bac80e764a23",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Nissan_Fairlady_69.webp",
@@ -3357,7 +3357,7 @@ export const carsData = [
   //Z Version
   {
     id: uuidv4(),
-    name: " Version",
+    name: "Z Version",
     modelCarsId: "5433a0d9-ac82-483e-b876-bac80e764a23",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Nissan_Fairlady_94.webp",
@@ -3444,7 +3444,7 @@ export const carsData = [
   // V-Spec (1993)
   {
     id: uuidv4(),
-    name: "V-Spec (1993)",
+    name: "V-Spec",
     modelCarsId: "7f6ec6e3-43a2-427c-b1fa-7b1ed5dce104",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Nissan_GT-R_93.webp",
@@ -3458,7 +3458,7 @@ export const carsData = [
   // V-Spec (1997)
   {
     id: uuidv4(),
-    name: "V-Spec (1997)",
+    name: "V-Spec",
     modelCarsId: "7f6ec6e3-43a2-427c-b1fa-7b1ed5dce104",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Nissan_GT-R_97.webp",
@@ -3516,7 +3516,7 @@ export const carsData = [
   // Opel GT
   {
     id: uuidv4(),
-    name: "Opel GT",
+    name: "",
     modelCarsId: "f5513eec-563a-428a-8dd0-409c7685d8ed",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Opel_GT.webp",
@@ -3559,7 +3559,7 @@ export const carsData = [
   // Opel Manta
   {
     id: uuidv4(),
-    name: "Opel Manta",
+    name: "",
     modelCarsId: "ff205224-1a7d-452a-afd1-154eba22ff7a",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Opel_Manta.webp",
@@ -3576,7 +3576,7 @@ export const carsData = [
   // Stock
   {
     id: uuidv4(),
-    name: "Stock",
+    name: "",
     modelCarsId: "9a9efa25-696d-4ffd-878a-ed61bd60e6c9",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Pagani_Huayra.webp",
@@ -3707,7 +3707,7 @@ export const carsData = [
   // Peugeot 308
   {
     id: uuidv4(),
-    name: "Peugeot 308",
+    name: "",
     modelCarsId: "429a5bc0-1cd9-4dab-9697-37e6e8a15f2b",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_Peugeot_308.webp",
@@ -3721,7 +3721,7 @@ export const carsData = [
   // Peugeot 908
   {
     id: uuidv4(),
-    name: "Peugeot 908",
+    name: "",
     modelCarsId: "523ddde8-482d-4fd5-8b7a-43df1e15b417",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_Peugeot_9_908.webp",
@@ -3738,7 +3738,7 @@ export const carsData = [
   // Stock
   {
     id: uuidv4(),
-    name: "Stock",
+    name: "",
     modelCarsId: "b9de8e99-0e74-4e58-8e9c-dc9ed2fdadc6",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Pontiac_Firebird_68.webp",
@@ -3752,7 +3752,7 @@ export const carsData = [
   // Trans Am (1969)
   {
     id: uuidv4(),
-    name: "Trans Am (1969)",
+    name: "Trans Am",
     modelCarsId: "b9de8e99-0e74-4e58-8e9c-dc9ed2fdadc6",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_Pontiac_Firebird_69.webp",
@@ -3766,7 +3766,7 @@ export const carsData = [
   // Trans Am (1977)
   {
     id: uuidv4(),
-    name: "Trans Am (1977)",
+    name: "Trans Am",
     modelCarsId: "b9de8e99-0e74-4e58-8e9c-dc9ed2fdadc6",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Pontiac_Firebird_77.webp",
@@ -3851,7 +3851,7 @@ export const carsData = [
   // 1965
   {
     id: uuidv4(),
-    name: "1965",
+    name: "",
     modelCarsId: "f5ec402d-5d30-4b12-b029-2be7bda3ff3c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Pontiac_GTO_65.webp",
@@ -3865,7 +3865,7 @@ export const carsData = [
   // 2004
   {
     id: uuidv4(),
-    name: "2004",
+    name: "",
     modelCarsId: "f5ec402d-5d30-4b12-b029-2be7bda3ff3c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/Pontiac_GTO_04.webp",
@@ -3879,7 +3879,7 @@ export const carsData = [
   // 2006
   {
     id: uuidv4(),
-    name: "2006",
+    name: "",
     modelCarsId: "f5ec402d-5d30-4b12-b029-2be7bda3ff3c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Pontiac_GTO.webp",
@@ -3910,7 +3910,7 @@ export const carsData = [
   // GT3 RS (2019)
   {
     id: uuidv4(),
-    name: "GT3 RS (2019)",
+    name: "GT3 RS",
     modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_911_19_GT3.webp",
@@ -3924,7 +3924,7 @@ export const carsData = [
   // Turbo 3.3
   {
     id: uuidv4(),
-    name: "Turbo 3.3",
+    name: "Turbo",
     modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_911_82.webp",
@@ -3938,7 +3938,7 @@ export const carsData = [
   // GT3 RS 4.0
   {
     id: uuidv4(),
-    name: "GT3 RS 4.0",
+    name: "GT3 RS",
     modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_911_12_GT3.webp",
@@ -3952,7 +3952,7 @@ export const carsData = [
   // GT3 (2004)
   {
     id: uuidv4(),
-    name: "GT3 (2004)",
+    name: "GT3",
     modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_911_04.webp",
@@ -3966,7 +3966,7 @@ export const carsData = [
   // GT2 (1995)
   {
     id: uuidv4(),
-    name: "GT2 (1995)",
+    name: "GT2",
     modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_911_95.webp",
@@ -3980,7 +3980,7 @@ export const carsData = [
   // GT3 RS (2016)
   {
     id: uuidv4(),
-    name: "GT3 RS (2016)",
+    name: "GT3 RS",
     modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_911_16.webp",
@@ -3994,7 +3994,7 @@ export const carsData = [
   // GT2 RS (2012)
   {
     id: uuidv4(),
-    name: "GT2 RS (2012)",
+    name: "GT2 RS",
     modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_911_12_GT2.webp",
@@ -4036,7 +4036,7 @@ export const carsData = [
   // GT2 RS (2018)
   {
     id: uuidv4(),
-    name: "GT2 RS (2018)",
+    name: "GT2 RS",
     modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_911_18.webp",
@@ -4078,7 +4078,7 @@ export const carsData = [
   // GT3 RSR (2011)
   {
     id: uuidv4(),
-    name: "GT3 RSR (2011)",
+    name: "GT3 RSR",
     modelCarsId: "6679ff85-d66a-480d-a3a0-fee9ddc53b20",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_45_911.webp",
@@ -4092,7 +4092,7 @@ export const carsData = [
   // Porsche 959
   {
     id: uuidv4(),
-    name: "Porsche 959",
+    name: "",
     modelCarsId: "1335c65b-b34f-4fb2-a475-afe541297b39",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_959.webp",
@@ -4106,7 +4106,7 @@ export const carsData = [
   // Porsche Carrera GT
   {
     id: uuidv4(),
-    name: "Porsche Carrera GT",
+    name: "",
     modelCarsId: "293985cd-693c-4f02-bc00-d07fadca1cec",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_Carrera.webp",
@@ -4135,7 +4135,7 @@ export const carsData = [
   // Turbo (2018)
   {
     id: uuidv4(),
-    name: "Turbo (2018)",
+    name: "Turbo",
     modelCarsId: "63647e4c-e9fe-4ea6-857c-2e9820355b10",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Porsche_Cayenne_18.webp",
@@ -4165,7 +4165,7 @@ export const carsData = [
   // RAM 1500 Rebel
   {
     id: uuidv4(),
-    name: "RAM 1500 Rebel",
+    name: "",
     modelCarsId: "2e083b7f-d8e6-4aae-bc5b-86152e1a5fcd",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_RAM_1500.webp",
@@ -4179,7 +4179,7 @@ export const carsData = [
   // RAM 2500
   {
     id: uuidv4(),
-    name: "RAM 2500",
+    name: "",
     modelCarsId: "f2d69398-59d8-4977-9066-42c2affd905d",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_RAM_2500.webp",
@@ -4193,7 +4193,7 @@ export const carsData = [
   // RAM Runner
   {
     id: uuidv4(),
-    name: "RAM Runner",
+    name: "",
     modelCarsId: "e740dddc-ea69-4359-905d-1306f23b39ee",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_RAM_Runner.webp",
@@ -4209,7 +4209,7 @@ export const carsData = [
   // Renault 5
   {
     id: uuidv4(),
-    name: "Renault 5",
+    name: "",
     modelCarsId: "d25389eb-8206-433a-8fcb-1b41a6c53f69",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Renault_5.webp",
@@ -4238,7 +4238,7 @@ export const carsData = [
   // Sport V6
   {
     id: uuidv4(),
-    name: "Sport V6",
+    name: "Sport",
     modelCarsId: "ce77fcdf-04df-4a18-b5df-1cb53d68986d",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Renault_Clio_03.webp",
@@ -4353,7 +4353,7 @@ export const carsData = [
   // Rolls-Royce Dawn
   {
     id: uuidv4(),
-    name: "Rolls-Royce Dawn",
+    name: "",
     modelCarsId: "d51f4fec-a970-4a2f-95b2-0ea76ed2f703",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_RR_Dawn.webp",
@@ -4367,7 +4367,7 @@ export const carsData = [
   // Rolls-Royce Wraith
   {
     id: uuidv4(),
-    name: "Rolls-Royce Wraith",
+    name: "",
     modelCarsId: "037c6a8f-ebcd-4cdf-ab95-d078257467df",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_RR_Wraith.webp",
@@ -4383,7 +4383,7 @@ export const carsData = [
   // Rover SD1 Vitesse
   {
     id: uuidv4(),
-    name: "Rover SD1 Vitesse",
+    name: "",
     modelCarsId: "9db11393-84e4-4063-a3be-94ce1fe6d9e9",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Rover_SD1.webp",
@@ -4442,7 +4442,7 @@ export const carsData = [
   // Saab 99
   {
     id: uuidv4(),
-    name: "Saab 99",
+    name: "",
     modelCarsId: "a1ed6a58-32c0-4eaf-aa3e-9bb6e9158ad9",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Saab_99_78.webp",
@@ -4459,7 +4459,7 @@ export const carsData = [
   //GT Prototype
   {
     id: uuidv4(),
-    name: "T Prototype",
+    name: "GT Prototype",
     modelCarsId: "e0429d31-6b0f-444d-9579-abe6a489344d",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/SEAT_Cupra_GT_Prototype.webp",
@@ -4474,7 +4474,7 @@ export const carsData = [
   // CUPRA
   {
     id: uuidv4(),
-    name: "CUPRA",
+    name: "",
     modelCarsId: "0e00b177-3ac5-4ef3-ad0d-4c227ade0d39",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_Seat_Ibiza_Cupra.webp",
@@ -4489,7 +4489,7 @@ export const carsData = [
   // CUPRA R (2010)
   {
     id: uuidv4(),
-    name: "CUPRA R (2010)",
+    name: "CUPRA R",
     modelCarsId: "5123e290-c74b-4443-8c20-4adba794b768",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_Seat_Leon_Cupra_R_2010.webp",
@@ -4517,7 +4517,7 @@ export const carsData = [
   // Cupra R (2003)
   {
     id: uuidv4(),
-    name: "Cupra R (2003)",
+    name: "Cupra R",
     modelCarsId: "5123e290-c74b-4443-8c20-4adba794b768",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_Seat_Leon_Cupra_R_2003.webp",
@@ -4534,7 +4534,7 @@ export const carsData = [
   // Stock
   {
     id: uuidv4(),
-    name: "Stock",
+    name: "",
     modelCarsId: "7ed56574-ff8d-4724-92ae-1f75341ce708",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_BRZ.webp",
@@ -4563,7 +4563,7 @@ export const carsData = [
   //22B STi
   {
     id: uuidv4(),
-    name: "2B STi",
+    name: "22B STi",
     modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_Impreza_98.webp",
@@ -4577,7 +4577,7 @@ export const carsData = [
   //WRX STi (2004)
   {
     id: uuidv4(),
-    name: "RX STi (2004)",
+    name: "WRX STi",
     modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_Impreza_04.webp",
@@ -4591,7 +4591,7 @@ export const carsData = [
   //WRX STi (2005)
   {
     id: uuidv4(),
-    name: "RX STi (2005)",
+    name: "WRX STi",
     modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_Impreza_05.webp",
@@ -4605,7 +4605,7 @@ export const carsData = [
   //WRX STi (2008)
   {
     id: uuidv4(),
-    name: "RX STi (2008)",
+    name: "WRX STi",
     modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_Impreza_08.webp",
@@ -4620,7 +4620,7 @@ export const carsData = [
   // 2011
   {
     id: uuidv4(),
-    name: "2011",
+    name: "",
     modelCarsId: "96390e11-573e-40cb-9195-2eac6fa9c667",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_WRX_11.webp",
@@ -4664,7 +4664,7 @@ export const carsData = [
   // Suzuki Liana
   {
     id: uuidv4(),
-    name: "Suzuki Liana",
+    name: "",
     modelCarsId: "e79c8986-c3e1-4ac3-b8c4-571b78c26621",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Suzuki_Liana_02.webp",
@@ -4678,7 +4678,7 @@ export const carsData = [
   // Suzuki SX4
   {
     id: uuidv4(),
-    name: "Suzuki SX4",
+    name: "",
     modelCarsId: "aa6aabcb-e2e7-4189-bc11-6e942ed04dc8",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Suzuki_SX4_11.webp",
@@ -4695,7 +4695,7 @@ export const carsData = [
   // Stock
   {
     id: uuidv4(),
-    name: "Stock",
+    name: "",
     modelCarsId: "63197517-8b64-4850-9bc9-57949650b66c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Tesla_Model_14.webp",
@@ -4737,7 +4737,7 @@ export const carsData = [
   // Tesla Roadster
   {
     id: uuidv4(),
-    name: "Tesla Roadster",
+    name: "",
     modelCarsId: "6a2702b9-ddea-45dc-a3c4-2b259eb2eb1f",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_X360_Tesla_Roadster.webp",
@@ -4796,7 +4796,7 @@ export const carsData = [
   // GT-Four ST205
   {
     id: uuidv4(),
-    name: "GT-Four ST205",
+    name: "",
     modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Celica_94_FH4.webp",
@@ -4810,7 +4810,7 @@ export const carsData = [
   // GT-Four RC ST185
   {
     id: uuidv4(),
-    name: "GT-Four RC ST185",
+    name: "",
     modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Celica_92_FH4.webp",
@@ -4824,7 +4824,7 @@ export const carsData = [
   // Toyota GT86
   {
     id: uuidv4(),
-    name: "Toyota GT86",
+    name: "",
     modelCarsId: "acacf848-d22a-4965-8a5f-cec1d597341b",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_GT86_FH4.webp",
@@ -4838,7 +4838,7 @@ export const carsData = [
   // Toyota Hilux
   {
     id: uuidv4(),
-    name: "Toyota Hilux",
+    name: "",
     modelCarsId: "9a4f5e6e-af89-4ec8-a51c-436d4551d350",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Hilux.webp",
@@ -4852,7 +4852,7 @@ export const carsData = [
   // Toyota Sprinter
   {
     id: uuidv4(),
-    name: "Toyota Sprinter",
+    name: "",
     modelCarsId: "b77578b5-e716-487c-b4be-2d66b9a27d3e",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Sprinter_FH4.webp",
@@ -4881,7 +4881,7 @@ export const carsData = [
   // 2.0 GT
   {
     id: uuidv4(),
-    name: "2.0 GT",
+    name: "GT",
     modelCarsId: "92c2b7a5-5f6d-4d80-b3ae-975e1c21a130",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Supra_92_FH4.webp",
@@ -4912,7 +4912,7 @@ export const carsData = [
   // Stock
   {
     id: uuidv4(),
-    name: "Stock",
+    name: "",
     modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Beetle.webp",
@@ -4954,7 +4954,7 @@ export const carsData = [
   // Beetle (2004)
   {
     id: uuidv4(),
-    name: "Beetle (2004)",
+    name: "Beetle",
     modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_VW_Beetle_04.webp",
@@ -4985,7 +4985,7 @@ export const carsData = [
   // R (2010)
   {
     id: uuidv4(),
-    name: "R (2010)",
+    name: "R",
     modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Golf_10.webp",
@@ -5027,7 +5027,7 @@ export const carsData = [
   // R (2014)
   {
     id: uuidv4(),
-    name: "R (2014)",
+    name: "R",
     modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Golf_14.webp",
@@ -5083,7 +5083,7 @@ export const carsData = [
   // Volkswagen Rabbit
   {
     id: uuidv4(),
-    name: "Volkswagen Rabbit",
+    name: "",
     modelCarsId: "ed3487dc-ef87-45ff-84bc-e1b6f4d08874",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_VW_Rabbit.webp",
@@ -5128,7 +5128,7 @@ export const carsData = [
   // Volvo 242
   {
     id: uuidv4(),
-    name: "Volvo 242",
+    name: "",
     modelCarsId: "b0ce5ab2-cf3b-485a-a9b9-a2c21b0f5975",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Volvo_242.webp",
@@ -5142,7 +5142,7 @@ export const carsData = [
   // Volvo 850
   {
     id: uuidv4(),
-    name: "Volvo 850",
+    name: "",
     modelCarsId: "0c1ce1a0-8838-4c59-852d-c75e61baf621",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Volvo_850.webp",
@@ -5214,7 +5214,7 @@ export const carsData = [
   // Polestar
   {
     id: uuidv4(),
-    name: "Polestar",
+    name: "",
     modelCarsId: "dffee83f-ef61-482b-b6e4-1f030d78f34e",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Volvo_V60.webp",
