@@ -29,6 +29,7 @@ type Car @model
 # @auth(rules: [{ allow: private }]) 
 {
   id: ID!
+  name: String
   model: Model @belongsTo
   image: String
   generation: Int

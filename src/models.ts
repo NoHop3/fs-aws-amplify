@@ -5,7 +5,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "baa8c1b2-c7cb-4f06-b62c-c7ae22ebf56a",
-    name: "Abarth Punto SuperSport",
+    name: "Abarth Punto",
   },
   {
     id: uuidv4(),
@@ -140,7 +140,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "c4c25054-ada1-4683-9c14-9dfa43e4aa26",
-    name: "BMW M6 Coupe",
+    name: "BMW M6",
   },
   {
     id: uuidv4(),
@@ -235,7 +235,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "7de5fbf1-56f6-40c3-9fbc-69b0623eb957",
-    name: "Chrysler 300 SRT8",
+    name: "Chrysler 300",
   },
   {
     id: uuidv4(),
@@ -245,7 +245,7 @@ export const modelsData = [
   {
     id: uuidv4(),
     manufacturerModelsId: "7de5fbf1-56f6-40c3-9fbc-69b0623eb957",
-    name: "Chrysler Crossfire SRT6",
+    name: "Chrysler Crossfire",
   },
   {
     id: uuidv4(),

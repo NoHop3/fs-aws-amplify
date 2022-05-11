@@ -107,6 +107,7 @@ export type ModelCarConnection = {
 export type Car = {
   __typename: "Car",
   id: string,
+  name?: string | null,
   model?: Model | null,
   image?: string | null,
   generation?: number | null,
@@ -177,6 +178,7 @@ export type DeleteModelInput = {
 
 export type CreateCarInput = {
   id?: string | null,
+  name?: string | null,
   image?: string | null,
   generation?: number | null,
   power?: number | null,
@@ -188,6 +190,7 @@ export type CreateCarInput = {
 };
 
 export type ModelCarConditionInput = {
+  name?: ModelStringInput | null,
   image?: ModelStringInput | null,
   generation?: ModelIntInput | null,
   power?: ModelIntInput | null,
@@ -215,6 +218,7 @@ export type ModelIntInput = {
 
 export type UpdateCarInput = {
   id: string,
+  name?: string | null,
   image?: string | null,
   generation?: number | null,
   power?: number | null,
@@ -260,6 +264,7 @@ export type ModelModelFilterInput = {
 
 export type ModelCarFilterInput = {
   id?: ModelIDInput | null,
+  name?: ModelStringInput | null,
   image?: ModelStringInput | null,
   generation?: ModelIntInput | null,
   power?: ModelIntInput | null,
@@ -404,6 +409,7 @@ export type CreateModelMutation = {
       items:  Array< {
         __typename: "Car",
         id: string,
+        name?: string | null,
         image?: string | null,
         generation?: number | null,
         power?: number | null,
@@ -455,6 +461,7 @@ export type UpdateModelMutation = {
       items:  Array< {
         __typename: "Car",
         id: string,
+        name?: string | null,
         image?: string | null,
         generation?: number | null,
         power?: number | null,
@@ -506,6 +513,7 @@ export type DeleteModelMutation = {
       items:  Array< {
         __typename: "Car",
         id: string,
+        name?: string | null,
         image?: string | null,
         generation?: number | null,
         power?: number | null,
@@ -534,6 +542,7 @@ export type CreateCarMutation = {
   createCar?:  {
     __typename: "Car",
     id: string,
+    name?: string | null,
     model?:  {
       __typename: "Model",
       id: string,
@@ -581,6 +590,7 @@ export type UpdateCarMutation = {
   updateCar?:  {
     __typename: "Car",
     id: string,
+    name?: string | null,
     model?:  {
       __typename: "Model",
       id: string,
@@ -628,6 +638,7 @@ export type DeleteCarMutation = {
   deleteCar?:  {
     __typename: "Car",
     id: string,
+    name?: string | null,
     model?:  {
       __typename: "Model",
       id: string,
@@ -759,6 +770,7 @@ export type GetModelQuery = {
       items:  Array< {
         __typename: "Car",
         id: string,
+        name?: string | null,
         image?: string | null,
         generation?: number | null,
         power?: number | null,
@@ -824,6 +836,7 @@ export type GetCarQuery = {
   getCar?:  {
     __typename: "Car",
     id: string,
+    name?: string | null,
     model?:  {
       __typename: "Model",
       id: string,
@@ -874,6 +887,7 @@ export type ListCarsQuery = {
     items:  Array< {
       __typename: "Car",
       id: string,
+      name?: string | null,
       model?:  {
         __typename: "Model",
         id: string,
@@ -1008,6 +1022,7 @@ export type OnCreateModelSubscription = {
       items:  Array< {
         __typename: "Car",
         id: string,
+        name?: string | null,
         image?: string | null,
         generation?: number | null,
         power?: number | null,
@@ -1054,6 +1069,7 @@ export type OnUpdateModelSubscription = {
       items:  Array< {
         __typename: "Car",
         id: string,
+        name?: string | null,
         image?: string | null,
         generation?: number | null,
         power?: number | null,
@@ -1100,6 +1116,7 @@ export type OnDeleteModelSubscription = {
       items:  Array< {
         __typename: "Car",
         id: string,
+        name?: string | null,
         image?: string | null,
         generation?: number | null,
         power?: number | null,
@@ -1123,6 +1140,7 @@ export type OnCreateCarSubscription = {
   onCreateCar?:  {
     __typename: "Car",
     id: string,
+    name?: string | null,
     model?:  {
       __typename: "Model",
       id: string,
@@ -1165,6 +1183,7 @@ export type OnUpdateCarSubscription = {
   onUpdateCar?:  {
     __typename: "Car",
     id: string,
+    name?: string | null,
     model?:  {
       __typename: "Model",
       id: string,
@@ -1207,6 +1226,7 @@ export type OnDeleteCarSubscription = {
   onDeleteCar?:  {
     __typename: "Car",
     id: string,
+    name?: string | null,
     model?:  {
       __typename: "Model",
       id: string,

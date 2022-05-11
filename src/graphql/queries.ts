@@ -77,6 +77,7 @@ export const getModel = /* GraphQL */ `
       cars {
         items {
           id
+          name
           image
           generation
           power
@@ -109,9 +110,21 @@ export const listModels = /* GraphQL */ `
         manufacturer {
           id
           name
+          established
+          founder
+          headquarters
+          about
+          netWorth
+          logo
+          createdAt
+          updatedAt
+        }
+        cars {
+          nextToken
         }
         createdAt
         updatedAt
+        manufacturerModelsId
       }
       nextToken
     }
@@ -121,6 +134,7 @@ export const getCar = /* GraphQL */ `
   query GetCar($id: ID!) {
     getCar(id: $id) {
       id
+      name
       model {
         id
         name
@@ -165,9 +179,12 @@ export const listCars = /* GraphQL */ `
     listCars(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
+        name
         model {
           id
           name
+          createdAt
+          updatedAt
           manufacturerModelsId
         }
         image
@@ -177,6 +194,8 @@ export const listCars = /* GraphQL */ `
         weight
         gearbox
         engine
+        createdAt
+        updatedAt
         modelCarsId
       }
       nextToken

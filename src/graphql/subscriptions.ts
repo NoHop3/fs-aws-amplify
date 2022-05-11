@@ -103,6 +103,7 @@ export const onCreateModel = /* GraphQL */ `
       cars {
         items {
           id
+          name
           image
           generation
           power
@@ -145,6 +146,7 @@ export const onUpdateModel = /* GraphQL */ `
       cars {
         items {
           id
+          name
           image
           generation
           power
@@ -187,6 +189,7 @@ export const onDeleteModel = /* GraphQL */ `
       cars {
         items {
           id
+          name
           image
           generation
           power
@@ -210,6 +213,7 @@ export const onCreateCar = /* GraphQL */ `
   subscription OnCreateCar {
     onCreateCar {
       id
+      name
       model {
         id
         name
@@ -249,6 +253,7 @@ export const onUpdateCar = /* GraphQL */ `
   subscription OnUpdateCar {
     onUpdateCar {
       id
+      name
       model {
         id
         name
@@ -288,6 +293,7 @@ export const onDeleteCar = /* GraphQL */ `
   subscription OnDeleteCar {
     onDeleteCar {
       id
+      name
       model {
         id
         name

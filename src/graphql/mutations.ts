@@ -97,37 +97,38 @@ export const createModel = /* GraphQL */ `
     createModel(input: $input, condition: $condition) {
       id
       name
-      # manufacturer {
-      #   id
-      #   name
-      #   established
-      #   founder
-      #   headquarters
-      #   about
-      #   netWorth
-      #   logo
-      #   models {
-      #     nextToken
-      #   }
-      #   createdAt
-      #   updatedAt
-      # }
-      # cars {
-      #   items {
-      #     id
-      #     image
-      #     generation
-      #     power
-      #     torque
-      #     weight
-      #     gearbox
-      #     engine
-      #     createdAt
-      #     updatedAt
-      #     modelCarsId
-      #   }
-      #   nextToken
-      # }
+      manufacturer {
+        id
+        name
+        established
+        founder
+        headquarters
+        about
+        netWorth
+        logo
+        models {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      cars {
+        items {
+          id
+          name
+          image
+          generation
+          power
+          torque
+          weight
+          gearbox
+          engine
+          createdAt
+          updatedAt
+          modelCarsId
+        }
+        nextToken
+      }
       createdAt
       updatedAt
       manufacturerModelsId
@@ -160,6 +161,7 @@ export const updateModel = /* GraphQL */ `
       cars {
         items {
           id
+          name
           image
           generation
           power
@@ -205,6 +207,7 @@ export const deleteModel = /* GraphQL */ `
       cars {
         items {
           id
+          name
           image
           generation
           power
@@ -231,6 +234,7 @@ export const createCar = /* GraphQL */ `
   ) {
     createCar(input: $input, condition: $condition) {
       id
+      name
       model {
         id
         name
@@ -273,6 +277,7 @@ export const updateCar = /* GraphQL */ `
   ) {
     updateCar(input: $input, condition: $condition) {
       id
+      name
       model {
         id
         name
@@ -315,6 +320,7 @@ export const deleteCar = /* GraphQL */ `
   ) {
     deleteCar(input: $input, condition: $condition) {
       id
+      name
       model {
         id
         name
