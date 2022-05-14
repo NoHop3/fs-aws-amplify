@@ -4404,26 +4404,26 @@ export const carsData = [
     modelCarsId: "88386294-4647-4849-8992-f8ac6378696d",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Saab_93_02.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2002,
+    power: 205,
+    torque: 283,
+    weight: 1490,
   },
-  // Turbo
+  // Turbo X
   {
     id: uuidv4(),
-    name: "Turbo",
+    name: "Turbo X",
     modelCarsId: "88386294-4647-4849-8992-f8ac6378696d",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Saab_93_08.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.8L Turbocharged V6",
+    gearbox: "6-speed Transmission",
+    generation: 2008,
+    power: 280,
+    torque: 400,
+    weight: 1710,
   },
   // Viggen
   {
@@ -4432,26 +4432,26 @@ export const carsData = [
     modelCarsId: "88386294-4647-4849-8992-f8ac6378696d",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/Saab_Viggen.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.3L Turbocharged I4",
+    gearbox: "5-speed Transmission",
+    generation: 2002,
+    power: 230,
+    torque: 350,
+    weight: 1420,
   },
   // Saab 99
   {
     id: uuidv4(),
-    name: "",
+    name: "Turbo",
     modelCarsId: "a1ed6a58-32c0-4eaf-aa3e-9bb6e9158ad9",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Saab_99_78.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I6",
+    gearbox: "4-speed Transmission",
+    generation: 1978,
+    power: 143,
+    torque: 235,
+    weight: 1210,
   },
   //
   /*********************************** Seat ***************************************/
@@ -4463,12 +4463,12 @@ export const carsData = [
     modelCarsId: "e0429d31-6b0f-444d-9579-abe6a489344d",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/SEAT_Cupra_GT_Prototype.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "3.0L Twin-Turbocharged V6",
+    gearbox: "6-speed Transmission",
+    generation: 2005,
+    power: 500,
+    torque: 601,
+    weight: 1150,
   },
   //! Seat Ibiza
   // CUPRA
@@ -4478,12 +4478,12 @@ export const carsData = [
     modelCarsId: "0e00b177-3ac5-4ef3-ad0d-4c227ade0d39",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_Seat_Ibiza_Cupra.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.4L Twin-Charged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2009,
+    power: 177,
+    torque: 249,
+    weight: 1169,
   },
   //! Seat Leon
   // CUPRA R (2010)
@@ -4493,12 +4493,12 @@ export const carsData = [
     modelCarsId: "5123e290-c74b-4443-8c20-4adba794b768",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_Seat_Leon_Cupra_R_2010.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2010,
+    power: 265,
+    torque: 350,
+    weight: 1375,
   },
   // Supercup
   {
@@ -4507,12 +4507,12 @@ export const carsData = [
     modelCarsId: "5123e290-c74b-4443-8c20-4adba794b768",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_Seat_Leon_Supercup.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2007,
+    power: 295,
+    torque: 338,
+    weight: 1100,
   },
   // Cupra R (2003)
   {
@@ -4521,12 +4521,12 @@ export const carsData = [
     modelCarsId: "5123e290-c74b-4443-8c20-4adba794b768",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_Seat_Leon_Cupra_R_2003.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.8L Turbocharged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2003,
+    power: 225,
+    torque: 281,
+    weight: 1366,
   },
   //
   /*********************************** Subaru ***************************************/
@@ -4538,12 +4538,12 @@ export const carsData = [
     modelCarsId: "7ed56574-ff8d-4724-92ae-1f75341ce708",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_BRZ.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Naturally-Aspirated F4",
+    gearbox: "6-speed Transmission",
+    generation: 2013,
+    power: 200,
+    torque: 205,
+    weight: 1254,
   },
   // Fast & Furious Edition
   {
@@ -4552,12 +4552,12 @@ export const carsData = [
     modelCarsId: "7ed56574-ff8d-4724-92ae-1f75341ce708",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_Subaru_BRZ_FF.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Naturally-Aspirated F4",
+    gearbox: "6-speed Transmission",
+    generation: 2013,
+    power: 400,
+    torque: 550,
+    weight: 1191,
   },
   //! Subaru Impreza
   //22B STi
@@ -4567,12 +4567,12 @@ export const carsData = [
     modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_Impreza_98.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.2L Turbocharged F4",
+    gearbox: "5-speed Transmission",
+    generation: 1198,
+    power: 276,
+    torque: 360,
+    weight: 1270,
   },
   //WRX STi (2004)
   {
@@ -4581,12 +4581,12 @@ export const carsData = [
     modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_Impreza_04.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged F4",
+    gearbox: "6-speed Transmission",
+    generation: 2004,
+    power: 278,
+    torque: 394,
+    weight: 1483,
   },
   //WRX STi (2005)
   {
@@ -4595,12 +4595,12 @@ export const carsData = [
     modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_Impreza_05.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged F4",
+    gearbox: "6-speed Transmission",
+    generation: 2005,
+    power: 311,
+    torque: 422,
+    weight: 1504,
   },
   //WRX STi (2008)
   {
@@ -4609,12 +4609,12 @@ export const carsData = [
     modelCarsId: "14719778-f687-463d-8533-3217df9bf261",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_Impreza_08.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.5L Turbocharged F4",
+    gearbox: "6-speed Transmission",
+    generation: 2008,
+    power: 305,
+    torque: 455,
+    weight: 1540,
   },
   //! Subaru WRX STI
   // 2011
@@ -4624,12 +4624,12 @@ export const carsData = [
     modelCarsId: "96390e11-573e-40cb-9195-2eac6fa9c667",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_WRX_11.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.5L Turbocharged F4",
+    gearbox: "6-speed Transmission",
+    generation: 2011,
+    power: 305,
+    torque: 393,
+    weight: 1535,
   },
   // VT15R Rally Car
   {
@@ -4638,12 +4638,12 @@ export const carsData = [
     modelCarsId: "96390e11-573e-40cb-9195-2eac6fa9c667",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Subaru_199_WRX.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged F4",
+    gearbox: "6-speed Transmission",
+    generation: 2016,
+    power: 330,
+    torque: 651,
+    weight: 1315,
   },
   // Fast & Furious Edition
   {
@@ -4652,42 +4652,42 @@ export const carsData = [
     modelCarsId: "96390e11-573e-40cb-9195-2eac6fa9c667",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_Subaru_WRX_15_FF.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.5L Turbocharged F4",
+    gearbox: "6-speed Transmission",
+    generation: 2016,
+    power: 475,
+    torque: 610,
+    weight: 1551,
   },
   //
   /*********************************** Suzuki ***************************************/
   // Suzuki Liana
   {
     id: uuidv4(),
-    name: "",
+    name: "GLX",
     modelCarsId: "e79c8986-c3e1-4ac3-b8c4-571b78c26621",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Suzuki_Liana_02.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.6L Naturally-Aspirated I4",
+    gearbox: "5-speed Transmission",
+    generation: 2002,
+    power: 104,
+    torque: 144,
+    weight: 1160,
   },
   // Suzuki SX4
   {
     id: uuidv4(),
-    name: "",
+    name: "Sportback",
     modelCarsId: "aa6aabcb-e2e7-4189-bc11-6e942ed04dc8",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Suzuki_SX4_11.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Naturally-Aspirated I4",
+    gearbox: "5-speed Transmission",
+    generation: 2011,
+    power: 150,
+    torque: 190,
+    weight: 1240,
   },
   //
   /*********************************** Tesla ***************************************/
@@ -4699,12 +4699,12 @@ export const carsData = [
     modelCarsId: "63197517-8b64-4850-9bc9-57949650b66c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Tesla_Model_14.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "Dual Motor, 3-phase AC Induction Motor",
+    gearbox: "1-speed Transmission",
+    generation: 2014,
+    power: 416,
+    torque: 600,
+    weight: 2154,
   },
   // P85D
   {
@@ -4713,12 +4713,12 @@ export const carsData = [
     modelCarsId: "63197517-8b64-4850-9bc9-57949650b66c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_X360_Tesla_Model_P85S.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "Dual Motor, 3-phase AC Induction Motor",
+    gearbox: "1-speed Transmission",
+    generation: 2015,
+    power: 691,
+    torque: 931,
+    weight: 2191,
   },
   // P90D
   {
@@ -4727,12 +4727,12 @@ export const carsData = [
     modelCarsId: "63197517-8b64-4850-9bc9-57949650b66c",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Tesla_Model.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "Dual Motor, 3-phase AC Induction Motor",
+    gearbox: "1-speed Transmission",
+    generation: 2016,
+    power: 532,
+    torque: 967,
+    weight: 2196,
   },
   // Tesla Roadster
   {
@@ -4741,12 +4741,12 @@ export const carsData = [
     modelCarsId: "6a2702b9-ddea-45dc-a3c4-2b259eb2eb1f",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_X360_Tesla_Roadster.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "Dual Motor, 4-Pole AC Induction Motor",
+    gearbox: "1-speed Transmission",
+    generation: 2011,
+    power: 288,
+    torque: 400,
+    weight: 1235,
   },
   //
   /*********************************** Toyota ***************************************/
@@ -4758,12 +4758,12 @@ export const carsData = [
     modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/Toyota_Celica_SS-1_2003.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.8L Naturally-Aspirated I4",
+    gearbox: "6-speed Transmission",
+    generation: 2003,
+    power: 187,
+    torque: 180,
+    weight: 1161,
   },
   // GT
   {
@@ -4772,12 +4772,12 @@ export const carsData = [
     modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Celica_74_FH4.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Naturally-Aspirated I4",
+    gearbox: "5-speed Transmission",
+    generation: 1974,
+    power: 97,
+    torque: 144,
+    weight: 1085,
   },
   // Supra
   {
@@ -4786,40 +4786,40 @@ export const carsData = [
     modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_Toyota_CelicaSupra.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.8L Naturally-Aspirated I6",
+    gearbox: "5-speed Transmission",
+    generation: 1984,
+    power: 160,
+    torque: 221,
+    weight: 1381,
   },
   // GT-Four ST205
   {
     id: uuidv4(),
-    name: "",
+    name: "GT-Four ST205",
     modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Celica_94_FH4.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I4",
+    gearbox: "5-speed Transmission",
+    generation: 1994,
+    power: 255,
+    torque: 304,
+    weight: 1440,
   },
   // GT-Four RC ST185
   {
     id: uuidv4(),
-    name: "",
+    name: "GT-Four RC ST185",
     modelCarsId: "18d690f9-0e80-4a4f-874e-151755b81094",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Celica_92_FH4.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I4",
+    gearbox: "5-speed Transmission",
+    generation: 1992,
+    power: 232,
+    torque: 304,
+    weight: 1460,
   },
   // Toyota GT86
   {
@@ -4828,40 +4828,42 @@ export const carsData = [
     modelCarsId: "acacf848-d22a-4965-8a5f-cec1d597341b",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_GT86_FH4.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Naturally-Aspirated F4",
+    gearbox: "6-speed Transmission",
+    generation: 2013,
+    power: 197,
+    torque: 205,
+    weight: 1240,
   },
-  // Toyota Hilux
+  //! Toyota Hilux
+  // Arctic Trucks AT38
   {
     id: uuidv4(),
-    name: "",
+    name: "Arctic Trucks AT38",
     modelCarsId: "9a4f5e6e-af89-4ec8-a51c-436d4551d350",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Hilux.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "3.0L Turbocharged I4",
+    gearbox: "5-speed Transmission",
+    generation: 2007,
+    power: 169,
+    torque: 359,
+    weight: 2150,
   },
-  // Toyota Sprinter
+  //! Toyota Sprinter
+  // Trueno GT Apex
   {
     id: uuidv4(),
-    name: "",
+    name: "Trueno GT Apex",
     modelCarsId: "b77578b5-e716-487c-b4be-2d66b9a27d3e",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Sprinter_FH4.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.6L Naturally-Aspirated I4",
+    gearbox: "5-speed Transmission",
+    generation: 1985,
+    power: 128,
+    torque: 149,
+    weight: 950,
   },
   //! Toyota Supra
   // RZ
@@ -4871,12 +4873,12 @@ export const carsData = [
     modelCarsId: "92c2b7a5-5f6d-4d80-b3ae-975e1c21a130",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Supra_98_FH4.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "3.0L Twin-Turbocharged I6",
+    gearbox: "6-speed Transmission",
+    generation: 1998,
+    power: 320,
+    torque: 427,
+    weight: 1510,
   },
   // 2.0 GT
   {
@@ -4885,12 +4887,12 @@ export const carsData = [
     modelCarsId: "92c2b7a5-5f6d-4d80-b3ae-975e1c21a130",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Toyota_Supra_92_FH4.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Twin-Turbocharged I6",
+    gearbox: "5-speed Transmission",
+    generation: 1992,
+    power: 206,
+    torque: 275,
+    weight: 1510,
   },
   // GT500
   {
@@ -4899,12 +4901,26 @@ export const carsData = [
     modelCarsId: "92c2b7a5-5f6d-4d80-b3ae-975e1c21a130",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/Toyota_Supra_GT500.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "4.5L Naturally-Aspirated V8",
+    gearbox: "6-speed Transmission",
+    generation: 2005,
+    power: 468,
+    torque: 484,
+    weight: 1100,
+  },
+  // Fast & Furious Edition
+  {
+    id: uuidv4(),
+    name: "Fast & Furious Edition",
+    modelCarsId: "92c2b7a5-5f6d-4d80-b3ae-975e1c21a130",
+    image:
+      "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/Toyota_Supra_GT500.webp",
+    engine: "3.0L Turbocharged I6",
+    gearbox: "6-speed Transmission",
+    generation: 1995,
+    power: 779,
+    torque: 872,
+    weight: 1510,
   },
   //
   /*********************************** Volkswagen ***************************************/
@@ -4916,12 +4932,12 @@ export const carsData = [
     modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Beetle.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.5L Naturally-Aspirated F4",
+    gearbox: "4-speed Transmission",
+    generation: 1963,
+    power: 40,
+    torque: 88,
+    weight: 798,
   },
   // Global RallyCross
   {
@@ -4930,12 +4946,12 @@ export const carsData = [
     modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_GRC.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.6L Turbocharged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2014,
+    power: 536,
+    torque: 525,
+    weight: 1210,
   },
   // 34 Andretti Rallycross
   {
@@ -4944,12 +4960,12 @@ export const carsData = [
     modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_34_Beetle.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2017,
+    power: 553,
+    torque: 629,
+    weight: 1210,
   },
   // Beetle (2004)
   {
@@ -4958,12 +4974,12 @@ export const carsData = [
     modelCarsId: "98d474fc-49e7-4495-ac13-b26c51cec029",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_VW_Beetle_04.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.8L Turbocharged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2004,
+    power: 180,
+    torque: 235,
+    weight: 1363,
   },
   //! Volkswagen Corrado
   // VR6
@@ -4973,12 +4989,12 @@ export const carsData = [
     modelCarsId: "1e565560-7aa8-4aae-b793-358032543bcd",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Corrado.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.8L Naturally-Aspirated V6",
+    gearbox: "5-speed Transmission",
+    generation: 1995,
+    power: 178,
+    torque: 240,
+    weight: 1240,
   },
 
   //! Volkswagen Golf
@@ -4989,12 +5005,12 @@ export const carsData = [
     modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Golf_10.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2010,
+    power: 267,
+    torque: 345,
+    weight: 1446,
   },
   // R32
   {
@@ -5003,12 +5019,12 @@ export const carsData = [
     modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Golf_03.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "3.2L Naturally-Aspirated V6",
+    gearbox: "6-speed Transmission",
+    generation: 2003,
+    power: 241,
+    torque: 320,
+    weight: 1477,
   },
   // Gti 16v Mk2
   {
@@ -5017,12 +5033,12 @@ export const carsData = [
     modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Golf_92.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.8L Naturally-Aspirated I4",
+    gearbox: "5-speed Transmission",
+    generation: 1992,
+    power: 139,
+    torque: 163,
+    weight: 1100,
   },
   // R (2014)
   {
@@ -5031,12 +5047,12 @@ export const carsData = [
     modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Golf_14.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I4",
+    gearbox: "6-speed Transmission  ",
+    generation: 2014,
+    power: 296,
+    torque: 384,
+    weight: 1476,
   },
   // GTI
   {
@@ -5045,12 +5061,12 @@ export const carsData = [
     modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Golf_83.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.8L Naturally-Aspirated I4",
+    gearbox: "5-speed Transmission",
+    generation: 1983,
+    power: 112,
+    torque: 148,
+    weight: 866,
   },
   // GTI 2006
   {
@@ -5059,12 +5075,12 @@ export const carsData = [
     modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_VW_Golf_GTI_06.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2006,
+    power: 197,
+    torque: 279,
+    weight: 1330,
   },
   // GTI VR6 Mk3
   {
@@ -5073,26 +5089,26 @@ export const carsData = [
     modelCarsId: "6b94ef1f-0baa-48d6-83cd-fcc4f6179a50",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_GTI.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.8L Naturally-Aspirated V6",
+    gearbox: "5-speed Transmission",
+    generation: 1998,
+    power: 172,
+    torque: 235,
+    weight: 1270,
   },
   // Volkswagen Rabbit
   {
     id: uuidv4(),
-    name: "",
+    name: "GTI",
     modelCarsId: "ed3487dc-ef87-45ff-84bc-e1b6f4d08874",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_VW_Rabbit.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.6L Naturally-Aspirated I4",
+    gearbox: "5-speed Transmission",
+    generation: 1984,
+    power: 90,
+    torque: 142,
+    weight: 953,
   },
   //! Volkswagen Scirocco
   // R
@@ -5102,12 +5118,12 @@ export const carsData = [
     modelCarsId: "15cfc310-7510-4aa1-8a79-f0440677ad84",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Scirocco_11.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.0L Turbocharged I4",
+    gearbox: "6-speed Transmission",
+    generation: 2011,
+    power: 261,
+    torque: 350,
+    weight: 1344,
   },
   // S
   {
@@ -5116,42 +5132,42 @@ export const carsData = [
     modelCarsId: "15cfc310-7510-4aa1-8a79-f0440677ad84",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_VW_Scirocco_81.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "1.7L Naturally-Aspirated I4",
+    gearbox: "5-speed Transmission",
+    generation: 1981,
+    power: 74,
+    torque: 121,
+    weight: 914,
   },
   //
   /*********************************** Volvo ***************************************/
   // Volvo 242
   {
     id: uuidv4(),
-    name: "",
+    name: "Turbo Edition",
     modelCarsId: "b0ce5ab2-cf3b-485a-a9b9-a2c21b0f5975",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Volvo_242.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.1L Turbocharged I4",
+    gearbox: "5-speed Transmission",
+    generation: 1983,
+    power: 225,
+    torque: 339,
+    weight: 971,
   },
   // Volvo 850
   {
     id: uuidv4(),
-    name: "",
+    name: "R",
     modelCarsId: "0c1ce1a0-8838-4c59-852d-c75e61baf621",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Volvo_850.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.3L Turbocharged I5",
+    gearbox: "5-speed Transmission",
+    generation: 1997,
+    power: 240,
+    torque: 300,
+    weight: 1465,
   },
   //! Volvo S60
   // STCC
@@ -5161,12 +5177,12 @@ export const carsData = [
     modelCarsId: "b645e035-0d73-40ad-aea1-e8936e50bdcc",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_Volvo_1_S60.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "3.5L Naturally-Aspirated V6",
+    gearbox: "6-speed Transmission",
+    generation: 2014,
+    power: 420,
+    torque: 412,
+    weight: 1200,
   },
   // Polestar
   {
@@ -5175,12 +5191,12 @@ export const carsData = [
     modelCarsId: "b645e035-0d73-40ad-aea1-e8936e50bdcc",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB1_Volvo_S60.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "3.0L Turbocharged I6",
+    gearbox: "6-speed Transmission",
+    generation: 2015,
+    power: 346,
+    torque: 500,
+    weight: 1671,
   },
   // R
   {
@@ -5189,12 +5205,12 @@ export const carsData = [
     modelCarsId: "b645e035-0d73-40ad-aea1-e8936e50bdcc",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/FM4_Volvo_S60-R.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "2.5L Turbocharged I5",
+    gearbox: "6-speed Transmission",
+    generation: 2004,
+    power: 300,
+    torque: 400,
+    weight: 1620,
   },
   // R-Design
   {
@@ -5203,12 +5219,12 @@ export const carsData = [
     modelCarsId: "b645e035-0d73-40ad-aea1-e8936e50bdcc",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/MOT_XB360_Volvo_S60R_11.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "3.0L Turbocharged I6",
+    gearbox: "6-speed Transmission",
+    generation: 2011,
+    power: 300,
+    torque: 439,
+    weight: 1729,
   },
   //! Volvo V60
   // Polestar
@@ -5218,11 +5234,11 @@ export const carsData = [
     modelCarsId: "dffee83f-ef61-482b-b6e4-1f030d78f34e",
     image:
       "https://amplifyfsf73d60c5428e439e90effb7e77eac604151230-dev.s3.eu-central-1.amazonaws.com/cars/HOR_XB1_Volvo_V60.webp",
-    engine: "",
-    gearbox: "",
-    generation: 0,
-    power: 0,
-    torque: 0,
-    weight: 0,
+    engine: "3.0L Turbocharged I6",
+    gearbox: "6-speed Transmission",
+    generation: 2015,
+    power: 346,
+    torque: 499,
+    weight: 1808,
   },
 ];
