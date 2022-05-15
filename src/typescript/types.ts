@@ -21,6 +21,7 @@ export type Model = {
 
 export type Car = {
   id: String;
+  name: String;
   model: Model;
   generation: Number;
   power: Number;
