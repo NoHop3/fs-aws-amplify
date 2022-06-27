@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
+import styled, { keyframes } from "styled-components";
+
 
 export const Error = () => {
   return (
-    <div>Error</div>
-  )
-}
+    <h1>Error</h1>
+  );
+};
