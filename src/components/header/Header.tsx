@@ -15,6 +15,8 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
+import Slide from "@mui/material/Slide";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { Logo } from "./Logo.styled";
 
 const Search = styled("div")(({ theme }) => ({
@@ -65,6 +67,23 @@ interface Props {
    * You won't need it on your project.
    */
   window?: () => Window;
+  children: React.ReactElement;
+}
+
+function HideOnScroll(props: Props) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+  });
+
+  return (
+    <Slide appear={false} direction='down' in={!trigger}>
+      {children}
+    </Slide>
+  );
 }
 
 const drawerWidth = 240;
@@ -101,37 +120,39 @@ export default function DrawerAppBar(props: Props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component='nav'>
-        <Toolbar>
-          <IconButton
-            color='inherit'
-            aria-label='open drawer'
-            edge='start'
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}>
-            <MenuIcon />
-          </IconButton>
-          <Box sx={{ flexGrow: 1 }}>
-          <Logo src="/images/stgdev__logo__dark.png"/>
-          </Box>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
-            ))}
-          </Box>
-          <Search sx={{ width: 250 }}>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder='Search…'
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
-        </Toolbar>
-      </AppBar>
+      <HideOnScroll {...props}>
+        <AppBar component='nav' color="inherit">
+          <Toolbar>
+            <IconButton
+              color='inherit'
+              aria-label='open drawer'
+              edge='start'
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: "none" } }}>
+              <MenuIcon />
+            </IconButton>
+            <Box sx={{ flexGrow: 1 }}>
+              <Logo src='/images/stgdev__logo__dark.png' />
+            </Box>
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              {navItems.map((item) => (
+                <Button key={item} sx={{ color: "#fff" }}>
+                  {item}
+                </Button>
+              ))}
+            </Box>
+            <Search sx={{ width: 250 }}>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder='Search…'
+                inputProps={{ "aria-label": "search" }}
+              />
+            </Search>
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
       <Box component='nav'>
         <Drawer
           container={container}
@@ -151,7 +172,8 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box component='main' sx={{ m: 5 }}>
+      <Box component='main' sx={{ m: 4, p:1 }}>
+
       </Box>
     </Box>
   );
