@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled, alpha } from "@mui/material/styles";
+import { styled, alpha, useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
@@ -92,6 +92,7 @@ const navItems = ["Home", "Manufacturers", "Cars", "About"];
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const theme = useTheme();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -121,7 +122,7 @@ export default function DrawerAppBar(props: Props) {
   return (
     <Box sx={{ display: "flex" }}>
       <HideOnScroll {...props}>
-        <AppBar component='nav' color="inherit">
+        <AppBar component='nav'>
           <Toolbar>
             <IconButton
               color='inherit'
@@ -172,9 +173,7 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box component='main' sx={{ m: 4, p:1 }}>
-
-      </Box>
+      <Box component='main' sx={{ m: 4, p: 1 }}></Box>
     </Box>
   );
 }

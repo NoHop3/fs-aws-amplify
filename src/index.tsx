@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "./styles/Theme";
 import { Amplify } from "aws-amplify";
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
@@ -12,7 +15,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
