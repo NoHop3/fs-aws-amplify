@@ -12,6 +12,7 @@ export default function Cars() {
       const CarsData = (await API.graphql(graphqlOperation(listCars))) as any;
       const Cars = CarsData.data.listCars.items;
       setCars(Cars);
+      console.log(Cars);
     } catch (error) {
       console.error(error);
     }
