@@ -1,35 +1,35 @@
 export type Manufacturer = {
-  id: String;
-  name: String;
-  established: String;
-  headquarters: String;
-  founder: String;
-  about: String;
-  logo: String;
-  createdAt: String;
-  updatedAt: String;
-  netWorth: String;
+  id: string;
+  name: string;
+  established: string;
+  headquarters: string;
+  founder: string;
+  about: string;
+  logo: string;
+  createdAt: string;
+  updatedAt: string;
+  netWorth: string;
 };
 
 export type Model = {
-  id: String;
-  name: String;
-  createdAt: String;
-  updatedAt: String;
+  id: string;
+  name: string;
+  createdAt: string;
+  updatedAt: string;
   manufacturer: Manufacturer;
 };
 
 export type Car = {
-  id: String;
-  name: String;
+  id: string;
+  name: string;
   model: Model;
-  generation: Number;
-  power: Number;
-  torque: Number;
-  engine: String;
-  gearbox: String;
-  weight: Number;
-  image: String;
-  createdAt: String;
-  updatedAt: String;
+  generation: number;
+  power: number;
+  torque: number;
+  engine: string;
+  gearbox: string;
+  weight: number;
+  image: string;
+  createdAt: string;
+  updatedAt: string;
 };
