@@ -14,6 +14,18 @@
     "categories": {
       "auth": {
         "amplifyfsee1615cf": {}
+      },
+      "storage": {
+        "s3Images": {}
+      },
+      "function": {
+        "graphQlLambdaAuthorizerc220a46c": {
+          "deploymentBucketName": "amplify-amplifyfs-dev-151230-deployment",
+          "s3Key": "amplify-builds/graphQlLambdaAuthorizerc220a46c-7a715572325973543931-build.zip"
+        }
+      },
+      "api": {
+        "amplifyfs": {}
       }
     }
   }

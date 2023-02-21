@@ -278,6 +278,82 @@ export type ModelCarFilterInput = {
   modelCarsId?: ModelIDInput | null,
 };
 
+export type ModelSubscriptionManufacturerFilterInput = {
+  id?: ModelSubscriptionIDInput | null,
+  name?: ModelSubscriptionStringInput | null,
+  established?: ModelSubscriptionStringInput | null,
+  founder?: ModelSubscriptionStringInput | null,
+  headquarters?: ModelSubscriptionStringInput | null,
+  about?: ModelSubscriptionStringInput | null,
+  netWorth?: ModelSubscriptionStringInput | null,
+  logo?: ModelSubscriptionStringInput | null,
+  and?: Array< ModelSubscriptionManufacturerFilterInput | null > | null,
+  or?: Array< ModelSubscriptionManufacturerFilterInput | null > | null,
+};
+
+export type ModelSubscriptionIDInput = {
+  ne?: string | null,
+  eq?: string | null,
+  le?: string | null,
+  lt?: string | null,
+  ge?: string | null,
+  gt?: string | null,
+  contains?: string | null,
+  notContains?: string | null,
+  between?: Array< string | null > | null,
+  beginsWith?: string | null,
+  in?: Array< string | null > | null,
+  notIn?: Array< string | null > | null,
+};
+
+export type ModelSubscriptionStringInput = {
+  ne?: string | null,
+  eq?: string | null,
+  le?: string | null,
+  lt?: string | null,
+  ge?: string | null,
+  gt?: string | null,
+  contains?: string | null,
+  notContains?: string | null,
+  between?: Array< string | null > | null,
+  beginsWith?: string | null,
+  in?: Array< string | null > | null,
+  notIn?: Array< string | null > | null,
+};
+
+export type ModelSubscriptionModelFilterInput = {
+  id?: ModelSubscriptionIDInput | null,
+  name?: ModelSubscriptionStringInput | null,
+  and?: Array< ModelSubscriptionModelFilterInput | null > | null,
+  or?: Array< ModelSubscriptionModelFilterInput | null > | null,
+};
+
+export type ModelSubscriptionCarFilterInput = {
+  id?: ModelSubscriptionIDInput | null,
+  name?: ModelSubscriptionStringInput | null,
+  image?: ModelSubscriptionStringInput | null,
+  generation?: ModelSubscriptionIntInput | null,
+  power?: ModelSubscriptionIntInput | null,
+  torque?: ModelSubscriptionIntInput | null,
+  weight?: ModelSubscriptionIntInput | null,
+  gearbox?: ModelSubscriptionStringInput | null,
+  engine?: ModelSubscriptionStringInput | null,
+  and?: Array< ModelSubscriptionCarFilterInput | null > | null,
+  or?: Array< ModelSubscriptionCarFilterInput | null > | null,
+};
+
+export type ModelSubscriptionIntInput = {
+  ne?: number | null,
+  eq?: number | null,
+  le?: number | null,
+  lt?: number | null,
+  ge?: number | null,
+  gt?: number | null,
+  between?: Array< number | null > | null,
+  in?: Array< number | null > | null,
+  notIn?: Array< number | null > | null,
+};
+
 export type CreateManufacturerMutationVariables = {
   input: CreateManufacturerInput,
   condition?: ModelManufacturerConditionInput | null,
@@ -911,6 +987,10 @@ export type ListCarsQuery = {
   } | null,
 };
 
+export type OnCreateManufacturerSubscriptionVariables = {
+  filter?: ModelSubscriptionManufacturerFilterInput | null,
+};
+
 export type OnCreateManufacturerSubscription = {
   onCreateManufacturer?:  {
     __typename: "Manufacturer",
@@ -937,6 +1017,10 @@ export type OnCreateManufacturerSubscription = {
     createdAt: string,
     updatedAt: string,
   } | null,
+};
+
+export type OnUpdateManufacturerSubscriptionVariables = {
+  filter?: ModelSubscriptionManufacturerFilterInput | null,
 };
 
 export type OnUpdateManufacturerSubscription = {
@@ -967,6 +1051,10 @@ export type OnUpdateManufacturerSubscription = {
   } | null,
 };
 
+export type OnDeleteManufacturerSubscriptionVariables = {
+  filter?: ModelSubscriptionManufacturerFilterInput | null,
+};
+
 export type OnDeleteManufacturerSubscription = {
   onDeleteManufacturer?:  {
     __typename: "Manufacturer",
@@ -993,6 +1081,10 @@ export type OnDeleteManufacturerSubscription = {
     createdAt: string,
     updatedAt: string,
   } | null,
+};
+
+export type OnCreateModelSubscriptionVariables = {
+  filter?: ModelSubscriptionModelFilterInput | null,
 };
 
 export type OnCreateModelSubscription = {
@@ -1042,6 +1134,10 @@ export type OnCreateModelSubscription = {
   } | null,
 };
 
+export type OnUpdateModelSubscriptionVariables = {
+  filter?: ModelSubscriptionModelFilterInput | null,
+};
+
 export type OnUpdateModelSubscription = {
   onUpdateModel?:  {
     __typename: "Model",
@@ -1087,6 +1183,10 @@ export type OnUpdateModelSubscription = {
     updatedAt: string,
     manufacturerModelsId?: string | null,
   } | null,
+};
+
+export type OnDeleteModelSubscriptionVariables = {
+  filter?: ModelSubscriptionModelFilterInput | null,
 };
 
 export type OnDeleteModelSubscription = {
@@ -1136,6 +1236,10 @@ export type OnDeleteModelSubscription = {
   } | null,
 };
 
+export type OnCreateCarSubscriptionVariables = {
+  filter?: ModelSubscriptionCarFilterInput | null,
+};
+
 export type OnCreateCarSubscription = {
   onCreateCar?:  {
     __typename: "Car",
@@ -1179,6 +1283,10 @@ export type OnCreateCarSubscription = {
   } | null,
 };
 
+export type OnUpdateCarSubscriptionVariables = {
+  filter?: ModelSubscriptionCarFilterInput | null,
+};
+
 export type OnUpdateCarSubscription = {
   onUpdateCar?:  {
     __typename: "Car",
@@ -1220,6 +1328,10 @@ export type OnUpdateCarSubscription = {
     updatedAt: string,
     modelCarsId?: string | null,
   } | null,
+};
+
+export type OnDeleteCarSubscriptionVariables = {
+  filter?: ModelSubscriptionCarFilterInput | null,
 };
 
 export type OnDeleteCarSubscription = {

@@ -3,12 +3,23 @@
   "serviceConfiguration": {
     "apiName": "amplifyfs",
     "serviceName": "AppSync",
-    "gqlSchemaPath": "C:\\Users\\bird\\Documents\\GitHub\\fs-aws-amplify\\amplify\\backend\\api\\amplifyfs\\schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
-      "expirationTime": 30,
-      "apiKeyExpirationDate": "2022-06-04T13:21:10.568Z",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2024-02-21T22:15:55.587Z",
       "keyDescription": ""
-    }
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authamplifyfsee1615cf"
+      },
+      {
+        "mode": "AWS_LAMBDA",
+        "lambdaFunction": "graphQlLambdaAuthorizerc220a46c",
+        "ttlSeconds": "300"
+      }
+    ]
   }
 }

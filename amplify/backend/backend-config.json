@@ -1,14 +1,36 @@
 {
   "api": {
     "amplifyfs": {
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "amplifyfsee1615cf"
+        }
+      ],
       "output": {
         "authConfig": {
-          "additionalAuthenticationProviders": [],
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authamplifyfsee1615cf"
+              }
+            },
+            {
+              "authenticationType": "AWS_LAMBDA",
+              "lambdaAuthorizerConfig": {
+                "lambdaFunction": "graphQlLambdaAuthorizerc220a46c",
+                "ttlSeconds": "300"
+              }
+            }
+          ],
           "defaultAuthentication": {
             "apiKeyConfig": {
-              "apiKeyExpirationDate": "2022-06-04T13:21:10.568Z",
-              "apiKeyExpirationDays": 30,
+              "apiKeyExpirationDate": "2024-02-21T22:15:55.587Z",
+              "apiKeyExpirationDays": 365,
               "description": ""
             },
             "authenticationType": "API_KEY"
@@ -43,6 +65,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "graphQlLambdaAuthorizerc220a46c": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_graphQlLambdaAuthorizerc220a46c_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizerc220a46c"
+        }
+      ]
+    },
+    "AMPLIFY_function_graphQlLambdaAuthorizerc220a46c_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizerc220a46c"
+        }
+      ]
     }
   },
   "storage": {

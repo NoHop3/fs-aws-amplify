@@ -3,8 +3,10 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateManufacturer = /* GraphQL */ `
-  subscription OnCreateManufacturer {
-    onCreateManufacturer {
+  subscription OnCreateManufacturer(
+    $filter: ModelSubscriptionManufacturerFilterInput
+  ) {
+    onCreateManufacturer(filter: $filter) {
       id
       name
       established
@@ -29,8 +31,10 @@ export const onCreateManufacturer = /* GraphQL */ `
   }
 `;
 export const onUpdateManufacturer = /* GraphQL */ `
-  subscription OnUpdateManufacturer {
-    onUpdateManufacturer {
+  subscription OnUpdateManufacturer(
+    $filter: ModelSubscriptionManufacturerFilterInput
+  ) {
+    onUpdateManufacturer(filter: $filter) {
       id
       name
       established
@@ -55,8 +59,10 @@ export const onUpdateManufacturer = /* GraphQL */ `
   }
 `;
 export const onDeleteManufacturer = /* GraphQL */ `
-  subscription OnDeleteManufacturer {
-    onDeleteManufacturer {
+  subscription OnDeleteManufacturer(
+    $filter: ModelSubscriptionManufacturerFilterInput
+  ) {
+    onDeleteManufacturer(filter: $filter) {
       id
       name
       established
@@ -81,8 +87,8 @@ export const onDeleteManufacturer = /* GraphQL */ `
   }
 `;
 export const onCreateModel = /* GraphQL */ `
-  subscription OnCreateModel {
-    onCreateModel {
+  subscription OnCreateModel($filter: ModelSubscriptionModelFilterInput) {
+    onCreateModel(filter: $filter) {
       id
       name
       manufacturer {
@@ -124,8 +130,8 @@ export const onCreateModel = /* GraphQL */ `
   }
 `;
 export const onUpdateModel = /* GraphQL */ `
-  subscription OnUpdateModel {
-    onUpdateModel {
+  subscription OnUpdateModel($filter: ModelSubscriptionModelFilterInput) {
+    onUpdateModel(filter: $filter) {
       id
       name
       manufacturer {
@@ -167,8 +173,8 @@ export const onUpdateModel = /* GraphQL */ `
   }
 `;
 export const onDeleteModel = /* GraphQL */ `
-  subscription OnDeleteModel {
-    onDeleteModel {
+  subscription OnDeleteModel($filter: ModelSubscriptionModelFilterInput) {
+    onDeleteModel(filter: $filter) {
       id
       name
       manufacturer {
@@ -210,8 +216,8 @@ export const onDeleteModel = /* GraphQL */ `
   }
 `;
 export const onCreateCar = /* GraphQL */ `
-  subscription OnCreateCar {
-    onCreateCar {
+  subscription OnCreateCar($filter: ModelSubscriptionCarFilterInput) {
+    onCreateCar(filter: $filter) {
       id
       name
       model {
@@ -250,8 +256,8 @@ export const onCreateCar = /* GraphQL */ `
   }
 `;
 export const onUpdateCar = /* GraphQL */ `
-  subscription OnUpdateCar {
-    onUpdateCar {
+  subscription OnUpdateCar($filter: ModelSubscriptionCarFilterInput) {
+    onUpdateCar(filter: $filter) {
       id
       name
       model {
@@ -290,8 +296,8 @@ export const onUpdateCar = /* GraphQL */ `
   }
 `;
 export const onDeleteCar = /* GraphQL */ `
-  subscription OnDeleteCar {
-    onDeleteCar {
+  subscription OnDeleteCar($filter: ModelSubscriptionCarFilterInput) {
+    onDeleteCar(filter: $filter) {
       id
       name
       model {

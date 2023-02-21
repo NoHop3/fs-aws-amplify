@@ -235,28 +235,28 @@ export const createCar = /* GraphQL */ `
     createCar(input: $input, condition: $condition) {
       id
       name
-      # model {
-      #   id
-      #   name
-      #   manufacturer {
-      #     id
-      #     name
-      #     established
-      #     founder
-      #     headquarters
-      #     about
-      #     netWorth
-      #     logo
-      #     createdAt
-      #     updatedAt
-      #   }
-      #   cars {
-      #     nextToken
-      #   }
-      #   createdAt
-      #   updatedAt
-      #   manufacturerModelsId
-      # }
+      model {
+        id
+        name
+        manufacturer {
+          id
+          name
+          established
+          founder
+          headquarters
+          about
+          netWorth
+          logo
+          createdAt
+          updatedAt
+        }
+        cars {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        manufacturerModelsId
+      }
       image
       generation
       power
