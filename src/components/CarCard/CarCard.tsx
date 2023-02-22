@@ -19,7 +19,7 @@ export default function CarCard({ ...props }: Car) {
       {props.model && (
         <CarModelWrapper>
           <CarModel>{props.model.name}</CarModel>
-          <CarLogo>{props.model.manufacturer.logo}</CarLogo>
+          <CarLogo src={props.model.manufacturer.logo} alt={props.model.manufacturer.name} />
         </CarModelWrapper>
       )}
       <CarInfoWrapper>

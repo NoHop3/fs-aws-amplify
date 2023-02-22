@@ -25,7 +25,7 @@ export default function Cars() {
   return (
     <>
       {cars.map((car: Car) => (
-        <CarCard {...car} />
+        <CarCard key={car.id} {...car} />
       ))}
     </>
   );

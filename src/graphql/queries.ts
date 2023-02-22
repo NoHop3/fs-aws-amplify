@@ -183,6 +183,10 @@ export const listCars = /* GraphQL */ `
         model {
           id
           name
+          manufacturer {
+          id
+          logo
+        }
           createdAt
           updatedAt
           manufacturerModelsId
