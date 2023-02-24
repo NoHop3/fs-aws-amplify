@@ -1,10 +1,24 @@
+import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import styled from "styled-components";
 
-export const CarWrapper = styled(Box)`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
+export const CarWrapper = styled(Grid)`
+  display grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+`;
+
+export const CarCardWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 2rem 0;
   padding: 1rem;
   border-radius: 1rem;
@@ -15,16 +29,6 @@ export const CarWrapper = styled(Box)`
   &:hover {
     transform: scale(1.05);
   }
-
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (max-width: 600px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
 `;
 
 export const CarImage = styled.img`
@@ -34,41 +38,52 @@ export const CarImage = styled.img`
   border-radius: 1rem;
 `;
 
-export const CarName = styled.h3`
-  margin: 1rem 0;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-`;
-
-export const CarModelWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const CarModel = styled.h4`
-  margin: 0.5rem 0;
+export const CarName = styled(Typography)`
+  margin: 1rem;
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
 `;
 
-export const CarLogo = styled.img`
-  width: 3rem;
-  height: 3rem;
-  object-fit: cover;
-  border-radius: 50%;
-`;
-
-export const CarInfoWrapper = styled.div`
+export const CarModelWrapper = styled(Box)`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0;
 `;
 
-export const CarInfo = styled.p`
+export const CarModel = styled(Typography)`
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  white-space: pre;
+`;
+
+export const CarLogo = styled.img`
+  margin: 0 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+`;
+
+export const CarInfoWrapper = styled(Box)`
+  width: calc(100% - 2rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
+export const CarInfo = styled(Typography)`
   margin: 0 0.5rem;
   font-size: 1rem;
   font-weight: 400;

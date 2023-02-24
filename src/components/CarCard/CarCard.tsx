@@ -8,28 +8,31 @@ import {
   CarModel,
   CarModelWrapper,
   CarName,
-  CarWrapper,
+  CarCardWrapper,
 } from "./CarCard.styled";
 
 export default function CarCard({ ...props }: Car) {
   return (
-    <CarWrapper>
+    <CarCardWrapper>
       {props.image && <CarImage src={props.image} alt={props.name} />}
-      {props.name && <CarName>{props.name}</CarName>}
       {props.model && (
         <CarModelWrapper>
-          <CarModel>{props.model.name}</CarModel>
-          <CarLogo src={props.model.manufacturer.logo} alt={props.model.manufacturer.name} />
+          <CarLogo
+            src={props.model.manufacturer.logo}
+            alt={props.model.manufacturer.name}
+          />
+          <CarModel fontSize={24}>{props.model.name} </CarModel>
+          {props.name && <CarName fontSize={24}>{props.name}</CarName>}
         </CarModelWrapper>
       )}
       <CarInfoWrapper>
-        {props.power && <CarInfo>{props.power}</CarInfo>}
-        {props.torque && <CarInfo>{props.torque}</CarInfo>}
-        {props.engine && <CarInfo>{props.engine}</CarInfo>}
-        {props.weight && <CarInfo>{props.weight}</CarInfo>}
-        {props.generation && <CarInfo>{props.generation}</CarInfo>}
-        {props.gearbox && <CarInfo>{props.gearbox}</CarInfo>}
+        {props.power && <CarInfo>Power: {props.power}hp</CarInfo>}
+        {props.torque && <CarInfo>Torque: {props.torque}nm</CarInfo>}
+        {props.engine && <CarInfo>Engine: {props.engine}</CarInfo>}
+        {props.weight && <CarInfo>Weight: {props.weight}kg</CarInfo>}
+        {props.generation && <CarInfo>Generation: {props.generation}</CarInfo>}
+        {props.gearbox && <CarInfo>Gearbox: {props.gearbox}</CarInfo>}
       </CarInfoWrapper>
-    </CarWrapper>
+    </CarCardWrapper>
   );
 }

@@ -3,6 +3,7 @@ import { API, graphqlOperation } from "aws-amplify";
 import { listCars } from "../graphql/queries";
 import { Car } from "../typescript/types";
 import CarCard from "../components/CarCard/CarCard";
+import { CarWrapper } from "../components/CarCard/CarCard.styled";
 
 export default function Cars() {
   const [cars, setCars] = useState<Car[]>([]);
@@ -23,10 +24,10 @@ export default function Cars() {
   }, []);
 
   return (
-    <>
+    <CarWrapper>
       {cars.map((car: Car) => (
         <CarCard key={car.id} {...car} />
       ))}
-    </>
+    </CarWrapper>
   );
 }
