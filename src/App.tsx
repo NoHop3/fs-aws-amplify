@@ -5,6 +5,7 @@ import { Error } from "./pages/Error";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Cars from "./pages/Cars";
+import useGetScreenSize, { screenSizes } from "./helpers/screenSizes";
 // import "@aws-amplify/ui-react/styles.css";
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Route path='/cars' element={<Cars />} />
         <Route path='*' element={<Error />} />
       </Routes>
-      <Footer />
+      {useGetScreenSize() < screenSizes.isDesktop && <Footer />}
     </div>
   );
 }

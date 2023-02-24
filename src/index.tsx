@@ -5,6 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
+import { StyledEngineProvider } from "@mui/material";
+import { ThemeProvider as ScThemeProvider } from "styled-components";
 import { theme } from "./styles/Theme";
 import { Amplify } from "aws-amplify";
 import awsExports from "./aws-exports";
@@ -15,11 +17,15 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={theme}>
+        <ScThemeProvider theme={theme}>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </ScThemeProvider>
+      </ThemeProvider>
+    </StyledEngineProvider>
   </React.StrictMode>
 );
 

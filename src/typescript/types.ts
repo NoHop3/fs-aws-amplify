@@ -33,3 +33,8 @@ export type Car = {
   createdAt: string;
   updatedAt: string;
 };
+
+export type NavItem = {
+  name: string;
+  path: string;
+}

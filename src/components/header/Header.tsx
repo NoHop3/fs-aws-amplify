@@ -17,7 +17,8 @@ import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import Slide from "@mui/material/Slide";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import { Logo } from "./Logo.styled";
+import { Logo, StyledLink } from "./header-styles";
+import { NavItem } from "../../typescript/types";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -87,7 +88,12 @@ function HideOnScroll(props: Props) {
 }
 
 const drawerWidth = 240;
-const navItems = ["Home", "Manufacturers", "Cars", "About"];
+const navItems: NavItem[] = [
+  { name: "Home", path: "/" },
+  { name: "Cars", path: "/cars" },
+  { name: "Manufacturers", path: "/manufacturers" },
+  { name: "About", path: "/about" },
+];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -106,9 +112,9 @@ export default function DrawerAppBar(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item.name} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -139,8 +145,8 @@ export default function DrawerAppBar(props: Props) {
             </Box>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#fff" }}>
-                  {item}
+                <Button key={item.name} sx={{ color: "#fff" }}>
+                  <StyledLink to={item.path}>{item.name}</StyledLink>
                 </Button>
               ))}
             </Box>
