@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { DeviceTypes } from "../typescript/enums";
+import { DeviceTypes } from "../enums/deviceTypes";
 
-export const screenSizes = {
+const screenSizes = {
   isMobile: 480,
   isTablet: 768,
   isDesktop: 1024,
 };
 
-export default function useGetDeviceType(): DeviceTypes {
+export const useGetDeviceType = (): DeviceTypes => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
   const [deviceType, setDeviceType] = useState(DeviceTypes.DESKTOP);
 
@@ -30,4 +30,4 @@ export default function useGetDeviceType(): DeviceTypes {
   }, [windowSize, deviceType]);
 
   return deviceType;
-}
+};

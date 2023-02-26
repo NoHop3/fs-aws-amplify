@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { API, graphqlOperation } from "aws-amplify";
 import { listCars } from "../../graphql/queries";
-import { Car } from "../../typescript/types";
+import { Car } from "../../utils/typescript/types";
 import { CarCard } from "../../components";
 import { StyledCarGrid } from "./cars.styled";
 
@@ -30,4 +30,4 @@ export const _Cars = () => {
       ))}
     </StyledCarGrid>
   );
-}
+};

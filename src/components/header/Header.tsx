@@ -18,7 +18,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import Slide from "@mui/material/Slide";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { Logo, StyledLink } from "./header.styled";
-import { NavItem } from "../../typescript/types";
+import { NavItem } from "../../utils/typescript/types";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -184,4 +184,4 @@ export const _Header = (props: Props) => {
       <Box component='main' sx={{ m: 4, p: 1 }}></Box>
     </Box>
   );
-}
+};

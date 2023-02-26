@@ -1,4 +1,4 @@
-import { Car } from "../../typescript/types";
+import { Car } from "../../utils/typescript/types";
 import {
   CarImage,
   CarInfo,
@@ -34,4 +34,4 @@ export const _CarCard = ({ ...props }: Car) => {
       </CarInfoWrapper>
     </CarCardWrapper>
   );
-}
+};
