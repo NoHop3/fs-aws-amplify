@@ -3,10 +3,11 @@ import { API, graphqlOperation } from "aws-amplify";
 import { listCars } from "../../graphql/queries";
 import { Car } from "../../utils/typescript/types";
 import { CarCard } from "../../components";
-import { StyledCarGrid } from "./cars.styled";
+import { StyledCarGrid, StyledCircularProgress } from "./cars.styled";
 
 export const _Cars = () => {
   const [cars, setCars] = useState<Car[]>([]);
+  const isLoading = true;
 
   const fetchCars = async () => {
     try {
@@ -25,9 +26,11 @@ export const _Cars = () => {
 
   return (
     <StyledCarGrid>
-      {cars.map((car: Car) => (
-        <CarCard key={car.id} {...car} />
-      ))}
+      {!isLoading ? (
+        cars.map((car: Car) => <CarCard key={car.id} {...car} />)
+      ) : (
+        <StyledCircularProgress disableShrink size={"6rem"} />
+      )}
     </StyledCarGrid>
   );
 };

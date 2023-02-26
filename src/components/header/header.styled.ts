@@ -8,8 +8,8 @@ export const Logo = styled.img`
   margin-right: 1rem;
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)<{ isInverted?: boolean }>`
   list-style: none;
   text-decoration: none;
-  color: ${({ theme }) => theme.palette.primary.light};
+  color: ${({ theme, isInverted }) => isInverted ? theme.palette.primary.dark: theme.palette.primary.light}; };
 `;

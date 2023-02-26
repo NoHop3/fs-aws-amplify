@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import { Home, Cars, Error } from "./pages";
+import { Home, Cars, Error, Manufacturers } from "./pages";
 import { Header, BottomNavigation } from "./components";
 import { useGetDeviceType } from "./utils/hooks/useGetDeviceType";
 import { DeviceTypes } from "./utils/enums/deviceTypes";
@@ -13,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/cars' element={<Cars />} />
+        <Route path='/manufacturers' element={<Manufacturers />} />
         <Route path='*' element={<Error />} />
       </Routes>
       {useGetDeviceType() !== DeviceTypes.DESKTOP && <BottomNavigation />}

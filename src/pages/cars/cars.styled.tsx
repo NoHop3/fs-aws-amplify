@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { CircularProgress, Grid } from "@mui/material";
 import styled from "styled-components";
 
 export const StyledCarGrid = styled(Grid)`
@@ -11,4 +11,12 @@ export const StyledCarGrid = styled(Grid)`
   }
   @media (max-width: 480px) {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+`;
+
+export const StyledCircularProgress = styled(CircularProgress)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -48px 0 0 -48px;
+  color: ${({ theme }) => theme.palette.primary.dark};
 `;

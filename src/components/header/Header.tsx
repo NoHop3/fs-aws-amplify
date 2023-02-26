@@ -114,7 +114,9 @@ export const _Header = (props: Props) => {
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item.name} />
+              <StyledLink to={item.path} isInverted>
+                <ListItemText primary={item.name}>{item.name}</ListItemText>
+              </StyledLink>
             </ListItemButton>
           </ListItem>
         ))}
@@ -137,13 +139,13 @@ export const _Header = (props: Props) => {
               aria-label='open drawer'
               edge='start'
               onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}>
+              sx={{ mr: 2, display: { lg: "none" } }}>
               <MenuIcon />
             </IconButton>
             <Box sx={{ flexGrow: 1 }}>
               <Logo src='/images/stgdev__logo__dark.png' />
             </Box>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box sx={{ display: { xs: "none", lg: "block" } }}>
               {navItems.map((item) => (
                 <Button key={item.name} sx={{ color: "#fff" }}>
                   <StyledLink to={item.path}>{item.name}</StyledLink>
