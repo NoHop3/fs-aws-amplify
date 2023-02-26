@@ -19,6 +19,7 @@ import Slide from "@mui/material/Slide";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { Logo, StyledLink } from "./header.styled";
 import { NavItem } from "../../utils/typescript/types";
+import { useNavigate } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -99,9 +100,14 @@ export const _Header = (props: Props) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const theme = useTheme();
+  const navigate = useNavigate();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
+  };
+
+  const handleDrawerClick = (path: string) => {
+    navigate(path);
   };
 
   const drawer = (
@@ -113,10 +119,12 @@ export const _Header = (props: Props) => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <StyledLink to={item.path} isInverted>
-                <ListItemText primary={item.name}>{item.name}</ListItemText>
-              </StyledLink>
+            <ListItemButton
+              sx={{ textAlign: "center" }}
+              onClick={() => {
+                handleDrawerClick(item.path);
+              }}>
+              <ListItemText primary={item.name}>{item.name}</ListItemText>
             </ListItemButton>
           </ListItem>
         ))}
@@ -134,14 +142,6 @@ export const _Header = (props: Props) => {
           component='nav'
           style={{ backgroundColor: theme.palette.primary.dark }}>
           <Toolbar>
-            <IconButton
-              color='inherit'
-              aria-label='open drawer'
-              edge='start'
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { lg: "none" } }}>
-              <MenuIcon />
-            </IconButton>
             <Box sx={{ flexGrow: 1 }}>
               <Logo src='/images/stgdev__logo__dark.png' />
             </Box>
@@ -161,11 +161,21 @@ export const _Header = (props: Props) => {
                 inputProps={{ "aria-label": "search" }}
               />
             </Search>
+            <Divider />
+            <IconButton
+              color='inherit'
+              aria-label='open drawer'
+              edge='end'
+              onClick={handleDrawerToggle}
+              sx={{ ml: 2, display: { lg: "none" } }}>
+              <MenuIcon />
+            </IconButton>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
       <Box component='nav'>
         <Drawer
+          anchor='right'
           container={container}
           variant='temporary'
           open={mobileOpen}
@@ -174,7 +184,7 @@ export const _Header = (props: Props) => {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", lg: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,

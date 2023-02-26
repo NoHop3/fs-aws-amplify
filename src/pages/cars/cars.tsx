@@ -7,7 +7,7 @@ import { StyledCarGrid, StyledCircularProgress } from "./cars.styled";
 
 export const _Cars = () => {
   const [cars, setCars] = useState<Car[]>([]);
-  const isLoading = true;
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const fetchCars = async () => {
     try {
@@ -22,7 +22,8 @@ export const _Cars = () => {
 
   useEffect(() => {
     fetchCars();
-  }, []);
+    cars.length > 0 && setIsLoading(false);
+  }, [cars.length]);
 
   return (
     <StyledCarGrid>
