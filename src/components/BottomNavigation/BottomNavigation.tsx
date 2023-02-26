@@ -6,7 +6,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import BedtimeIcon from "@mui/icons-material/Bedtime";
 import { useTheme } from "@mui/material/styles";
 
-export default function _BottomNavigation() {
+export const _BottomNavigation = () => {
   const [value, setValue] = React.useState("recents");
   const theme = useTheme();
 

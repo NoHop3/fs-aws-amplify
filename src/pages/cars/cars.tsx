@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { API, graphqlOperation } from "aws-amplify";
-import { listCars } from "../graphql/queries";
-import { Car } from "../typescript/types";
-import CarCard from "../components/CarCard/CarCard";
-import { CarWrapper } from "../components/CarCard/CarCard.styled";
+import { listCars } from "../../graphql/queries";
+import { Car } from "../../typescript/types";
+import { CarCard } from "../../components";
+import { StyledCarGrid } from "./cars.styled";
 
-export default function Cars() {
+export const _Cars = () => {
   const [cars, setCars] = useState<Car[]>([]);
 
   const fetchCars = async () => {
@@ -24,10 +24,10 @@ export default function Cars() {
   }, []);
 
   return (
-    <CarWrapper>
+    <StyledCarGrid>
       {cars.map((car: Car) => (
         <CarCard key={car.id} {...car} />
       ))}
-    </CarWrapper>
+    </StyledCarGrid>
   );
 }

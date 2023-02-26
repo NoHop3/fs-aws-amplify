@@ -17,7 +17,7 @@ import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import Slide from "@mui/material/Slide";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import { Logo, StyledLink } from "./header-styles";
+import { Logo, StyledLink } from "./header.styled";
 import { NavItem } from "../../typescript/types";
 
 const Search = styled("div")(({ theme }) => ({
@@ -95,7 +95,7 @@ const navItems: NavItem[] = [
   { name: "About", path: "/about" },
 ];
 
-export default function DrawerAppBar(props: Props) {
+export const _Header = (props: Props) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const theme = useTheme();

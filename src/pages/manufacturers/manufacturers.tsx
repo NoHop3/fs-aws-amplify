@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 import { API, graphqlOperation } from "aws-amplify";
-import { listManufacturers } from "../graphql/queries";
-import { Manufacturer } from "../typescript/types";
+import { listManufacturers } from "../../graphql/queries";
+import { Manufacturer } from "../../typescript/types";
 
-export default function Manufacturers() {
+export const _Manufacturers = () => {
   // const [manufacturers, setManufacturers] = useState([]);
 
   // const fetchManufacturers = async () => {
@@ -34,4 +34,4 @@ export default function Manufacturers() {
   //   fetchManufacturers();
   // }, [manufacturers]);
   return <div>Manufacturers</div>;
-}
+};

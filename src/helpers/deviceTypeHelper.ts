@@ -7,9 +7,9 @@ export const screenSizes = {
   isDesktop: 1024,
 };
 
-export default function useGetDeviceType(): string {
+export default function useGetDeviceType(): DeviceTypes {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
-  const [deviceType, setDeviceType] = useState("");
+  const [deviceType, setDeviceType] = useState(DeviceTypes.DESKTOP);
 
   useEffect(() => {
     const handleWindowResize = () => {

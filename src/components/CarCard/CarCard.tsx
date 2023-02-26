@@ -1,4 +1,3 @@
-import React from "react";
 import { Car } from "../../typescript/types";
 import {
   CarImage,
@@ -9,9 +8,9 @@ import {
   CarModelWrapper,
   CarName,
   CarCardWrapper,
-} from "./CarCard.styled";
+} from "./carCard.styled";
 
-export default function CarCard({ ...props }: Car) {
+export const _CarCard = ({ ...props }: Car) => {
   return (
     <CarCardWrapper>
       {props.image && <CarImage src={props.image} alt={props.name} />}

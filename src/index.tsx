@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import { StyledEngineProvider } from "@mui/material";
 import { ThemeProvider as ScThemeProvider } from "styled-components";
-import { theme } from "./styles/Theme";
+import { theme } from "./styles/defaultTheme";
 import { Amplify } from "aws-amplify";
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
