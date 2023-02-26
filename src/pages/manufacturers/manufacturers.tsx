@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 
-import { API, graphqlOperation } from "aws-amplify";
-import { listManufacturers } from "../../graphql/queries";
-import { Manufacturer } from "../../utils/typescript/types";
+// import { API, graphqlOperation } from "aws-amplify";
+// import { listManufacturers } from "../../graphql/queries";
+// import { Manufacturer } from "../../utils/typescript/types";
 
 export const _Manufacturers = () => {
   // const [manufacturers, setManufacturers] = useState([]);
