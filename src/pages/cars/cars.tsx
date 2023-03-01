@@ -1,39 +1,25 @@
 import { useEffect, useState } from "react";
-import { API, graphqlOperation } from "aws-amplify";
-import { listCars } from "../../graphql/queries";
 import { Car } from "../../utils/typescript/types";
 import { CarCard, Snackbar } from "../../components";
 import { StyledCarGrid, StyledCircularProgress } from "./cars.styled";
-import { AlertColor } from "@mui/material";
+import { SnackBarModel } from "../../shared/models";
+import { fetchCars } from "../../store/car-store";
+import { useDispatch } from "react-redux";
 
 export const _Cars = () => {
   const [cars, setCars] = useState<Car[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [snack, setSnack] = useState<{
-    open: boolean;
-    type: AlertColor;
-    message: string;
-  }>({ open: false, type: "error", message: "" });
-
-  const fetchCars = async () => {
-    try {
-      const CarsData = (await API.graphql(graphqlOperation(listCars))) as any;
-      const Cars = CarsData.data.listCars.items;
-      setCars(Cars);
-      setSnack({
-        open: true,
-        type: "success",
-        message: "Successfully fetched car data!",
-      });
-    } catch (error: any) {
-      console.error(error);
-      //! Globalize snacking - implement redux, notification state!
-      setSnack({ open: true, type: "error", message: error.message });
-    }
-  };
+  const [snack, setSnack] = useState<SnackBarModel>({
+    open: false,
+    type: "error",
+    message: "",
+  });
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    fetchCars();
+    const cars =  fetchCars();
+    console.log("🚀 ~ file: Cars.tsx:21 ~ useEffect ~ cars:", cars)
+    
     cars.length > 0 && setIsLoading(false);
   }, [cars.length]);
 
