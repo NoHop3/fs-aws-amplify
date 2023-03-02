@@ -1,6 +1,6 @@
 # Forza Library full-stack project created with lots of ❤️ 
 
-## Technology stack: To be added...
+## Technology stack: React, Typescript, Redux, DynamoDB, GraphQL, AWS Amplify 
 
 ### About the project
 
