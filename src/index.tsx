@@ -10,6 +10,8 @@ import { ThemeProvider as ScThemeProvider } from "styled-components";
 import { theme } from "./utils/theming/defaultTheme";
 import { Amplify } from "aws-amplify";
 import awsExports from "./aws-exports";
+import { Provider } from "react-redux";
+import { configureAppStore } from "./store/configure-store";
 Amplify.configure(awsExports);
 
 const root = ReactDOM.createRoot(
@@ -17,15 +19,17 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
-        <ScThemeProvider theme={theme}>
-          <BrowserRouter>
-            <App />
-          </BrowserRouter>
-        </ScThemeProvider>
-      </ThemeProvider>
-    </StyledEngineProvider>
+    <Provider store={configureAppStore()}>
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={theme}>
+          <ScThemeProvider theme={theme}>
+            <BrowserRouter>
+              <App />
+            </BrowserRouter>
+          </ScThemeProvider>
+        </ThemeProvider>
+      </StyledEngineProvider>
+    </Provider>
   </React.StrictMode>
 );
 

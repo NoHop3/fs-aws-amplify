@@ -1,27 +1,20 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Car } from "../../utils/typescript/types";
-import { CarCard, Snackbar } from "../../components";
+import { CarCard } from "../../components";
 import { StyledCarGrid, StyledCircularProgress } from "./cars.styled";
-import { SnackBarModel } from "../../shared/models";
-import { fetchCars } from "../../store/car-store";
-import { useDispatch } from "react-redux";
+import {
+  useAppDispatch,
+  useAppSelector,
+} from "../../utils/typescript/reduxTypes";
+import { fetchCars } from "../../services/car-service";
 
 export const _Cars = () => {
-  const [cars, setCars] = useState<Car[]>([]);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [snack, setSnack] = useState<SnackBarModel>({
-    open: false,
-    type: "error",
-    message: "",
-  });
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
+  const { isLoading, cars } = useAppSelector((state) => state.cars);
 
   useEffect(() => {
-    const cars =  fetchCars();
-    console.log("🚀 ~ file: Cars.tsx:21 ~ useEffect ~ cars:", cars)
-    
-    cars.length > 0 && setIsLoading(false);
-  }, [cars.length]);
+    dispatch(fetchCars());
+  }, [dispatch]);
 
   return (
     <StyledCarGrid>
@@ -30,13 +23,6 @@ export const _Cars = () => {
       ) : (
         <StyledCircularProgress disableShrink size={"6rem"} />
       )}
-      <Snackbar
-        open={snack.open}
-        message={snack.message}
-        type={snack.type ?? "error"}
-        onClose={() => setSnack({ open: false, type: "error", message: "" })}
-        autoHideDuration={4000}
-      />
     </StyledCarGrid>
   );
 };

@@ -5,6 +5,7 @@ import {
 import { connectRouter, routerMiddleware } from "connected-react-router";
 import { createBrowserHistory, History } from "history";
 import carReducer from "./car-store";
+import notificationReducer from "./notification-store";
 
 export const history = createBrowserHistory();
 
@@ -12,9 +13,12 @@ const createRootReducer = (history: History) =>
   combineReducers({
     router: connectRouter(history),
     cars: carReducer,
+    notifications: notificationReducer,
   });
 
 export let store: ReturnType<typeof configureAppStore>;
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
 export const configureAppStore = () => {
   let _store = configureStore({
