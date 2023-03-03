@@ -43,5 +43,4 @@ export type Notification = {
   open: boolean;
   type: "success" | "error";
   message: string;
-  
 }

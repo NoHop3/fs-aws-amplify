@@ -6,14 +6,14 @@ import {
   useAppDispatch,
   useAppSelector,
 } from "../../utils/typescript/reduxTypes";
-import { fetchCars } from "../../services/car-service";
+import { services } from "../../services";
 
 export const _Cars = () => {
   const dispatch = useAppDispatch();
   const { isLoading, cars } = useAppSelector((state) => state.cars);
 
   useEffect(() => {
-    dispatch(fetchCars());
+    dispatch(services.fetchCars());
   }, [dispatch]);
 
   return (
