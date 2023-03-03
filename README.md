@@ -6,6 +6,6 @@
 
 This project was started during the AWS module in the Fullstack academy course at Integrify.
 
-Deployed at: To be added...
+Deployed at: AWS? Hopefully 
 
 ### Inspired by the Forza Games Series
