@@ -1,28 +1,22 @@
-import { useEffect } from "react";
-import { Car } from "../../utils/typescript/types";
-import { CarCard } from "../../components";
-import { StyledCarGrid, StyledCircularProgress } from "./cars.styled";
-import {
-  useAppDispatch,
-  useAppSelector,
-} from "../../utils/typescript/reduxTypes";
+import { connect } from "react-redux";
+import { bindActionCreators } from "@reduxjs/toolkit";
+
+import { _Cars } from "./cars-container";
 import { services } from "../../services";
+import { AppDispatch, RootState } from "../../store/configure-store";
 
-export const _Cars = () => {
-  const dispatch = useAppDispatch();
-  const { isLoading, cars } = useAppSelector((state) => state.cars);
+const mapStateToProps = (state: RootState) => ({
+  isLoading: state.cars.isLoading,
+  cars: state.cars.cars,
+});
 
-  useEffect(() => {
-    dispatch(services.fetchCars());
-  }, [dispatch]);
-
-  return (
-    <StyledCarGrid>
-      {!isLoading ? (
-        cars.map((car: Car) => <CarCard key={car.id} {...car} />)
-      ) : (
-        <StyledCircularProgress disableShrink size={"6rem"} />
-      )}
-    </StyledCarGrid>
+const mapDispatchToProps = (dispatch: AppDispatch) => {
+  return bindActionCreators(
+    {
+      fetchCars: services.fetchCars,
+    },
+    dispatch
   );
 };
+
+export const Cars = connect(mapStateToProps, mapDispatchToProps)(_Cars);
