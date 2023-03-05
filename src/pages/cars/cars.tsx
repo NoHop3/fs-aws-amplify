@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { bindActionCreators } from "@reduxjs/toolkit";
 
-import { _Cars } from "./cars-container";
+import { _Cars } from "./cars.container";
 import { services } from "../../services";
 import { AppDispatch, RootState } from "../../store/configure-store";
 

@@ -1,8 +1,9 @@
-import { Car } from "../../utils/typescript/types";
-import { CarCard } from "../../components";
-import { CarProps } from "./car-props";
-import { StyledCarGrid, StyledCircularProgress } from "./cars-styles";
 import { useEffect } from "react";
+
+import { CarProps } from "./car.props";
+import { Car } from "../../shared/models";
+import { CarCard } from "../../components";
+import { StyledCarGrid, StyledCircularProgress } from "./cars.styles";
 
 export const _Cars = (props: CarProps) => {
   useEffect(() => {

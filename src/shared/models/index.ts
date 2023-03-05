@@ -1,3 +1,6 @@
-import { SnackBarModel } from "./snackBarModel";
+import { Snackbar } from "./snackbar";
+import { Car } from "./car";
+import { Manufacturer } from "./manufacturer";
+import { Model } from "./model";
 
-export { SnackBarModel };
+export { Snackbar, Car, Manufacturer, Model };

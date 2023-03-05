@@ -21,10 +21,10 @@ const notificationSlice = createSlice({
       state.notification = action.payload;
     },
     setNotificationType(state, action: PayloadAction<"success" | "error">) {
-        state.notification.type = action.payload;
+      state.notification.type = action.payload;
     },
     setNotificationMessage(state, action: PayloadAction<string>) {
-        state.notification.message = action.payload;
+      state.notification.message = action.payload;
     },
     setNotificationVisibility(state, action: PayloadAction<boolean>) {
       state.notification.open = action.payload;
@@ -33,4 +33,9 @@ const notificationSlice = createSlice({
 });
 
 export default notificationSlice.reducer;
-export const { setNotification, setNotificationVisibility, setNotificationMessage, setNotificationType } = notificationSlice.actions;
+export const {
+  setNotification,
+  setNotificationVisibility,
+  setNotificationMessage,
+  setNotificationType,
+} = notificationSlice.actions;
