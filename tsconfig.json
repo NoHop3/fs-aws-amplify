@@ -24,6 +24,8 @@
     "strictNullChecks": true
   },
   "include": [
-    "src"
-, "data/cars.ts"  ]
+    "src", 
+    "data", 
+    "test"  
+  ]
 }
