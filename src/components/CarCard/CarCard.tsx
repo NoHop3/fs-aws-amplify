@@ -1,4 +1,4 @@
-import { Car } from "../../utils/typescript/types";
+import { Car } from "../../shared/models";
 import {
   CarImage,
   CarInfo,

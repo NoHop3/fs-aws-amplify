@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Notification } from "../../utils/typescript/types";
+import { Notification } from "../utils/typescript/types";
 
 export interface NotificationStore {
   notification: Notification;

@@ -1,25 +1,27 @@
 import * as React from "react";
 import { styled, alpha, useTheme } from "@mui/material/styles";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import InputBase from "@mui/material/InputBase";
-import SearchIcon from "@mui/icons-material/Search";
-import Slide from "@mui/material/Slide";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { Logo, StyledLink } from "./header.styled";
-import { NavItem } from "../../utils/typescript/types";
+import { NavItem } from "../../shared/utils/typescript/types";
 import { useNavigate } from "react-router-dom";
+import {
+  InputBase,
+  useScrollTrigger,
+  Slide,
+  Typography,
+  Divider,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  AppBar,
+  Toolbar,
+  Button,
+  IconButton,
+  Drawer,
+} from "@mui/material";
+import { Box } from "@mui/system";
+import SearchIcon from "@mui/icons-material/Search";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",

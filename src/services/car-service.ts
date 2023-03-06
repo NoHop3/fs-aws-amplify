@@ -1,8 +1,8 @@
 import { listCars } from "../graphql/queries";
 import { API, graphqlOperation } from "aws-amplify";
-import { Car } from "../utils/typescript/types";
 import { setIsLoading, setCarData } from "../shared/store/car-store";
 import { setNotification } from "../shared/store/notification-store";
+import { Car } from "../shared/models";
 
 export const fetchCars = () => async (dispatch: any) => {
   dispatch(setIsLoading(true));

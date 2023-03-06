@@ -1,7 +1,7 @@
 import { Action } from "@reduxjs/toolkit";
 import { useDispatch, TypedUseSelectorHook, useSelector } from "react-redux";
 import { ThunkAction } from "redux-thunk";
-import { AppDispatch, RootState } from "../../shared/store/configure-store";
+import { AppDispatch, RootState } from "../../store/configure-store";
 
 export declare type Thunk<TStore> = ThunkAction<
   void,
