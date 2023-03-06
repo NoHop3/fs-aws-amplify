@@ -2,14 +2,16 @@ import { Routes, Route } from "react-router-dom";
 
 import { Home, Cars, Error, Manufacturers, Models } from "./pages";
 import { Header, BottomNavigation, Snackbar } from "./components";
-import { useGetDeviceType } from "./utils/hooks/useGetDeviceType";
-import { DeviceTypes } from "./utils/enums/deviceTypes";
-import { useAppDispatch, useAppSelector } from "./utils/typescript/reduxTypes";
-import { setNotificationVisibility } from "./store/notification-store";
+import { useGetDeviceType } from "./shared/utils/hooks/useGetDeviceType";
+import { DeviceTypes } from "./shared/utils/enums/deviceTypes";
+import { useAppDispatch, useAppSelector } from "./shared/utils/typescript/reduxTypes";
+import { setNotificationVisibility } from "./shared/store/notification-store";
 // import "@aws-amplify/ui-react/styles.css";
 
 function App() {
-  const notification = useAppSelector((state) => state.notifications.notification);
+  const notification = useAppSelector(
+    (state) => state.notifications.notification
+  );
   const dispatch = useAppDispatch();
   return (
     <div className='App'>

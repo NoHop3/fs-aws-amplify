@@ -7,11 +7,11 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import { StyledEngineProvider } from "@mui/material";
 import { ThemeProvider as ScThemeProvider } from "styled-components";
-import { theme } from "./utils/theming/defaultTheme";
+import { theme } from "./shared/utils/theming/defaultTheme";
 import { Amplify } from "aws-amplify";
 import awsExports from "./aws-exports";
 import { Provider } from "react-redux";
-import { configureAppStore } from "./store/configure-store";
+import { configureAppStore } from "./shared/store/configure-store";
 Amplify.configure(awsExports);
 
 const root = ReactDOM.createRoot(

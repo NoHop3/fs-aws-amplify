@@ -1,4 +1,4 @@
-import { StyledHomeTitle, StyledHomeWrapper } from "./home.styled";
+import { StyledHomeTitle, StyledHomeWrapper } from "./home.styles";
 
 export const _Home = () => {
   return (

@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Car } from "../utils/typescript/types";
+import { Car } from "../models";
 
 export interface CarStore {
   cars: Car[];
