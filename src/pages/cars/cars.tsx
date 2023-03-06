@@ -3,9 +3,10 @@ import { bindActionCreators } from "@reduxjs/toolkit";
 
 import { _Cars } from "./cars.container";
 import { services } from "../../services";
-import { AppDispatch, RootState } from "../../shared/store/configure-store";
+import { ApplicationState } from "../../shared/store/app-state";
+import { AppDispatch } from "../../shared/store/app-thunk";
 
-const mapStateToProps = (state: RootState) => ({
+const mapStateToProps = (state: ApplicationState) => ({
   isLoading: state.cars.isLoading,
   cars: state.cars.cars,
 });

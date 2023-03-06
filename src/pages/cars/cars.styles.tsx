@@ -7,9 +7,9 @@ export const StyledCarGrid = styled(Grid)`
   grid-gap: 1rem;
   padding: 1rem;
   @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   }
-  @media (max-width: 480px) {
+  @media (max-width: 464px) {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 `;
 

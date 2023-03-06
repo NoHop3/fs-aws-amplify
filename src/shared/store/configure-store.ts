@@ -1,7 +1,4 @@
-import {
-  configureStore,
-  combineReducers,
-} from "@reduxjs/toolkit";
+import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import { connectRouter, routerMiddleware } from "connected-react-router";
 import { createBrowserHistory, History } from "history";
 import carReducer from "./car-store";
@@ -17,8 +14,6 @@ const createRootReducer = (history: History) =>
   });
 
 export let store: ReturnType<typeof configureAppStore>;
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
 
 export const configureAppStore = () => {
   let _store = configureStore({
