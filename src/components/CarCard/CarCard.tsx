@@ -8,7 +8,7 @@ import {
   CarModelWrapper,
   CarName,
   CarCardWrapper,
-} from "./carCard.styled";
+} from "./carCard.styles";
 
 export const _CarCard = ({ ...props }: Car) => {
   return (

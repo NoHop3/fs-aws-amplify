@@ -6,8 +6,6 @@ export const StyledHomeWrapper = styled(Box)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
     padding: 1rem;
     background-color: ${({ theme }) => theme.palette.background.default};
 `;

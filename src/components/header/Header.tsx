@@ -1,6 +1,6 @@
 import * as React from "react";
 import { styled, alpha, useTheme } from "@mui/material/styles";
-import { Logo, StyledLink } from "./header.styled";
+import { Logo, StyledLink } from "./header.styles";
 import { NavItem } from "../../shared/utils/typescript/types";
 import { useNavigate } from "react-router-dom";
 import {

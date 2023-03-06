@@ -1,4 +1,4 @@
-import { StyledErrorText } from "./error.styled";
+import { StyledErrorText } from "./error.styles";
 
 export const _Error = () => {
   return (
