@@ -6,7 +6,7 @@
 
 This project was started during the AWS module in the Fullstack academy course at Integrify and finished many many months later due to internship, university and of course procrastinating.
 
-Deployed at: AWS? Hopefully ...
+Deployed at: ...
 
 ### Inspired by the Forza Horizon Games Series
 
