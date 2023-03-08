@@ -10,4 +10,4 @@ Deployed at: ...
 
 ### Inspired by the Forza Horizon Games Series
 
-!!! All rights reserved to Forza Horizon Games Series
+All rights reserved to Forza Horizon Games Series
