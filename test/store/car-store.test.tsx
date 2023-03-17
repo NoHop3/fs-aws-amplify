@@ -1,3 +1,4 @@
+import configureStore from "redux-mock-store";
 import { Car } from "../../src/shared/models";
 import carReducer, {
   CarStore,
@@ -13,6 +14,9 @@ describe("Cars slice", () => {
       cars: [],
       isLoading: false,
     };
+    const mockStore = configureStore();
+    let store = mockStore(initialState);
+    // check what is in the store
   });
 
   it("should handle setting car data", () => {

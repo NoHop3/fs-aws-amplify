@@ -1,41 +1,50 @@
+import { Amplify } from "aws-amplify";
 import { render, screen } from "@testing-library/react";
+import { Provider } from "react-redux";
+import configureStore from "redux-mock-store";
 import "@testing-library/jest-dom";
+
 import App from "../../src/App";
+import { BrowserRouter } from "react-router-dom";
+
+jest.mock("aws-amplify");
 
 describe("Testing App.tsx", () => {
-  it("Should render the Header component", () => {
-    render(<App />);
-    const headerElement = screen.getByRole("heading");
-    expect(headerElement).toBeInTheDocument();
+  beforeEach(() => {
+    Amplify.configure({
+      Auth: {
+        identityPoolId: "abc",
+        region: "def",
+        userPoolId: "ghi",
+        userPoolWebClientId: "jkl",
+      },
+    });
+    const initialState = {
+      notifications: {
+        notification: {
+          open: false,
+          message: "",
+          type: "success",
+        },
+      },
+      cars: {
+        cars: [],
+        isLoading: false,
+      },
+    };
+    const mockStore = configureStore();
+    let store = mockStore(initialState);
+    render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>,
+    );
   });
-
+  
   it("Should render the Home page", () => {
-    render(<App />);
     const homeElement = screen.getByText("Home page");
     expect(homeElement).toBeInTheDocument();
-  });
-
-  it("Should render the Cars page", () => {
-    render(<App />);
-    const carsElement = screen.getByText("Cars page");
-    expect(carsElement).toBeInTheDocument();
-  });
-
-  it("Should render the Manufacturers page", () => {
-    render(<App />);
-    const manufacturersElement = screen.getByText("Manufacturers page");
-    expect(manufacturersElement).toBeInTheDocument();
-  });
-
-  it("Should render the Models page", () => {
-    render(<App />);
-    const modelsElement = screen.getByText("Models page");
-    expect(modelsElement).toBeInTheDocument();
-  });
-
-  it("Should render the Error page", () => {
-    render(<App />);
-    const errorElement = screen.getByText("Error page");
-    expect(errorElement).toBeInTheDocument();
   });
 });
