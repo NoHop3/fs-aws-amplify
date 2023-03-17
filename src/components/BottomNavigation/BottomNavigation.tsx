@@ -19,12 +19,13 @@ export const _BottomNavigation = () => {
       style={{ backgroundColor: theme.palette.primary.dark }}
       sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
       value={value}
-      onChange={handleChange}>
+      onChange={handleChange}
+    >
       <BottomNavigationAction
         style={{ color: theme.palette.primary.light }}
         color={"#fafafa"}
-        label='Home'
-        value='home'
+        label="Home"
+        value="home"
         icon={<HomeIcon style={{ color: theme.palette.primary.light }} />}
       />
       {/* <BottomNavigationAction
@@ -34,16 +35,16 @@ export const _BottomNavigation = () => {
       /> */}
       <BottomNavigationAction
         style={{ color: theme.palette.primary.light }}
-        label='Favorites'
-        value='favorites'
+        label="Favorites"
+        value="favorites"
         icon={<FavoriteIcon style={{ color: theme.palette.primary.light }} />}
       />
       <BottomNavigationAction
         style={{ color: theme.palette.primary.light }}
-        label='Theme'
-        value='theme'
+        label="Theme"
+        value="theme"
         icon={<BedtimeIcon style={{ color: theme.palette.primary.light }} />}
       />
     </BottomNavigation>
   );
-}
+};

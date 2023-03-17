@@ -1,7 +1,7 @@
 import * as React from "react";
 import { styled, alpha, useTheme } from "@mui/material/styles";
 import { Logo, StyledLink } from "./header.styles";
-import { NavItem } from "../../shared/utils/typescript/types";
+import { type NavItem } from "../../shared/utils/typescript/types";
 import { useNavigate } from "react-router-dom";
 import {
   InputBase,
@@ -80,11 +80,11 @@ function HideOnScroll(props: Props) {
   // will default to window.
   // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
+    target: window != null ? window() : undefined,
   });
 
   return (
-    <Slide appear={false} direction='down' in={!trigger}>
+    <Slide appear={false} direction="down" in={!trigger}>
       {children}
     </Slide>
   );
@@ -114,7 +114,7 @@ export const _Header = (props: Props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant='h6' sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2 }}>
         Car Garage
       </Typography>
       <Divider />
@@ -125,7 +125,8 @@ export const _Header = (props: Props) => {
               sx={{ textAlign: "center" }}
               onClick={() => {
                 handleDrawerClick(item.path);
-              }}>
+              }}
+            >
               <ListItemText primary={item.name}>{item.name}</ListItemText>
             </ListItemButton>
           </ListItem>
@@ -139,13 +140,15 @@ export const _Header = (props: Props) => {
 
   return (
     <Box sx={{ display: "flex" }}>
+      {/* eslint-disable-next-line */}
       <HideOnScroll {...props}>
         <AppBar
-          component='nav'
-          style={{ backgroundColor: theme.palette.primary.dark }}>
+          component="nav"
+          style={{ backgroundColor: theme.palette.primary.dark }}
+        >
           <Toolbar>
             <Box sx={{ flexGrow: 1 }}>
-              <Logo src='/images/stgdev__logo__dark.png' />
+              <Logo src="/images/stgdev__logo__dark.png" />
             </Box>
             <Box sx={{ display: { xs: "none", lg: "block" } }}>
               {navItems.map((item) => (
@@ -159,27 +162,28 @@ export const _Header = (props: Props) => {
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase
-                placeholder='Search…'
+                placeholder="Search…"
                 inputProps={{ "aria-label": "search" }}
               />
             </Search>
             <Divider />
             <IconButton
-              color='inherit'
-              aria-label='open drawer'
-              edge='end'
+              color="inherit"
+              aria-label="open drawer"
+              edge="end"
               onClick={handleDrawerToggle}
-              sx={{ ml: 2, display: { lg: "none" } }}>
+              sx={{ ml: 2, display: { lg: "none" } }}
+            >
               <MenuIcon />
             </IconButton>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <Box component='nav'>
+      <Box component="nav">
         <Drawer
-          anchor='right'
+          anchor="right"
           container={container}
-          variant='temporary'
+          variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
@@ -191,11 +195,12 @@ export const _Header = (props: Props) => {
               boxSizing: "border-box",
               width: drawerWidth,
             },
-          }}>
+          }}
+        >
           {drawer}
         </Drawer>
       </Box>
-      <Box component='main' sx={{ m: 4, p: 1 }}></Box>
+      <Box component="main" sx={{ m: 4, p: 1 }}></Box>
     </Box>
   );
 };

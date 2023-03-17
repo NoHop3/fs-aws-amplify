@@ -1,4 +1,4 @@
-import { SnackbarProps, AlertProps } from "@mui/material";
+import { type SnackbarProps, type AlertProps } from "@mui/material";
 
 export interface SnackbarPayload {
   message: string;

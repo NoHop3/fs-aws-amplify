@@ -1,4 +1,4 @@
-import { Car } from "../../shared/models";
+import { type Car } from "../../shared/models";
 import {
   CarImage,
   CarInfo,

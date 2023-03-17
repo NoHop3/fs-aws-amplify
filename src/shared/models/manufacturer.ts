@@ -1,4 +1,4 @@
-export type Manufacturer = {
+export interface Manufacturer {
   id: string;
   name: string;
   established: string;
@@ -9,4 +9,4 @@ export type Manufacturer = {
   createdAt: string;
   updatedAt: string;
   netWorth: string;
-};
+}

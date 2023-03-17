@@ -1,6 +1,6 @@
 import { Alert, Snackbar } from "@mui/material";
 
-import { ISnackbar } from "./snackbar.props";
+import { type ISnackbar } from "./snackbar.props";
 
 export function _Snackbar(props: ISnackbar) {
   return (
@@ -8,11 +8,13 @@ export function _Snackbar(props: ISnackbar) {
       anchorOrigin={props.anchorOrigin}
       open={props.open}
       onClose={props.onClose}
-      autoHideDuration={props.autoHideDuration}>
+      autoHideDuration={props.autoHideDuration}
+    >
       <Alert
         onClose={props.onClose}
         severity={props.type}
-        sx={{ width: "100%" }}>
+        sx={{ width: "100%" }}
+      >
         {props.message}
       </Alert>
     </Snackbar>

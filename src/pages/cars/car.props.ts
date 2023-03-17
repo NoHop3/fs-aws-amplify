@@ -1,7 +1,7 @@
-import { Car } from "../../shared/models";
+import { type Car } from "../../shared/models";
 
-export type CarProps = {
+export interface CarProps {
   cars: Car[];
   isLoading: boolean;
   fetchCars: () => void;
-};
+}

@@ -1,9 +1,9 @@
-import { Manufacturer } from "./manufacturer";
+import { type Manufacturer } from "./manufacturer";
 
-export type Model = {
+export interface Model {
   id: string;
   name: string;
   createdAt: string;
   updatedAt: string;
   manufacturer: Manufacturer;
-};
+}

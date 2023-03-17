@@ -3,8 +3,8 @@ import { bindActionCreators } from "@reduxjs/toolkit";
 
 import { _Cars } from "./cars.container";
 import { services } from "../../services";
-import { ApplicationState } from "../../shared/store/app-state";
-import { AppDispatch } from "../../shared/store/app-thunk";
+import { type ApplicationState } from "../../shared/store/app-state";
+import { type AppDispatch } from "../../shared/store/app-thunk";
 
 const mapStateToProps = (state: ApplicationState) => ({
   isLoading: state.cars.isLoading,
@@ -16,7 +16,7 @@ const mapDispatchToProps = (dispatch: AppDispatch) => {
     {
       fetchCars: services.fetchCars,
     },
-    dispatch
+    dispatch,
   );
 };
 

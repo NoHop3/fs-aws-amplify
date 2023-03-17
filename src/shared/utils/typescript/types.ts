@@ -1,9 +1,9 @@
-export type NavItem = {
+export interface NavItem {
   name: string;
   path: string;
 }
 
-export type Notification = {
+export interface Notification {
   open: boolean;
   type: "success" | "error";
   message: string;

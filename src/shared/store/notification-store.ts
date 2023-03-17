@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Notification } from "../utils/typescript/types";
+import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
+import { type Notification } from "../utils/typescript/types";
 
 export interface NotificationStore {
   notification: Notification;
@@ -15,7 +15,7 @@ const initialState: NotificationStore = {
 
 const notificationSlice = createSlice({
   name: "notifications",
-  initialState: initialState,
+  initialState,
   reducers: {
     setNotification(state, action: PayloadAction<Notification>) {
       state.notification = action.payload;

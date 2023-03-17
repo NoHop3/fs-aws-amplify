@@ -1,6 +1,6 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import { connectRouter, routerMiddleware } from "connected-react-router";
-import { createBrowserHistory, History } from "history";
+import { createBrowserHistory, type History } from "history";
 import carReducer from "./car-store";
 import notificationReducer from "./notification-store";
 
@@ -16,11 +16,11 @@ const createRootReducer = (history: History) =>
 export let store: ReturnType<typeof configureAppStore>;
 
 export const configureAppStore = () => {
-  let _store = configureStore({
+  const _store = configureStore({
     reducer: createRootReducer(history),
     middleware: (getDefaultMiddleware) => {
       return getDefaultMiddleware({ serializableCheck: false }).concat(
-        routerMiddleware(history)
+        routerMiddleware(history),
       );
     },
   });

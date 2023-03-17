@@ -184,9 +184,9 @@ export const listCars = /* GraphQL */ `
           id
           name
           manufacturer {
-          id
-          logo
-        }
+            id
+            logo
+          }
           createdAt
           updatedAt
           manufacturerModelsId

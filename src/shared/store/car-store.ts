@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Car } from "../models";
+import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
+import { type Car } from "../models";
 
 export interface CarStore {
   cars: Car[];
@@ -13,7 +13,7 @@ const initialState: CarStore = {
 
 const carSlice = createSlice({
   name: "cars",
-  initialState: initialState,
+  initialState,
   reducers: {
     setCarData(state, action: PayloadAction<Car[]>) {
       state.cars = action.payload;

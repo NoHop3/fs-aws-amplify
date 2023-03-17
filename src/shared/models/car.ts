@@ -1,6 +1,6 @@
-import { Model } from "./model";
+import { type Model } from "./model";
 
-export type Car = {
+export interface Car {
   id: string;
   name: string;
   model: Model;
@@ -13,4 +13,4 @@ export type Car = {
   image: string;
   createdAt: string;
   updatedAt: string;
-};
+}

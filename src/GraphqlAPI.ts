@@ -1,45 +1,44 @@
-/* tslint:disable */
 /* eslint-disable */
 //  This file was automatically generated and should not be edited.
 
 export type CreateManufacturerInput = {
-  id?: string | null,
-  name: string,
-  established?: string | null,
-  founder?: string | null,
-  headquarters?: string | null,
-  about?: string | null,
-  netWorth?: string | null,
-  logo?: string | null,
+  id?: string | null;
+  name: string;
+  established?: string | null;
+  founder?: string | null;
+  headquarters?: string | null;
+  about?: string | null;
+  netWorth?: string | null;
+  logo?: string | null;
 };
 
 export type ModelManufacturerConditionInput = {
-  name?: ModelStringInput | null,
-  established?: ModelStringInput | null,
-  founder?: ModelStringInput | null,
-  headquarters?: ModelStringInput | null,
-  about?: ModelStringInput | null,
-  netWorth?: ModelStringInput | null,
-  logo?: ModelStringInput | null,
-  and?: Array< ModelManufacturerConditionInput | null > | null,
-  or?: Array< ModelManufacturerConditionInput | null > | null,
-  not?: ModelManufacturerConditionInput | null,
+  name?: ModelStringInput | null;
+  established?: ModelStringInput | null;
+  founder?: ModelStringInput | null;
+  headquarters?: ModelStringInput | null;
+  about?: ModelStringInput | null;
+  netWorth?: ModelStringInput | null;
+  logo?: ModelStringInput | null;
+  and?: Array<ModelManufacturerConditionInput | null> | null;
+  or?: Array<ModelManufacturerConditionInput | null> | null;
+  not?: ModelManufacturerConditionInput | null;
 };
 
 export type ModelStringInput = {
-  ne?: string | null,
-  eq?: string | null,
-  le?: string | null,
-  lt?: string | null,
-  ge?: string | null,
-  gt?: string | null,
-  contains?: string | null,
-  notContains?: string | null,
-  between?: Array< string | null > | null,
-  beginsWith?: string | null,
-  attributeExists?: boolean | null,
-  attributeType?: ModelAttributeTypes | null,
-  size?: ModelSizeInput | null,
+  ne?: string | null;
+  eq?: string | null;
+  le?: string | null;
+  lt?: string | null;
+  ge?: string | null;
+  gt?: string | null;
+  contains?: string | null;
+  notContains?: string | null;
+  between?: Array<string | null> | null;
+  beginsWith?: string | null;
+  attributeExists?: boolean | null;
+  attributeType?: ModelAttributeTypes | null;
+  size?: ModelSizeInput | null;
 };
 
 export enum ModelAttributeTypes {
@@ -55,1324 +54,1323 @@ export enum ModelAttributeTypes {
   _null = "_null",
 }
 
-
 export type ModelSizeInput = {
-  ne?: number | null,
-  eq?: number | null,
-  le?: number | null,
-  lt?: number | null,
-  ge?: number | null,
-  gt?: number | null,
-  between?: Array< number | null > | null,
+  ne?: number | null;
+  eq?: number | null;
+  le?: number | null;
+  lt?: number | null;
+  ge?: number | null;
+  gt?: number | null;
+  between?: Array<number | null> | null;
 };
 
 export type Manufacturer = {
-  __typename: "Manufacturer",
-  id: string,
-  name: string,
-  established?: string | null,
-  founder?: string | null,
-  headquarters?: string | null,
-  about?: string | null,
-  netWorth?: string | null,
-  logo?: string | null,
-  models?: ModelModelConnection | null,
-  createdAt: string,
-  updatedAt: string,
+  __typename: "Manufacturer";
+  id: string;
+  name: string;
+  established?: string | null;
+  founder?: string | null;
+  headquarters?: string | null;
+  about?: string | null;
+  netWorth?: string | null;
+  logo?: string | null;
+  models?: ModelModelConnection | null;
+  createdAt: string;
+  updatedAt: string;
 };
 
 export type ModelModelConnection = {
-  __typename: "ModelModelConnection",
-  items:  Array<Model | null >,
-  nextToken?: string | null,
+  __typename: "ModelModelConnection";
+  items: Array<Model | null>;
+  nextToken?: string | null;
 };
 
 export type Model = {
-  __typename: "Model",
-  id: string,
-  name: string,
-  manufacturer?: Manufacturer | null,
-  cars?: ModelCarConnection | null,
-  createdAt: string,
-  updatedAt: string,
-  manufacturerModelsId?: string | null,
+  __typename: "Model";
+  id: string;
+  name: string;
+  manufacturer?: Manufacturer | null;
+  cars?: ModelCarConnection | null;
+  createdAt: string;
+  updatedAt: string;
+  manufacturerModelsId?: string | null;
 };
 
 export type ModelCarConnection = {
-  __typename: "ModelCarConnection",
-  items:  Array<Car | null >,
-  nextToken?: string | null,
+  __typename: "ModelCarConnection";
+  items: Array<Car | null>;
+  nextToken?: string | null;
 };
 
 export type Car = {
-  __typename: "Car",
-  id: string,
-  name?: string | null,
-  model?: Model | null,
-  image?: string | null,
-  generation?: number | null,
-  power?: number | null,
-  torque?: number | null,
-  weight?: number | null,
-  gearbox?: string | null,
-  engine?: string | null,
-  createdAt: string,
-  updatedAt: string,
-  modelCarsId?: string | null,
+  __typename: "Car";
+  id: string;
+  name?: string | null;
+  model?: Model | null;
+  image?: string | null;
+  generation?: number | null;
+  power?: number | null;
+  torque?: number | null;
+  weight?: number | null;
+  gearbox?: string | null;
+  engine?: string | null;
+  createdAt: string;
+  updatedAt: string;
+  modelCarsId?: string | null;
 };
 
 export type UpdateManufacturerInput = {
-  id: string,
-  name?: string | null,
-  established?: string | null,
-  founder?: string | null,
-  headquarters?: string | null,
-  about?: string | null,
-  netWorth?: string | null,
-  logo?: string | null,
+  id: string;
+  name?: string | null;
+  established?: string | null;
+  founder?: string | null;
+  headquarters?: string | null;
+  about?: string | null;
+  netWorth?: string | null;
+  logo?: string | null;
 };
 
 export type DeleteManufacturerInput = {
-  id: string,
+  id: string;
 };
 
 export type CreateModelInput = {
-  id?: string | null,
-  name: string,
-  manufacturerModelsId?: string | null,
+  id?: string | null;
+  name: string;
+  manufacturerModelsId?: string | null;
 };
 
 export type ModelModelConditionInput = {
-  name?: ModelStringInput | null,
-  and?: Array< ModelModelConditionInput | null > | null,
-  or?: Array< ModelModelConditionInput | null > | null,
-  not?: ModelModelConditionInput | null,
-  manufacturerModelsId?: ModelIDInput | null,
+  name?: ModelStringInput | null;
+  and?: Array<ModelModelConditionInput | null> | null;
+  or?: Array<ModelModelConditionInput | null> | null;
+  not?: ModelModelConditionInput | null;
+  manufacturerModelsId?: ModelIDInput | null;
 };
 
 export type ModelIDInput = {
-  ne?: string | null,
-  eq?: string | null,
-  le?: string | null,
-  lt?: string | null,
-  ge?: string | null,
-  gt?: string | null,
-  contains?: string | null,
-  notContains?: string | null,
-  between?: Array< string | null > | null,
-  beginsWith?: string | null,
-  attributeExists?: boolean | null,
-  attributeType?: ModelAttributeTypes | null,
-  size?: ModelSizeInput | null,
+  ne?: string | null;
+  eq?: string | null;
+  le?: string | null;
+  lt?: string | null;
+  ge?: string | null;
+  gt?: string | null;
+  contains?: string | null;
+  notContains?: string | null;
+  between?: Array<string | null> | null;
+  beginsWith?: string | null;
+  attributeExists?: boolean | null;
+  attributeType?: ModelAttributeTypes | null;
+  size?: ModelSizeInput | null;
 };
 
 export type UpdateModelInput = {
-  id: string,
-  name?: string | null,
-  manufacturerModelsId?: string | null,
+  id: string;
+  name?: string | null;
+  manufacturerModelsId?: string | null;
 };
 
 export type DeleteModelInput = {
-  id: string,
+  id: string;
 };
 
 export type CreateCarInput = {
-  id?: string | null,
-  name?: string | null,
-  image?: string | null,
-  generation?: number | null,
-  power?: number | null,
-  torque?: number | null,
-  weight?: number | null,
-  gearbox?: string | null,
-  engine?: string | null,
-  modelCarsId?: string | null,
+  id?: string | null;
+  name?: string | null;
+  image?: string | null;
+  generation?: number | null;
+  power?: number | null;
+  torque?: number | null;
+  weight?: number | null;
+  gearbox?: string | null;
+  engine?: string | null;
+  modelCarsId?: string | null;
 };
 
 export type ModelCarConditionInput = {
-  name?: ModelStringInput | null,
-  image?: ModelStringInput | null,
-  generation?: ModelIntInput | null,
-  power?: ModelIntInput | null,
-  torque?: ModelIntInput | null,
-  weight?: ModelIntInput | null,
-  gearbox?: ModelStringInput | null,
-  engine?: ModelStringInput | null,
-  and?: Array< ModelCarConditionInput | null > | null,
-  or?: Array< ModelCarConditionInput | null > | null,
-  not?: ModelCarConditionInput | null,
-  modelCarsId?: ModelIDInput | null,
+  name?: ModelStringInput | null;
+  image?: ModelStringInput | null;
+  generation?: ModelIntInput | null;
+  power?: ModelIntInput | null;
+  torque?: ModelIntInput | null;
+  weight?: ModelIntInput | null;
+  gearbox?: ModelStringInput | null;
+  engine?: ModelStringInput | null;
+  and?: Array<ModelCarConditionInput | null> | null;
+  or?: Array<ModelCarConditionInput | null> | null;
+  not?: ModelCarConditionInput | null;
+  modelCarsId?: ModelIDInput | null;
 };
 
 export type ModelIntInput = {
-  ne?: number | null,
-  eq?: number | null,
-  le?: number | null,
-  lt?: number | null,
-  ge?: number | null,
-  gt?: number | null,
-  between?: Array< number | null > | null,
-  attributeExists?: boolean | null,
-  attributeType?: ModelAttributeTypes | null,
+  ne?: number | null;
+  eq?: number | null;
+  le?: number | null;
+  lt?: number | null;
+  ge?: number | null;
+  gt?: number | null;
+  between?: Array<number | null> | null;
+  attributeExists?: boolean | null;
+  attributeType?: ModelAttributeTypes | null;
 };
 
 export type UpdateCarInput = {
-  id: string,
-  name?: string | null,
-  image?: string | null,
-  generation?: number | null,
-  power?: number | null,
-  torque?: number | null,
-  weight?: number | null,
-  gearbox?: string | null,
-  engine?: string | null,
-  modelCarsId?: string | null,
+  id: string;
+  name?: string | null;
+  image?: string | null;
+  generation?: number | null;
+  power?: number | null;
+  torque?: number | null;
+  weight?: number | null;
+  gearbox?: string | null;
+  engine?: string | null;
+  modelCarsId?: string | null;
 };
 
 export type DeleteCarInput = {
-  id: string,
+  id: string;
 };
 
 export type ModelManufacturerFilterInput = {
-  id?: ModelIDInput | null,
-  name?: ModelStringInput | null,
-  established?: ModelStringInput | null,
-  founder?: ModelStringInput | null,
-  headquarters?: ModelStringInput | null,
-  about?: ModelStringInput | null,
-  netWorth?: ModelStringInput | null,
-  logo?: ModelStringInput | null,
-  and?: Array< ModelManufacturerFilterInput | null > | null,
-  or?: Array< ModelManufacturerFilterInput | null > | null,
-  not?: ModelManufacturerFilterInput | null,
+  id?: ModelIDInput | null;
+  name?: ModelStringInput | null;
+  established?: ModelStringInput | null;
+  founder?: ModelStringInput | null;
+  headquarters?: ModelStringInput | null;
+  about?: ModelStringInput | null;
+  netWorth?: ModelStringInput | null;
+  logo?: ModelStringInput | null;
+  and?: Array<ModelManufacturerFilterInput | null> | null;
+  or?: Array<ModelManufacturerFilterInput | null> | null;
+  not?: ModelManufacturerFilterInput | null;
 };
 
 export type ModelManufacturerConnection = {
-  __typename: "ModelManufacturerConnection",
-  items:  Array<Manufacturer | null >,
-  nextToken?: string | null,
+  __typename: "ModelManufacturerConnection";
+  items: Array<Manufacturer | null>;
+  nextToken?: string | null;
 };
 
 export type ModelModelFilterInput = {
-  id?: ModelIDInput | null,
-  name?: ModelStringInput | null,
-  and?: Array< ModelModelFilterInput | null > | null,
-  or?: Array< ModelModelFilterInput | null > | null,
-  not?: ModelModelFilterInput | null,
-  manufacturerModelsId?: ModelIDInput | null,
+  id?: ModelIDInput | null;
+  name?: ModelStringInput | null;
+  and?: Array<ModelModelFilterInput | null> | null;
+  or?: Array<ModelModelFilterInput | null> | null;
+  not?: ModelModelFilterInput | null;
+  manufacturerModelsId?: ModelIDInput | null;
 };
 
 export type ModelCarFilterInput = {
-  id?: ModelIDInput | null,
-  name?: ModelStringInput | null,
-  image?: ModelStringInput | null,
-  generation?: ModelIntInput | null,
-  power?: ModelIntInput | null,
-  torque?: ModelIntInput | null,
-  weight?: ModelIntInput | null,
-  gearbox?: ModelStringInput | null,
-  engine?: ModelStringInput | null,
-  and?: Array< ModelCarFilterInput | null > | null,
-  or?: Array< ModelCarFilterInput | null > | null,
-  not?: ModelCarFilterInput | null,
-  modelCarsId?: ModelIDInput | null,
+  id?: ModelIDInput | null;
+  name?: ModelStringInput | null;
+  image?: ModelStringInput | null;
+  generation?: ModelIntInput | null;
+  power?: ModelIntInput | null;
+  torque?: ModelIntInput | null;
+  weight?: ModelIntInput | null;
+  gearbox?: ModelStringInput | null;
+  engine?: ModelStringInput | null;
+  and?: Array<ModelCarFilterInput | null> | null;
+  or?: Array<ModelCarFilterInput | null> | null;
+  not?: ModelCarFilterInput | null;
+  modelCarsId?: ModelIDInput | null;
 };
 
 export type ModelSubscriptionManufacturerFilterInput = {
-  id?: ModelSubscriptionIDInput | null,
-  name?: ModelSubscriptionStringInput | null,
-  established?: ModelSubscriptionStringInput | null,
-  founder?: ModelSubscriptionStringInput | null,
-  headquarters?: ModelSubscriptionStringInput | null,
-  about?: ModelSubscriptionStringInput | null,
-  netWorth?: ModelSubscriptionStringInput | null,
-  logo?: ModelSubscriptionStringInput | null,
-  and?: Array< ModelSubscriptionManufacturerFilterInput | null > | null,
-  or?: Array< ModelSubscriptionManufacturerFilterInput | null > | null,
+  id?: ModelSubscriptionIDInput | null;
+  name?: ModelSubscriptionStringInput | null;
+  established?: ModelSubscriptionStringInput | null;
+  founder?: ModelSubscriptionStringInput | null;
+  headquarters?: ModelSubscriptionStringInput | null;
+  about?: ModelSubscriptionStringInput | null;
+  netWorth?: ModelSubscriptionStringInput | null;
+  logo?: ModelSubscriptionStringInput | null;
+  and?: Array<ModelSubscriptionManufacturerFilterInput | null> | null;
+  or?: Array<ModelSubscriptionManufacturerFilterInput | null> | null;
 };
 
 export type ModelSubscriptionIDInput = {
-  ne?: string | null,
-  eq?: string | null,
-  le?: string | null,
-  lt?: string | null,
-  ge?: string | null,
-  gt?: string | null,
-  contains?: string | null,
-  notContains?: string | null,
-  between?: Array< string | null > | null,
-  beginsWith?: string | null,
-  in?: Array< string | null > | null,
-  notIn?: Array< string | null > | null,
+  ne?: string | null;
+  eq?: string | null;
+  le?: string | null;
+  lt?: string | null;
+  ge?: string | null;
+  gt?: string | null;
+  contains?: string | null;
+  notContains?: string | null;
+  between?: Array<string | null> | null;
+  beginsWith?: string | null;
+  in?: Array<string | null> | null;
+  notIn?: Array<string | null> | null;
 };
 
 export type ModelSubscriptionStringInput = {
-  ne?: string | null,
-  eq?: string | null,
-  le?: string | null,
-  lt?: string | null,
-  ge?: string | null,
-  gt?: string | null,
-  contains?: string | null,
-  notContains?: string | null,
-  between?: Array< string | null > | null,
-  beginsWith?: string | null,
-  in?: Array< string | null > | null,
-  notIn?: Array< string | null > | null,
+  ne?: string | null;
+  eq?: string | null;
+  le?: string | null;
+  lt?: string | null;
+  ge?: string | null;
+  gt?: string | null;
+  contains?: string | null;
+  notContains?: string | null;
+  between?: Array<string | null> | null;
+  beginsWith?: string | null;
+  in?: Array<string | null> | null;
+  notIn?: Array<string | null> | null;
 };
 
 export type ModelSubscriptionModelFilterInput = {
-  id?: ModelSubscriptionIDInput | null,
-  name?: ModelSubscriptionStringInput | null,
-  and?: Array< ModelSubscriptionModelFilterInput | null > | null,
-  or?: Array< ModelSubscriptionModelFilterInput | null > | null,
+  id?: ModelSubscriptionIDInput | null;
+  name?: ModelSubscriptionStringInput | null;
+  and?: Array<ModelSubscriptionModelFilterInput | null> | null;
+  or?: Array<ModelSubscriptionModelFilterInput | null> | null;
 };
 
 export type ModelSubscriptionCarFilterInput = {
-  id?: ModelSubscriptionIDInput | null,
-  name?: ModelSubscriptionStringInput | null,
-  image?: ModelSubscriptionStringInput | null,
-  generation?: ModelSubscriptionIntInput | null,
-  power?: ModelSubscriptionIntInput | null,
-  torque?: ModelSubscriptionIntInput | null,
-  weight?: ModelSubscriptionIntInput | null,
-  gearbox?: ModelSubscriptionStringInput | null,
-  engine?: ModelSubscriptionStringInput | null,
-  and?: Array< ModelSubscriptionCarFilterInput | null > | null,
-  or?: Array< ModelSubscriptionCarFilterInput | null > | null,
+  id?: ModelSubscriptionIDInput | null;
+  name?: ModelSubscriptionStringInput | null;
+  image?: ModelSubscriptionStringInput | null;
+  generation?: ModelSubscriptionIntInput | null;
+  power?: ModelSubscriptionIntInput | null;
+  torque?: ModelSubscriptionIntInput | null;
+  weight?: ModelSubscriptionIntInput | null;
+  gearbox?: ModelSubscriptionStringInput | null;
+  engine?: ModelSubscriptionStringInput | null;
+  and?: Array<ModelSubscriptionCarFilterInput | null> | null;
+  or?: Array<ModelSubscriptionCarFilterInput | null> | null;
 };
 
 export type ModelSubscriptionIntInput = {
-  ne?: number | null,
-  eq?: number | null,
-  le?: number | null,
-  lt?: number | null,
-  ge?: number | null,
-  gt?: number | null,
-  between?: Array< number | null > | null,
-  in?: Array< number | null > | null,
-  notIn?: Array< number | null > | null,
+  ne?: number | null;
+  eq?: number | null;
+  le?: number | null;
+  lt?: number | null;
+  ge?: number | null;
+  gt?: number | null;
+  between?: Array<number | null> | null;
+  in?: Array<number | null> | null;
+  notIn?: Array<number | null> | null;
 };
 
 export type CreateManufacturerMutationVariables = {
-  input: CreateManufacturerInput,
-  condition?: ModelManufacturerConditionInput | null,
+  input: CreateManufacturerInput;
+  condition?: ModelManufacturerConditionInput | null;
 };
 
 export type CreateManufacturerMutation = {
-  createManufacturer?:  {
-    __typename: "Manufacturer",
-    id: string,
-    name: string,
-    established?: string | null,
-    founder?: string | null,
-    headquarters?: string | null,
-    about?: string | null,
-    netWorth?: string | null,
-    logo?: string | null,
-    models?:  {
-      __typename: "ModelModelConnection",
-      items:  Array< {
-        __typename: "Model",
-        id: string,
-        name: string,
-        createdAt: string,
-        updatedAt: string,
-        manufacturerModelsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
+  createManufacturer?: {
+    __typename: "Manufacturer";
+    id: string;
+    name: string;
+    established?: string | null;
+    founder?: string | null;
+    headquarters?: string | null;
+    about?: string | null;
+    netWorth?: string | null;
+    logo?: string | null;
+    models?: {
+      __typename: "ModelModelConnection";
+      items: Array<{
+        __typename: "Model";
+        id: string;
+        name: string;
+        createdAt: string;
+        updatedAt: string;
+        manufacturerModelsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+  } | null;
 };
 
 export type UpdateManufacturerMutationVariables = {
-  input: UpdateManufacturerInput,
-  condition?: ModelManufacturerConditionInput | null,
+  input: UpdateManufacturerInput;
+  condition?: ModelManufacturerConditionInput | null;
 };
 
 export type UpdateManufacturerMutation = {
-  updateManufacturer?:  {
-    __typename: "Manufacturer",
-    id: string,
-    name: string,
-    established?: string | null,
-    founder?: string | null,
-    headquarters?: string | null,
-    about?: string | null,
-    netWorth?: string | null,
-    logo?: string | null,
-    models?:  {
-      __typename: "ModelModelConnection",
-      items:  Array< {
-        __typename: "Model",
-        id: string,
-        name: string,
-        createdAt: string,
-        updatedAt: string,
-        manufacturerModelsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
+  updateManufacturer?: {
+    __typename: "Manufacturer";
+    id: string;
+    name: string;
+    established?: string | null;
+    founder?: string | null;
+    headquarters?: string | null;
+    about?: string | null;
+    netWorth?: string | null;
+    logo?: string | null;
+    models?: {
+      __typename: "ModelModelConnection";
+      items: Array<{
+        __typename: "Model";
+        id: string;
+        name: string;
+        createdAt: string;
+        updatedAt: string;
+        manufacturerModelsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+  } | null;
 };
 
 export type DeleteManufacturerMutationVariables = {
-  input: DeleteManufacturerInput,
-  condition?: ModelManufacturerConditionInput | null,
+  input: DeleteManufacturerInput;
+  condition?: ModelManufacturerConditionInput | null;
 };
 
 export type DeleteManufacturerMutation = {
-  deleteManufacturer?:  {
-    __typename: "Manufacturer",
-    id: string,
-    name: string,
-    established?: string | null,
-    founder?: string | null,
-    headquarters?: string | null,
-    about?: string | null,
-    netWorth?: string | null,
-    logo?: string | null,
-    models?:  {
-      __typename: "ModelModelConnection",
-      items:  Array< {
-        __typename: "Model",
-        id: string,
-        name: string,
-        createdAt: string,
-        updatedAt: string,
-        manufacturerModelsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
+  deleteManufacturer?: {
+    __typename: "Manufacturer";
+    id: string;
+    name: string;
+    established?: string | null;
+    founder?: string | null;
+    headquarters?: string | null;
+    about?: string | null;
+    netWorth?: string | null;
+    logo?: string | null;
+    models?: {
+      __typename: "ModelModelConnection";
+      items: Array<{
+        __typename: "Model";
+        id: string;
+        name: string;
+        createdAt: string;
+        updatedAt: string;
+        manufacturerModelsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+  } | null;
 };
 
 export type CreateModelMutationVariables = {
-  input: CreateModelInput,
-  condition?: ModelModelConditionInput | null,
+  input: CreateModelInput;
+  condition?: ModelModelConditionInput | null;
 };
 
 export type CreateModelMutation = {
-  createModel?:  {
-    __typename: "Model",
-    id: string,
-    name: string,
-    manufacturer?:  {
-      __typename: "Manufacturer",
-      id: string,
-      name: string,
-      established?: string | null,
-      founder?: string | null,
-      headquarters?: string | null,
-      about?: string | null,
-      netWorth?: string | null,
-      logo?: string | null,
-      models?:  {
-        __typename: "ModelModelConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    cars?:  {
-      __typename: "ModelCarConnection",
-      items:  Array< {
-        __typename: "Car",
-        id: string,
-        name?: string | null,
-        image?: string | null,
-        generation?: number | null,
-        power?: number | null,
-        torque?: number | null,
-        weight?: number | null,
-        gearbox?: string | null,
-        engine?: string | null,
-        createdAt: string,
-        updatedAt: string,
-        modelCarsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    manufacturerModelsId?: string | null,
-  } | null,
+  createModel?: {
+    __typename: "Model";
+    id: string;
+    name: string;
+    manufacturer?: {
+      __typename: "Manufacturer";
+      id: string;
+      name: string;
+      established?: string | null;
+      founder?: string | null;
+      headquarters?: string | null;
+      about?: string | null;
+      netWorth?: string | null;
+      logo?: string | null;
+      models?: {
+        __typename: "ModelModelConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+    } | null;
+    cars?: {
+      __typename: "ModelCarConnection";
+      items: Array<{
+        __typename: "Car";
+        id: string;
+        name?: string | null;
+        image?: string | null;
+        generation?: number | null;
+        power?: number | null;
+        torque?: number | null;
+        weight?: number | null;
+        gearbox?: string | null;
+        engine?: string | null;
+        createdAt: string;
+        updatedAt: string;
+        modelCarsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+    manufacturerModelsId?: string | null;
+  } | null;
 };
 
 export type UpdateModelMutationVariables = {
-  input: UpdateModelInput,
-  condition?: ModelModelConditionInput | null,
+  input: UpdateModelInput;
+  condition?: ModelModelConditionInput | null;
 };
 
 export type UpdateModelMutation = {
-  updateModel?:  {
-    __typename: "Model",
-    id: string,
-    name: string,
-    manufacturer?:  {
-      __typename: "Manufacturer",
-      id: string,
-      name: string,
-      established?: string | null,
-      founder?: string | null,
-      headquarters?: string | null,
-      about?: string | null,
-      netWorth?: string | null,
-      logo?: string | null,
-      models?:  {
-        __typename: "ModelModelConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    cars?:  {
-      __typename: "ModelCarConnection",
-      items:  Array< {
-        __typename: "Car",
-        id: string,
-        name?: string | null,
-        image?: string | null,
-        generation?: number | null,
-        power?: number | null,
-        torque?: number | null,
-        weight?: number | null,
-        gearbox?: string | null,
-        engine?: string | null,
-        createdAt: string,
-        updatedAt: string,
-        modelCarsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    manufacturerModelsId?: string | null,
-  } | null,
+  updateModel?: {
+    __typename: "Model";
+    id: string;
+    name: string;
+    manufacturer?: {
+      __typename: "Manufacturer";
+      id: string;
+      name: string;
+      established?: string | null;
+      founder?: string | null;
+      headquarters?: string | null;
+      about?: string | null;
+      netWorth?: string | null;
+      logo?: string | null;
+      models?: {
+        __typename: "ModelModelConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+    } | null;
+    cars?: {
+      __typename: "ModelCarConnection";
+      items: Array<{
+        __typename: "Car";
+        id: string;
+        name?: string | null;
+        image?: string | null;
+        generation?: number | null;
+        power?: number | null;
+        torque?: number | null;
+        weight?: number | null;
+        gearbox?: string | null;
+        engine?: string | null;
+        createdAt: string;
+        updatedAt: string;
+        modelCarsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+    manufacturerModelsId?: string | null;
+  } | null;
 };
 
 export type DeleteModelMutationVariables = {
-  input: DeleteModelInput,
-  condition?: ModelModelConditionInput | null,
+  input: DeleteModelInput;
+  condition?: ModelModelConditionInput | null;
 };
 
 export type DeleteModelMutation = {
-  deleteModel?:  {
-    __typename: "Model",
-    id: string,
-    name: string,
-    manufacturer?:  {
-      __typename: "Manufacturer",
-      id: string,
-      name: string,
-      established?: string | null,
-      founder?: string | null,
-      headquarters?: string | null,
-      about?: string | null,
-      netWorth?: string | null,
-      logo?: string | null,
-      models?:  {
-        __typename: "ModelModelConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    cars?:  {
-      __typename: "ModelCarConnection",
-      items:  Array< {
-        __typename: "Car",
-        id: string,
-        name?: string | null,
-        image?: string | null,
-        generation?: number | null,
-        power?: number | null,
-        torque?: number | null,
-        weight?: number | null,
-        gearbox?: string | null,
-        engine?: string | null,
-        createdAt: string,
-        updatedAt: string,
-        modelCarsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    manufacturerModelsId?: string | null,
-  } | null,
+  deleteModel?: {
+    __typename: "Model";
+    id: string;
+    name: string;
+    manufacturer?: {
+      __typename: "Manufacturer";
+      id: string;
+      name: string;
+      established?: string | null;
+      founder?: string | null;
+      headquarters?: string | null;
+      about?: string | null;
+      netWorth?: string | null;
+      logo?: string | null;
+      models?: {
+        __typename: "ModelModelConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+    } | null;
+    cars?: {
+      __typename: "ModelCarConnection";
+      items: Array<{
+        __typename: "Car";
+        id: string;
+        name?: string | null;
+        image?: string | null;
+        generation?: number | null;
+        power?: number | null;
+        torque?: number | null;
+        weight?: number | null;
+        gearbox?: string | null;
+        engine?: string | null;
+        createdAt: string;
+        updatedAt: string;
+        modelCarsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+    manufacturerModelsId?: string | null;
+  } | null;
 };
 
 export type CreateCarMutationVariables = {
-  input: CreateCarInput,
-  condition?: ModelCarConditionInput | null,
+  input: CreateCarInput;
+  condition?: ModelCarConditionInput | null;
 };
 
 export type CreateCarMutation = {
-  createCar?:  {
-    __typename: "Car",
-    id: string,
-    name?: string | null,
-    model?:  {
-      __typename: "Model",
-      id: string,
-      name: string,
-      manufacturer?:  {
-        __typename: "Manufacturer",
-        id: string,
-        name: string,
-        established?: string | null,
-        founder?: string | null,
-        headquarters?: string | null,
-        about?: string | null,
-        netWorth?: string | null,
-        logo?: string | null,
-        createdAt: string,
-        updatedAt: string,
-      } | null,
-      cars?:  {
-        __typename: "ModelCarConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      manufacturerModelsId?: string | null,
-    } | null,
-    image?: string | null,
-    generation?: number | null,
-    power?: number | null,
-    torque?: number | null,
-    weight?: number | null,
-    gearbox?: string | null,
-    engine?: string | null,
-    createdAt: string,
-    updatedAt: string,
-    modelCarsId?: string | null,
-  } | null,
+  createCar?: {
+    __typename: "Car";
+    id: string;
+    name?: string | null;
+    model?: {
+      __typename: "Model";
+      id: string;
+      name: string;
+      manufacturer?: {
+        __typename: "Manufacturer";
+        id: string;
+        name: string;
+        established?: string | null;
+        founder?: string | null;
+        headquarters?: string | null;
+        about?: string | null;
+        netWorth?: string | null;
+        logo?: string | null;
+        createdAt: string;
+        updatedAt: string;
+      } | null;
+      cars?: {
+        __typename: "ModelCarConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+      manufacturerModelsId?: string | null;
+    } | null;
+    image?: string | null;
+    generation?: number | null;
+    power?: number | null;
+    torque?: number | null;
+    weight?: number | null;
+    gearbox?: string | null;
+    engine?: string | null;
+    createdAt: string;
+    updatedAt: string;
+    modelCarsId?: string | null;
+  } | null;
 };
 
 export type UpdateCarMutationVariables = {
-  input: UpdateCarInput,
-  condition?: ModelCarConditionInput | null,
+  input: UpdateCarInput;
+  condition?: ModelCarConditionInput | null;
 };
 
 export type UpdateCarMutation = {
-  updateCar?:  {
-    __typename: "Car",
-    id: string,
-    name?: string | null,
-    model?:  {
-      __typename: "Model",
-      id: string,
-      name: string,
-      manufacturer?:  {
-        __typename: "Manufacturer",
-        id: string,
-        name: string,
-        established?: string | null,
-        founder?: string | null,
-        headquarters?: string | null,
-        about?: string | null,
-        netWorth?: string | null,
-        logo?: string | null,
-        createdAt: string,
-        updatedAt: string,
-      } | null,
-      cars?:  {
-        __typename: "ModelCarConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      manufacturerModelsId?: string | null,
-    } | null,
-    image?: string | null,
-    generation?: number | null,
-    power?: number | null,
-    torque?: number | null,
-    weight?: number | null,
-    gearbox?: string | null,
-    engine?: string | null,
-    createdAt: string,
-    updatedAt: string,
-    modelCarsId?: string | null,
-  } | null,
+  updateCar?: {
+    __typename: "Car";
+    id: string;
+    name?: string | null;
+    model?: {
+      __typename: "Model";
+      id: string;
+      name: string;
+      manufacturer?: {
+        __typename: "Manufacturer";
+        id: string;
+        name: string;
+        established?: string | null;
+        founder?: string | null;
+        headquarters?: string | null;
+        about?: string | null;
+        netWorth?: string | null;
+        logo?: string | null;
+        createdAt: string;
+        updatedAt: string;
+      } | null;
+      cars?: {
+        __typename: "ModelCarConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+      manufacturerModelsId?: string | null;
+    } | null;
+    image?: string | null;
+    generation?: number | null;
+    power?: number | null;
+    torque?: number | null;
+    weight?: number | null;
+    gearbox?: string | null;
+    engine?: string | null;
+    createdAt: string;
+    updatedAt: string;
+    modelCarsId?: string | null;
+  } | null;
 };
 
 export type DeleteCarMutationVariables = {
-  input: DeleteCarInput,
-  condition?: ModelCarConditionInput | null,
+  input: DeleteCarInput;
+  condition?: ModelCarConditionInput | null;
 };
 
 export type DeleteCarMutation = {
-  deleteCar?:  {
-    __typename: "Car",
-    id: string,
-    name?: string | null,
-    model?:  {
-      __typename: "Model",
-      id: string,
-      name: string,
-      manufacturer?:  {
-        __typename: "Manufacturer",
-        id: string,
-        name: string,
-        established?: string | null,
-        founder?: string | null,
-        headquarters?: string | null,
-        about?: string | null,
-        netWorth?: string | null,
-        logo?: string | null,
-        createdAt: string,
-        updatedAt: string,
-      } | null,
-      cars?:  {
-        __typename: "ModelCarConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      manufacturerModelsId?: string | null,
-    } | null,
-    image?: string | null,
-    generation?: number | null,
-    power?: number | null,
-    torque?: number | null,
-    weight?: number | null,
-    gearbox?: string | null,
-    engine?: string | null,
-    createdAt: string,
-    updatedAt: string,
-    modelCarsId?: string | null,
-  } | null,
+  deleteCar?: {
+    __typename: "Car";
+    id: string;
+    name?: string | null;
+    model?: {
+      __typename: "Model";
+      id: string;
+      name: string;
+      manufacturer?: {
+        __typename: "Manufacturer";
+        id: string;
+        name: string;
+        established?: string | null;
+        founder?: string | null;
+        headquarters?: string | null;
+        about?: string | null;
+        netWorth?: string | null;
+        logo?: string | null;
+        createdAt: string;
+        updatedAt: string;
+      } | null;
+      cars?: {
+        __typename: "ModelCarConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+      manufacturerModelsId?: string | null;
+    } | null;
+    image?: string | null;
+    generation?: number | null;
+    power?: number | null;
+    torque?: number | null;
+    weight?: number | null;
+    gearbox?: string | null;
+    engine?: string | null;
+    createdAt: string;
+    updatedAt: string;
+    modelCarsId?: string | null;
+  } | null;
 };
 
 export type GetManufacturerQueryVariables = {
-  id: string,
+  id: string;
 };
 
 export type GetManufacturerQuery = {
-  getManufacturer?:  {
-    __typename: "Manufacturer",
-    id: string,
-    name: string,
-    established?: string | null,
-    founder?: string | null,
-    headquarters?: string | null,
-    about?: string | null,
-    netWorth?: string | null,
-    logo?: string | null,
-    models?:  {
-      __typename: "ModelModelConnection",
-      items:  Array< {
-        __typename: "Model",
-        id: string,
-        name: string,
-        createdAt: string,
-        updatedAt: string,
-        manufacturerModelsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
+  getManufacturer?: {
+    __typename: "Manufacturer";
+    id: string;
+    name: string;
+    established?: string | null;
+    founder?: string | null;
+    headquarters?: string | null;
+    about?: string | null;
+    netWorth?: string | null;
+    logo?: string | null;
+    models?: {
+      __typename: "ModelModelConnection";
+      items: Array<{
+        __typename: "Model";
+        id: string;
+        name: string;
+        createdAt: string;
+        updatedAt: string;
+        manufacturerModelsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+  } | null;
 };
 
 export type ListManufacturersQueryVariables = {
-  filter?: ModelManufacturerFilterInput | null,
-  limit?: number | null,
-  nextToken?: string | null,
+  filter?: ModelManufacturerFilterInput | null;
+  limit?: number | null;
+  nextToken?: string | null;
 };
 
 export type ListManufacturersQuery = {
-  listManufacturers?:  {
-    __typename: "ModelManufacturerConnection",
-    items:  Array< {
-      __typename: "Manufacturer",
-      id: string,
-      name: string,
-      established?: string | null,
-      founder?: string | null,
-      headquarters?: string | null,
-      about?: string | null,
-      netWorth?: string | null,
-      logo?: string | null,
-      models?:  {
-        __typename: "ModelModelConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null >,
-    nextToken?: string | null,
-  } | null,
+  listManufacturers?: {
+    __typename: "ModelManufacturerConnection";
+    items: Array<{
+      __typename: "Manufacturer";
+      id: string;
+      name: string;
+      established?: string | null;
+      founder?: string | null;
+      headquarters?: string | null;
+      about?: string | null;
+      netWorth?: string | null;
+      logo?: string | null;
+      models?: {
+        __typename: "ModelModelConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+    } | null>;
+    nextToken?: string | null;
+  } | null;
 };
 
 export type GetModelQueryVariables = {
-  id: string,
+  id: string;
 };
 
 export type GetModelQuery = {
-  getModel?:  {
-    __typename: "Model",
-    id: string,
-    name: string,
-    manufacturer?:  {
-      __typename: "Manufacturer",
-      id: string,
-      name: string,
-      established?: string | null,
-      founder?: string | null,
-      headquarters?: string | null,
-      about?: string | null,
-      netWorth?: string | null,
-      logo?: string | null,
-      models?:  {
-        __typename: "ModelModelConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    cars?:  {
-      __typename: "ModelCarConnection",
-      items:  Array< {
-        __typename: "Car",
-        id: string,
-        name?: string | null,
-        image?: string | null,
-        generation?: number | null,
-        power?: number | null,
-        torque?: number | null,
-        weight?: number | null,
-        gearbox?: string | null,
-        engine?: string | null,
-        createdAt: string,
-        updatedAt: string,
-        modelCarsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    manufacturerModelsId?: string | null,
-  } | null,
+  getModel?: {
+    __typename: "Model";
+    id: string;
+    name: string;
+    manufacturer?: {
+      __typename: "Manufacturer";
+      id: string;
+      name: string;
+      established?: string | null;
+      founder?: string | null;
+      headquarters?: string | null;
+      about?: string | null;
+      netWorth?: string | null;
+      logo?: string | null;
+      models?: {
+        __typename: "ModelModelConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+    } | null;
+    cars?: {
+      __typename: "ModelCarConnection";
+      items: Array<{
+        __typename: "Car";
+        id: string;
+        name?: string | null;
+        image?: string | null;
+        generation?: number | null;
+        power?: number | null;
+        torque?: number | null;
+        weight?: number | null;
+        gearbox?: string | null;
+        engine?: string | null;
+        createdAt: string;
+        updatedAt: string;
+        modelCarsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+    manufacturerModelsId?: string | null;
+  } | null;
 };
 
 export type ListModelsQueryVariables = {
-  filter?: ModelModelFilterInput | null,
-  limit?: number | null,
-  nextToken?: string | null,
+  filter?: ModelModelFilterInput | null;
+  limit?: number | null;
+  nextToken?: string | null;
 };
 
 export type ListModelsQuery = {
-  listModels?:  {
-    __typename: "ModelModelConnection",
-    items:  Array< {
-      __typename: "Model",
-      id: string,
-      name: string,
-      manufacturer?:  {
-        __typename: "Manufacturer",
-        id: string,
-        name: string,
-        established?: string | null,
-        founder?: string | null,
-        headquarters?: string | null,
-        about?: string | null,
-        netWorth?: string | null,
-        logo?: string | null,
-        createdAt: string,
-        updatedAt: string,
-      } | null,
-      cars?:  {
-        __typename: "ModelCarConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      manufacturerModelsId?: string | null,
-    } | null >,
-    nextToken?: string | null,
-  } | null,
+  listModels?: {
+    __typename: "ModelModelConnection";
+    items: Array<{
+      __typename: "Model";
+      id: string;
+      name: string;
+      manufacturer?: {
+        __typename: "Manufacturer";
+        id: string;
+        name: string;
+        established?: string | null;
+        founder?: string | null;
+        headquarters?: string | null;
+        about?: string | null;
+        netWorth?: string | null;
+        logo?: string | null;
+        createdAt: string;
+        updatedAt: string;
+      } | null;
+      cars?: {
+        __typename: "ModelCarConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+      manufacturerModelsId?: string | null;
+    } | null>;
+    nextToken?: string | null;
+  } | null;
 };
 
 export type GetCarQueryVariables = {
-  id: string,
+  id: string;
 };
 
 export type GetCarQuery = {
-  getCar?:  {
-    __typename: "Car",
-    id: string,
-    name?: string | null,
-    model?:  {
-      __typename: "Model",
-      id: string,
-      name: string,
-      manufacturer?:  {
-        __typename: "Manufacturer",
-        id: string,
-        name: string,
-        established?: string | null,
-        founder?: string | null,
-        headquarters?: string | null,
-        about?: string | null,
-        netWorth?: string | null,
-        logo?: string | null,
-        createdAt: string,
-        updatedAt: string,
-      } | null,
-      cars?:  {
-        __typename: "ModelCarConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      manufacturerModelsId?: string | null,
-    } | null,
-    image?: string | null,
-    generation?: number | null,
-    power?: number | null,
-    torque?: number | null,
-    weight?: number | null,
-    gearbox?: string | null,
-    engine?: string | null,
-    createdAt: string,
-    updatedAt: string,
-    modelCarsId?: string | null,
-  } | null,
+  getCar?: {
+    __typename: "Car";
+    id: string;
+    name?: string | null;
+    model?: {
+      __typename: "Model";
+      id: string;
+      name: string;
+      manufacturer?: {
+        __typename: "Manufacturer";
+        id: string;
+        name: string;
+        established?: string | null;
+        founder?: string | null;
+        headquarters?: string | null;
+        about?: string | null;
+        netWorth?: string | null;
+        logo?: string | null;
+        createdAt: string;
+        updatedAt: string;
+      } | null;
+      cars?: {
+        __typename: "ModelCarConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+      manufacturerModelsId?: string | null;
+    } | null;
+    image?: string | null;
+    generation?: number | null;
+    power?: number | null;
+    torque?: number | null;
+    weight?: number | null;
+    gearbox?: string | null;
+    engine?: string | null;
+    createdAt: string;
+    updatedAt: string;
+    modelCarsId?: string | null;
+  } | null;
 };
 
 export type ListCarsQueryVariables = {
-  filter?: ModelCarFilterInput | null,
-  limit?: number | null,
-  nextToken?: string | null,
+  filter?: ModelCarFilterInput | null;
+  limit?: number | null;
+  nextToken?: string | null;
 };
 
 export type ListCarsQuery = {
-  listCars?:  {
-    __typename: "ModelCarConnection",
-    items:  Array< {
-      __typename: "Car",
-      id: string,
-      name?: string | null,
-      model?:  {
-        __typename: "Model",
-        id: string,
-        name: string,
-        createdAt: string,
-        updatedAt: string,
-        manufacturerModelsId?: string | null,
-      } | null,
-      image?: string | null,
-      generation?: number | null,
-      power?: number | null,
-      torque?: number | null,
-      weight?: number | null,
-      gearbox?: string | null,
-      engine?: string | null,
-      createdAt: string,
-      updatedAt: string,
-      modelCarsId?: string | null,
-    } | null >,
-    nextToken?: string | null,
-  } | null,
+  listCars?: {
+    __typename: "ModelCarConnection";
+    items: Array<{
+      __typename: "Car";
+      id: string;
+      name?: string | null;
+      model?: {
+        __typename: "Model";
+        id: string;
+        name: string;
+        createdAt: string;
+        updatedAt: string;
+        manufacturerModelsId?: string | null;
+      } | null;
+      image?: string | null;
+      generation?: number | null;
+      power?: number | null;
+      torque?: number | null;
+      weight?: number | null;
+      gearbox?: string | null;
+      engine?: string | null;
+      createdAt: string;
+      updatedAt: string;
+      modelCarsId?: string | null;
+    } | null>;
+    nextToken?: string | null;
+  } | null;
 };
 
 export type OnCreateManufacturerSubscriptionVariables = {
-  filter?: ModelSubscriptionManufacturerFilterInput | null,
+  filter?: ModelSubscriptionManufacturerFilterInput | null;
 };
 
 export type OnCreateManufacturerSubscription = {
-  onCreateManufacturer?:  {
-    __typename: "Manufacturer",
-    id: string,
-    name: string,
-    established?: string | null,
-    founder?: string | null,
-    headquarters?: string | null,
-    about?: string | null,
-    netWorth?: string | null,
-    logo?: string | null,
-    models?:  {
-      __typename: "ModelModelConnection",
-      items:  Array< {
-        __typename: "Model",
-        id: string,
-        name: string,
-        createdAt: string,
-        updatedAt: string,
-        manufacturerModelsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
+  onCreateManufacturer?: {
+    __typename: "Manufacturer";
+    id: string;
+    name: string;
+    established?: string | null;
+    founder?: string | null;
+    headquarters?: string | null;
+    about?: string | null;
+    netWorth?: string | null;
+    logo?: string | null;
+    models?: {
+      __typename: "ModelModelConnection";
+      items: Array<{
+        __typename: "Model";
+        id: string;
+        name: string;
+        createdAt: string;
+        updatedAt: string;
+        manufacturerModelsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+  } | null;
 };
 
 export type OnUpdateManufacturerSubscriptionVariables = {
-  filter?: ModelSubscriptionManufacturerFilterInput | null,
+  filter?: ModelSubscriptionManufacturerFilterInput | null;
 };
 
 export type OnUpdateManufacturerSubscription = {
-  onUpdateManufacturer?:  {
-    __typename: "Manufacturer",
-    id: string,
-    name: string,
-    established?: string | null,
-    founder?: string | null,
-    headquarters?: string | null,
-    about?: string | null,
-    netWorth?: string | null,
-    logo?: string | null,
-    models?:  {
-      __typename: "ModelModelConnection",
-      items:  Array< {
-        __typename: "Model",
-        id: string,
-        name: string,
-        createdAt: string,
-        updatedAt: string,
-        manufacturerModelsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
+  onUpdateManufacturer?: {
+    __typename: "Manufacturer";
+    id: string;
+    name: string;
+    established?: string | null;
+    founder?: string | null;
+    headquarters?: string | null;
+    about?: string | null;
+    netWorth?: string | null;
+    logo?: string | null;
+    models?: {
+      __typename: "ModelModelConnection";
+      items: Array<{
+        __typename: "Model";
+        id: string;
+        name: string;
+        createdAt: string;
+        updatedAt: string;
+        manufacturerModelsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+  } | null;
 };
 
 export type OnDeleteManufacturerSubscriptionVariables = {
-  filter?: ModelSubscriptionManufacturerFilterInput | null,
+  filter?: ModelSubscriptionManufacturerFilterInput | null;
 };
 
 export type OnDeleteManufacturerSubscription = {
-  onDeleteManufacturer?:  {
-    __typename: "Manufacturer",
-    id: string,
-    name: string,
-    established?: string | null,
-    founder?: string | null,
-    headquarters?: string | null,
-    about?: string | null,
-    netWorth?: string | null,
-    logo?: string | null,
-    models?:  {
-      __typename: "ModelModelConnection",
-      items:  Array< {
-        __typename: "Model",
-        id: string,
-        name: string,
-        createdAt: string,
-        updatedAt: string,
-        manufacturerModelsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-  } | null,
+  onDeleteManufacturer?: {
+    __typename: "Manufacturer";
+    id: string;
+    name: string;
+    established?: string | null;
+    founder?: string | null;
+    headquarters?: string | null;
+    about?: string | null;
+    netWorth?: string | null;
+    logo?: string | null;
+    models?: {
+      __typename: "ModelModelConnection";
+      items: Array<{
+        __typename: "Model";
+        id: string;
+        name: string;
+        createdAt: string;
+        updatedAt: string;
+        manufacturerModelsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+  } | null;
 };
 
 export type OnCreateModelSubscriptionVariables = {
-  filter?: ModelSubscriptionModelFilterInput | null,
+  filter?: ModelSubscriptionModelFilterInput | null;
 };
 
 export type OnCreateModelSubscription = {
-  onCreateModel?:  {
-    __typename: "Model",
-    id: string,
-    name: string,
-    manufacturer?:  {
-      __typename: "Manufacturer",
-      id: string,
-      name: string,
-      established?: string | null,
-      founder?: string | null,
-      headquarters?: string | null,
-      about?: string | null,
-      netWorth?: string | null,
-      logo?: string | null,
-      models?:  {
-        __typename: "ModelModelConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    cars?:  {
-      __typename: "ModelCarConnection",
-      items:  Array< {
-        __typename: "Car",
-        id: string,
-        name?: string | null,
-        image?: string | null,
-        generation?: number | null,
-        power?: number | null,
-        torque?: number | null,
-        weight?: number | null,
-        gearbox?: string | null,
-        engine?: string | null,
-        createdAt: string,
-        updatedAt: string,
-        modelCarsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    manufacturerModelsId?: string | null,
-  } | null,
+  onCreateModel?: {
+    __typename: "Model";
+    id: string;
+    name: string;
+    manufacturer?: {
+      __typename: "Manufacturer";
+      id: string;
+      name: string;
+      established?: string | null;
+      founder?: string | null;
+      headquarters?: string | null;
+      about?: string | null;
+      netWorth?: string | null;
+      logo?: string | null;
+      models?: {
+        __typename: "ModelModelConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+    } | null;
+    cars?: {
+      __typename: "ModelCarConnection";
+      items: Array<{
+        __typename: "Car";
+        id: string;
+        name?: string | null;
+        image?: string | null;
+        generation?: number | null;
+        power?: number | null;
+        torque?: number | null;
+        weight?: number | null;
+        gearbox?: string | null;
+        engine?: string | null;
+        createdAt: string;
+        updatedAt: string;
+        modelCarsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+    manufacturerModelsId?: string | null;
+  } | null;
 };
 
 export type OnUpdateModelSubscriptionVariables = {
-  filter?: ModelSubscriptionModelFilterInput | null,
+  filter?: ModelSubscriptionModelFilterInput | null;
 };
 
 export type OnUpdateModelSubscription = {
-  onUpdateModel?:  {
-    __typename: "Model",
-    id: string,
-    name: string,
-    manufacturer?:  {
-      __typename: "Manufacturer",
-      id: string,
-      name: string,
-      established?: string | null,
-      founder?: string | null,
-      headquarters?: string | null,
-      about?: string | null,
-      netWorth?: string | null,
-      logo?: string | null,
-      models?:  {
-        __typename: "ModelModelConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    cars?:  {
-      __typename: "ModelCarConnection",
-      items:  Array< {
-        __typename: "Car",
-        id: string,
-        name?: string | null,
-        image?: string | null,
-        generation?: number | null,
-        power?: number | null,
-        torque?: number | null,
-        weight?: number | null,
-        gearbox?: string | null,
-        engine?: string | null,
-        createdAt: string,
-        updatedAt: string,
-        modelCarsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    manufacturerModelsId?: string | null,
-  } | null,
+  onUpdateModel?: {
+    __typename: "Model";
+    id: string;
+    name: string;
+    manufacturer?: {
+      __typename: "Manufacturer";
+      id: string;
+      name: string;
+      established?: string | null;
+      founder?: string | null;
+      headquarters?: string | null;
+      about?: string | null;
+      netWorth?: string | null;
+      logo?: string | null;
+      models?: {
+        __typename: "ModelModelConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+    } | null;
+    cars?: {
+      __typename: "ModelCarConnection";
+      items: Array<{
+        __typename: "Car";
+        id: string;
+        name?: string | null;
+        image?: string | null;
+        generation?: number | null;
+        power?: number | null;
+        torque?: number | null;
+        weight?: number | null;
+        gearbox?: string | null;
+        engine?: string | null;
+        createdAt: string;
+        updatedAt: string;
+        modelCarsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+    manufacturerModelsId?: string | null;
+  } | null;
 };
 
 export type OnDeleteModelSubscriptionVariables = {
-  filter?: ModelSubscriptionModelFilterInput | null,
+  filter?: ModelSubscriptionModelFilterInput | null;
 };
 
 export type OnDeleteModelSubscription = {
-  onDeleteModel?:  {
-    __typename: "Model",
-    id: string,
-    name: string,
-    manufacturer?:  {
-      __typename: "Manufacturer",
-      id: string,
-      name: string,
-      established?: string | null,
-      founder?: string | null,
-      headquarters?: string | null,
-      about?: string | null,
-      netWorth?: string | null,
-      logo?: string | null,
-      models?:  {
-        __typename: "ModelModelConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    cars?:  {
-      __typename: "ModelCarConnection",
-      items:  Array< {
-        __typename: "Car",
-        id: string,
-        name?: string | null,
-        image?: string | null,
-        generation?: number | null,
-        power?: number | null,
-        torque?: number | null,
-        weight?: number | null,
-        gearbox?: string | null,
-        engine?: string | null,
-        createdAt: string,
-        updatedAt: string,
-        modelCarsId?: string | null,
-      } | null >,
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    manufacturerModelsId?: string | null,
-  } | null,
+  onDeleteModel?: {
+    __typename: "Model";
+    id: string;
+    name: string;
+    manufacturer?: {
+      __typename: "Manufacturer";
+      id: string;
+      name: string;
+      established?: string | null;
+      founder?: string | null;
+      headquarters?: string | null;
+      about?: string | null;
+      netWorth?: string | null;
+      logo?: string | null;
+      models?: {
+        __typename: "ModelModelConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+    } | null;
+    cars?: {
+      __typename: "ModelCarConnection";
+      items: Array<{
+        __typename: "Car";
+        id: string;
+        name?: string | null;
+        image?: string | null;
+        generation?: number | null;
+        power?: number | null;
+        torque?: number | null;
+        weight?: number | null;
+        gearbox?: string | null;
+        engine?: string | null;
+        createdAt: string;
+        updatedAt: string;
+        modelCarsId?: string | null;
+      } | null>;
+      nextToken?: string | null;
+    } | null;
+    createdAt: string;
+    updatedAt: string;
+    manufacturerModelsId?: string | null;
+  } | null;
 };
 
 export type OnCreateCarSubscriptionVariables = {
-  filter?: ModelSubscriptionCarFilterInput | null,
+  filter?: ModelSubscriptionCarFilterInput | null;
 };
 
 export type OnCreateCarSubscription = {
-  onCreateCar?:  {
-    __typename: "Car",
-    id: string,
-    name?: string | null,
-    model?:  {
-      __typename: "Model",
-      id: string,
-      name: string,
-      manufacturer?:  {
-        __typename: "Manufacturer",
-        id: string,
-        name: string,
-        established?: string | null,
-        founder?: string | null,
-        headquarters?: string | null,
-        about?: string | null,
-        netWorth?: string | null,
-        logo?: string | null,
-        createdAt: string,
-        updatedAt: string,
-      } | null,
-      cars?:  {
-        __typename: "ModelCarConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      manufacturerModelsId?: string | null,
-    } | null,
-    image?: string | null,
-    generation?: number | null,
-    power?: number | null,
-    torque?: number | null,
-    weight?: number | null,
-    gearbox?: string | null,
-    engine?: string | null,
-    createdAt: string,
-    updatedAt: string,
-    modelCarsId?: string | null,
-  } | null,
+  onCreateCar?: {
+    __typename: "Car";
+    id: string;
+    name?: string | null;
+    model?: {
+      __typename: "Model";
+      id: string;
+      name: string;
+      manufacturer?: {
+        __typename: "Manufacturer";
+        id: string;
+        name: string;
+        established?: string | null;
+        founder?: string | null;
+        headquarters?: string | null;
+        about?: string | null;
+        netWorth?: string | null;
+        logo?: string | null;
+        createdAt: string;
+        updatedAt: string;
+      } | null;
+      cars?: {
+        __typename: "ModelCarConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+      manufacturerModelsId?: string | null;
+    } | null;
+    image?: string | null;
+    generation?: number | null;
+    power?: number | null;
+    torque?: number | null;
+    weight?: number | null;
+    gearbox?: string | null;
+    engine?: string | null;
+    createdAt: string;
+    updatedAt: string;
+    modelCarsId?: string | null;
+  } | null;
 };
 
 export type OnUpdateCarSubscriptionVariables = {
-  filter?: ModelSubscriptionCarFilterInput | null,
+  filter?: ModelSubscriptionCarFilterInput | null;
 };
 
 export type OnUpdateCarSubscription = {
-  onUpdateCar?:  {
-    __typename: "Car",
-    id: string,
-    name?: string | null,
-    model?:  {
-      __typename: "Model",
-      id: string,
-      name: string,
-      manufacturer?:  {
-        __typename: "Manufacturer",
-        id: string,
-        name: string,
-        established?: string | null,
-        founder?: string | null,
-        headquarters?: string | null,
-        about?: string | null,
-        netWorth?: string | null,
-        logo?: string | null,
-        createdAt: string,
-        updatedAt: string,
-      } | null,
-      cars?:  {
-        __typename: "ModelCarConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      manufacturerModelsId?: string | null,
-    } | null,
-    image?: string | null,
-    generation?: number | null,
-    power?: number | null,
-    torque?: number | null,
-    weight?: number | null,
-    gearbox?: string | null,
-    engine?: string | null,
-    createdAt: string,
-    updatedAt: string,
-    modelCarsId?: string | null,
-  } | null,
+  onUpdateCar?: {
+    __typename: "Car";
+    id: string;
+    name?: string | null;
+    model?: {
+      __typename: "Model";
+      id: string;
+      name: string;
+      manufacturer?: {
+        __typename: "Manufacturer";
+        id: string;
+        name: string;
+        established?: string | null;
+        founder?: string | null;
+        headquarters?: string | null;
+        about?: string | null;
+        netWorth?: string | null;
+        logo?: string | null;
+        createdAt: string;
+        updatedAt: string;
+      } | null;
+      cars?: {
+        __typename: "ModelCarConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+      manufacturerModelsId?: string | null;
+    } | null;
+    image?: string | null;
+    generation?: number | null;
+    power?: number | null;
+    torque?: number | null;
+    weight?: number | null;
+    gearbox?: string | null;
+    engine?: string | null;
+    createdAt: string;
+    updatedAt: string;
+    modelCarsId?: string | null;
+  } | null;
 };
 
 export type OnDeleteCarSubscriptionVariables = {
-  filter?: ModelSubscriptionCarFilterInput | null,
+  filter?: ModelSubscriptionCarFilterInput | null;
 };
 
 export type OnDeleteCarSubscription = {
-  onDeleteCar?:  {
-    __typename: "Car",
-    id: string,
-    name?: string | null,
-    model?:  {
-      __typename: "Model",
-      id: string,
-      name: string,
-      manufacturer?:  {
-        __typename: "Manufacturer",
-        id: string,
-        name: string,
-        established?: string | null,
-        founder?: string | null,
-        headquarters?: string | null,
-        about?: string | null,
-        netWorth?: string | null,
-        logo?: string | null,
-        createdAt: string,
-        updatedAt: string,
-      } | null,
-      cars?:  {
-        __typename: "ModelCarConnection",
-        nextToken?: string | null,
-      } | null,
-      createdAt: string,
-      updatedAt: string,
-      manufacturerModelsId?: string | null,
-    } | null,
-    image?: string | null,
-    generation?: number | null,
-    power?: number | null,
-    torque?: number | null,
-    weight?: number | null,
-    gearbox?: string | null,
-    engine?: string | null,
-    createdAt: string,
-    updatedAt: string,
-    modelCarsId?: string | null,
-  } | null,
+  onDeleteCar?: {
+    __typename: "Car";
+    id: string;
+    name?: string | null;
+    model?: {
+      __typename: "Model";
+      id: string;
+      name: string;
+      manufacturer?: {
+        __typename: "Manufacturer";
+        id: string;
+        name: string;
+        established?: string | null;
+        founder?: string | null;
+        headquarters?: string | null;
+        about?: string | null;
+        netWorth?: string | null;
+        logo?: string | null;
+        createdAt: string;
+        updatedAt: string;
+      } | null;
+      cars?: {
+        __typename: "ModelCarConnection";
+        nextToken?: string | null;
+      } | null;
+      createdAt: string;
+      updatedAt: string;
+      manufacturerModelsId?: string | null;
+    } | null;
+    image?: string | null;
+    generation?: number | null;
+    power?: number | null;
+    torque?: number | null;
+    weight?: number | null;
+    gearbox?: string | null;
+    engine?: string | null;
+    createdAt: string;
+    updatedAt: string;
+    modelCarsId?: string | null;
+  } | null;
 };

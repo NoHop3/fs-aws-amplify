@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
-import { CarProps } from "./car.props";
-import { Car } from "../../shared/models";
+import { type CarProps } from "./car.props";
+import { type Car } from "../../shared/models";
 import { CarCard } from "../../components";
 import { StyledCarGrid, StyledCircularProgress } from "./cars.styles";
 
@@ -13,6 +13,7 @@ export const _Cars = (props: CarProps) => {
   return (
     <StyledCarGrid>
       {!props.isLoading ? (
+        // eslint-disable-next-line
         props.cars.map((car: Car) => <CarCard key={car.id} {...car} />)
       ) : (
         <StyledCircularProgress disableShrink size={"6rem"} />
