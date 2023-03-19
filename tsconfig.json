@@ -26,6 +26,6 @@
   "include": [
     "src", 
     "data", 
-    "test"  
+    "test"
   ]
 }

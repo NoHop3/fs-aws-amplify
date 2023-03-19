@@ -33,7 +33,8 @@ describe("Testing App.tsx", () => {
       },
     };
     const mockStore = configureStore();
-    let store = mockStore(initialState);
+    const store = mockStore(initialState);
+    // eslint-disable-next-line testing-library/no-render-in-setup
     render(
       <Provider store={store}>
         <BrowserRouter>
@@ -42,7 +43,6 @@ describe("Testing App.tsx", () => {
       </Provider>,
     );
   });
-  
   it("Should render the Home page", () => {
     const homeElement = screen.getByText("Home page");
     expect(homeElement).toBeInTheDocument();

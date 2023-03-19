@@ -1,2 +1,5 @@
 src/graphql/
 src/API.ts
+babel.config.js
+jest.config.ts
+.prettierrc
