@@ -18,6 +18,13 @@
         "prettier"
 
     ],
+    "rules": {
+        "react/react-in-jsx-scope": ["off"],
+        "react/jsx-uses-react": ["off"],
+        "react/jsx-props-no-spreading": ["warn"],
+        "react/no-unescaped-entities": ["off"],
+        "react/prop-types": "off"
+    },
     "overrides": [
         {
             "files": ["*.ts", "*.tsx"],
@@ -27,6 +34,15 @@
             ],
             "parserOptions": {
                 "project": ["./tsconfig.json"]
+            },
+            "rules": {  
+                "@typescript-eslint/explicit-function-return-type": "off",
+                "@typescript-eslint/strict-boolean-expressions": ["off"],
+                "@typescript-eslint/no-unsafe-assignment": ["off"],
+                "@typescript-eslint/no-unsafe-member-access": ["off"],
+                "@typescript-eslint/no-unsafe-call": ["off"],
+                "@typescript-eslint/no-unsafe-return": ["off"],
+                "@typescript-eslint/no-explicit-any": ["off"]
             }
         }
     ],
@@ -37,14 +53,5 @@
         "ecmaVersion": "latest",
         "sourceType": "module",
         "project": ["./tsconfig.json"]
-    },
-    "rules": {
-        "react/react-in-jsx-scope": ["off"],
-        "react/jsx-uses-react": ["off"],
-        "react/jsx-props-no-spreading": ["warn"],
-        "react/no-unescaped-entities": ["off"],
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "react/prop-types": "off",
-        "@typescript-eslint/strict-boolean-expressions": "off"
     }
 }
