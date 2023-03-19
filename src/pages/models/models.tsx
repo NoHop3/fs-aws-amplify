@@ -1,5 +1,5 @@
 import React from "react";
 
 export const _Models = () => {
-  return <div>Models</div>;
+  return <div>Models page</div>;
 };

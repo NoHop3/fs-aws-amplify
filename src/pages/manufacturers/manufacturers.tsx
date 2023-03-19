@@ -33,5 +33,5 @@ export const _Manufacturers = () => {
   // useEffect(() => {
   //   fetchManufacturers();
   // }, [manufacturers]);
-  return <div>Manufacturers</div>;
+  return <div>Manufacturers page</div>;
 };

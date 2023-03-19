@@ -18,4 +18,6 @@ module.exports = {
   moduleDirectories: ["node_modules", "src"],
 
   moduleNameMapper: { "^uuid$": "uuid" },
+
+  setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
 };

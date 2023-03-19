@@ -1,4 +1,5 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import type { PreloadedState } from "@reduxjs/toolkit";
 import { connectRouter, routerMiddleware } from "connected-react-router";
 import { createBrowserHistory, type History } from "history";
 import carReducer from "./car-store";
@@ -27,3 +28,18 @@ export const configureAppStore = () => {
   store = _store;
   return _store;
 };
+
+// Setup store for testing
+export const setupStore = (preloadedState?: PreloadedState<any>) => {
+  return configureStore({
+    reducer: combineReducers({
+      router: connectRouter(history),
+      cars: carReducer,
+      notifications: notificationReducer,
+    }),
+    preloadedState,
+  });
+};
+
+export type RootState = ReturnType<typeof createRootReducer>;
+export type AppStore = ReturnType<typeof setupStore>;

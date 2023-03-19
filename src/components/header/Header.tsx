@@ -88,7 +88,7 @@ const navItems: NavItem[] = [
   { name: "Home", path: "/" },
   { name: "Cars", path: "/cars" },
   { name: "Manufacturers", path: "/manufacturers" },
-  { name: "About", path: "/about" },
+  { name: "Models", path: "/models" },
 ];
 
 export const _Header = (props: Props) => {
