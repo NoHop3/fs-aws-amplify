@@ -23,21 +23,16 @@ export const _BottomNavigation = () => {
     >
       <BottomNavigationAction
         style={{ color: theme.palette.primary.light }}
+        label="Favorites"
+        value="favorites"
+        icon={<FavoriteIcon style={{ color: theme.palette.primary.light }} />}
+      />
+      <BottomNavigationAction
+        style={{ color: theme.palette.primary.light }}
         color={"#fafafa"}
         label="Home"
         value="home"
         icon={<HomeIcon style={{ color: theme.palette.primary.light }} />}
-      />
-      {/* <BottomNavigationAction
-        label='Recents'
-        value='recents'
-        icon={<RestoreIcon />}
-      /> */}
-      <BottomNavigationAction
-        style={{ color: theme.palette.primary.light }}
-        label="Favorites"
-        value="favorites"
-        icon={<FavoriteIcon style={{ color: theme.palette.primary.light }} />}
       />
       <BottomNavigationAction
         style={{ color: theme.palette.primary.light }}
@@ -45,6 +40,11 @@ export const _BottomNavigation = () => {
         value="theme"
         icon={<BedtimeIcon style={{ color: theme.palette.primary.light }} />}
       />
+      {/* <BottomNavigationAction
+        label="Recents"
+        value="recents"
+        icon={<RestoreIcon />}
+      /> */}
     </BottomNavigation>
   );
 };

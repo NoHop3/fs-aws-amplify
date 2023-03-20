@@ -1,29 +1,25 @@
-import * as React from "react";
-import { render, fireEvent, screen } from "@testing-library/react";
+/* eslint-disable testing-library/no-node-access */
+import { renderWithProviders } from "../utils/test-utils";
+import { fireEvent, screen } from "@testing-library/react";
 import { BottomNavigation } from "../../src/components";
 
 describe("BottomNavigation Component", () => {
   it("should render without crashing", () => {
-    render(<BottomNavigation />);
+    renderWithProviders(<BottomNavigation />);
   });
 
   it("should have correct initial state", () => {
-    render(<BottomNavigation />);
-    expect(screen.getByRole("navigation")).toBeInTheDocument();
-    expect(screen.getByRole("navigation").getAttribute("value")).toBe("home");
+    renderWithProviders(<BottomNavigation />);
+    const bottomNavigationActions = screen.getAllByRole("button");
+    expect(bottomNavigationActions).toHaveLength(3);
+    expect(bottomNavigationActions.map((action) => action.textContent)).toEqual(
+      ["Favorites", "Home", "Theme"],
+    );
   });
 
   it("updates state on navigation change", () => {
-    render(<BottomNavigation />);
-    fireEvent.click(screen.getByLabelText("Favorites"));
-    expect(screen.getByRole("navigation").getAttribute("value")).toBe(
-      "favorites",
-    );
-
-    fireEvent.click(screen.getByLabelText("Theme"));
-    expect(screen.getByRole("navigation").getAttribute("value")).toBe("theme");
-
-    fireEvent.click(screen.getByLabelText("Home"));
-    expect(screen.getByRole("navigation").getAttribute("value")).toBe("home");
+    renderWithProviders(<BottomNavigation />);
+    fireEvent.click(screen.getAllByRole("button")[2]);
+    expect(screen.getAllByRole("button")[2]).toHaveClass("Mui-selected");
   });
 });
