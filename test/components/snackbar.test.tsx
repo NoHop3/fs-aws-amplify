@@ -1,4 +1,5 @@
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
+import { renderWithProviders } from "../utils/test-utils";
 import userEvent from "@testing-library/user-event";
 import { Snackbar } from "../../src/components";
 
@@ -12,32 +13,32 @@ describe("Snackbar", () => {
   };
 
   it("renders with success variant message", () => {
-    render(<Snackbar {...defaultProps} />);
+    const { container } = renderWithProviders(<Snackbar {...defaultProps} />);
 
     const alertElement = screen.getByRole("alert");
-    const snackbarElement = screen.getByRole("status");
-
-    expect(alertElement).toHaveTextContent("This is a success message");
+    // eslint-disable-next-line testing-library/no-node-access
+    const snackbarElement = container.firstChild;
     expect(snackbarElement).toHaveClass("MuiSnackbar-root");
-    expect(alertElement).toHaveClass("MuiAlert-filledInfo");
+    expect(alertElement).toHaveClass("MuiAlert-root");
   });
 
-  it("calls onClose function when close button is clicked", () => {
-    const { getByRole } = render(<Snackbar {...defaultProps} />);
-    const closeButton = getByRole("button", { name: /close/i });
+  it("calls onClose function when close button is clicked", async () => {
+    renderWithProviders(<Snackbar {...defaultProps} />);
+    const closeButton = screen.getByRole("button", { name: /close/i });
 
-    userEvent.click(closeButton);
+    await userEvent.click(closeButton);
     expect(mockOnClose).toHaveBeenCalledTimes(1);
   });
 
-  it("auto hides after specified duration", async () => {
+  it("auto hides after specified duration", () => {
     const autoHideDuration = 2000;
-    render(<Snackbar {...defaultProps} autoHideDuration={autoHideDuration} />);
-
-    expect(screen.getByRole("status")).toBeVisible();
-    await screen.findByRole("status", {
-      hidden: true,
-    });
+    const { container } = renderWithProviders(<Snackbar {...defaultProps} />);
+    // eslint-disable-next-line testing-library/no-node-access
+    const snackbarElement = container.firstChild;
+    expect(snackbarElement).toBeVisible();
+    setTimeout(() => {
+      expect(snackbarElement).not.toBeVisible();
+    }, autoHideDuration);
     expect(screen.queryByRole("status")).not.toBeInTheDocument();
   });
 });

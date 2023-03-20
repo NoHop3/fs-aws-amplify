@@ -16,13 +16,13 @@ describe("Testing App.tsx", () => {
     expect(screen.getByText("Manufacturers page")).toBeInTheDocument();
   });
 
-  // it("should render app, navigate to Cars", async () => {
-  //   renderWithProviders(<App />);
+  // it("should render app & navigate to Cars", async () => {
+  //   renderWithProviders(<App />, undefined, ["/"]);
   //   const user = userEvent.setup();
 
   //   expect(screen.getByText("Home page")).toBeInTheDocument();
   //   await user.click(screen.getByRole("link", { name: /manufacturers/i }));
-  //   expect(screen.getByText("Manufacturers page")).toBeInTheDocument();
+  //   expect(screen.getByText("Cars page")).toBeInTheDocument();
   // });
 
   it("should render app & navigate to Models", async () => {
