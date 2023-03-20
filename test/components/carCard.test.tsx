@@ -1,29 +1,31 @@
+/* eslint-disable testing-library/prefer-screen-queries */
+/* eslint-disable testing-library/render-result-naming-convention */
 import React from "react";
-import { render } from "@testing-library/react";
-import { _CarCard } from "../../src/components/carCard/carCard";
+import { renderWithProviders } from "../utils/test-utils";
+import { CarCard } from "../../src/components";
 
-describe("Rendering", () => {
+describe("Test carCard component", () => {
   const car = {
     id: "1",
     name: "Car 1",
     image: "https://www.carlogos.org/logo/Peugeot-logo-2003-1920x1080.png",
     model: {
+      id: "1",
+      name: "Model 1",
+      manufacturer: {
         id: "1",
-        name: "Model 1",
-        manufacturer: {
-            id: "1",
-            name: "Manufacturer 1",
-            logo: "https://www.carlogos.org/logo/Peugeot-logo-2003-1920x1080.png",
-            established: "2021-01-01T00:00:00.000Z",
-            headquarters: "100",
-            founder: "100",
-            netWorth: "100",
-            about: "100",
-            createdAt: "2021-01-01T00:00:00.000Z",
-            updatedAt: "2021-01-01T00:00:00.000Z",
-        },
+        name: "Manufacturer 1",
+        logo: "https://www.carlogos.org/logo/Peugeot-logo-2003-1920x1080.png",
+        established: "2021-01-01T00:00:00.000Z",
+        headquarters: "100",
+        founder: "100",
+        netWorth: "100",
+        about: "100",
         createdAt: "2021-01-01T00:00:00.000Z",
         updatedAt: "2021-01-01T00:00:00.000Z",
+      },
+      createdAt: "2021-01-01T00:00:00.000Z",
+      updatedAt: "2021-01-01T00:00:00.000Z",
     },
     power: 100,
     torque: 100,
@@ -33,24 +35,26 @@ describe("Rendering", () => {
     gearbox: "100",
     createdAt: "2021-01-01T00:00:00.000Z",
     updatedAt: "2021-01-01T00:00:00.000Z",
-  }
+  };
 
   it("should render car image if image exists", () => {
-    const renderedComponent = render(<_CarCard {...car} />);
-    const imageElement = renderedComponent.getByAltText(car.name);
-    expect(imageElement).toBeInTheDocument();
-    expect((imageElement as HTMLImageElement).src).toBe(car.image);
+    const renderedComponent = renderWithProviders(<CarCard {...car} />);
+    const carElement = renderedComponent.getByAltText(car.name);
+    expect(carElement).toBeInTheDocument();
+    expect((carElement as HTMLImageElement).src).toBe(car.image);
   });
 
   it("should not render car image if image doesn't exist", () => {
     const carWithoutImage = { ...car, image: "" };
-    const renderedComponent = render(<_CarCard {...carWithoutImage} />);
+    const renderedComponent = renderWithProviders(
+      <CarCard {...carWithoutImage} />,
+    );
     const imageElement = renderedComponent.queryByAltText(carWithoutImage.name);
     expect(imageElement).not.toBeInTheDocument();
   });
 
   it("should render the car name, model name and model manufacturer logo", () => {
-    const renderedComponent = render(<_CarCard {...car} />);
+    const renderedComponent = renderWithProviders(<CarCard {...car} />);
     const carModelNameElement = renderedComponent.getByText(car.model.name);
     expect(carModelNameElement).toBeInTheDocument();
 
@@ -61,12 +65,13 @@ describe("Rendering", () => {
 
     if (car.name) {
       const carNameElement = renderedComponent.getByText(car.name);
+      // eslint-disable-next-line jest/no-conditional-expect
       expect(carNameElement).toBeInTheDocument();
     }
   });
 
   it("should render all car details", () => {
-    const renderedComponent = render(<_CarCard {...car} />);
+    const renderedComponent = renderWithProviders(<CarCard {...car} />);
     const powerElement = renderedComponent.getByText(`Power: ${car.power}hp`);
     expect(powerElement).toBeInTheDocument();
 
@@ -100,7 +105,9 @@ describe("Rendering", () => {
       power: 0,
       weight: 0,
     };
-    const renderedComponent = render(<_CarCard {...carWithoutSomeDetails} />);
+    const renderedComponent = renderWithProviders(
+      <CarCard {...carWithoutSomeDetails} />,
+    );
 
     const powerElement = renderedComponent.queryByText(`Power: ${car.power}hp`);
     expect(powerElement).not.toBeInTheDocument();

@@ -3,7 +3,7 @@ import { renderWithProviders } from "../utils/test-utils";
 import userEvent from "@testing-library/user-event";
 import { Snackbar } from "../../src/components";
 
-describe("Snackbar", () => {
+describe("Test Snackbar component", () => {
   const mockOnClose = jest.fn();
   const defaultProps = {
     open: true,
