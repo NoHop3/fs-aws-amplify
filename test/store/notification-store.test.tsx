@@ -1,4 +1,10 @@
-import reducer, { NotificationStore, setNotification, setNotificationMessage, setNotificationType, setNotificationVisibility } from "../../src/shared/store/notification-store";
+import reducer, {
+  NotificationStore,
+  setNotification,
+  setNotificationMessage,
+  setNotificationType,
+  setNotificationVisibility,
+} from "../../src/shared/store/notification-store";
 
 describe("notification slice", () => {
   const initialState: NotificationStore = {
@@ -17,7 +23,7 @@ describe("notification slice", () => {
     };
     const newState = { notification };
     expect(reducer(initialState, setNotification(notification))).toEqual(
-      newState
+      newState,
     );
   });
 
@@ -27,7 +33,7 @@ describe("notification slice", () => {
       notification: { ...initialState.notification, message },
     };
     expect(reducer(initialState, setNotificationMessage(message))).toEqual(
-      newState
+      newState,
     );
   });
 
@@ -41,7 +47,7 @@ describe("notification slice", () => {
     const open = true;
     const newState = { notification: { ...initialState.notification, open } };
     expect(reducer(initialState, setNotificationVisibility(open))).toEqual(
-      newState
+      newState,
     );
   });
 });

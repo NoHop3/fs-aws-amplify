@@ -37,6 +37,10 @@ describe("Test carCard component", () => {
     updatedAt: "2021-01-01T00:00:00.000Z",
   };
 
+  it("should render without crashing", () => {
+    renderWithProviders(<CarCard {...car} />);
+  });
+
   it("should render car image if image exists", () => {
     const renderedComponent = renderWithProviders(<CarCard {...car} />);
     const carElement = renderedComponent.getByAltText(car.name);

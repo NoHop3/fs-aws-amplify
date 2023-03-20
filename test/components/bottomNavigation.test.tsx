@@ -1,4 +1,3 @@
-/* eslint-disable testing-library/no-node-access */
 import { renderWithProviders } from "../utils/test-utils";
 import { fireEvent, screen } from "@testing-library/react";
 import { BottomNavigation } from "../../src/components";

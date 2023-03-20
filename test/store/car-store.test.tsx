@@ -15,7 +15,7 @@ describe("Cars slice", () => {
       isLoading: false,
     };
     const mockStore = configureStore();
-    let store = mockStore(initialState);
+    mockStore(initialState);
     // check what is in the store
   });
 

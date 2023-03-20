@@ -12,6 +12,10 @@ describe("Test Snackbar component", () => {
     onClose: mockOnClose,
   };
 
+  it("should render without crashing", () => {
+    renderWithProviders(<Snackbar {...defaultProps} />);
+  });
+
   it("renders with success variant message", () => {
     const { container } = renderWithProviders(<Snackbar {...defaultProps} />);
 

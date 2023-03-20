@@ -7,6 +7,10 @@ import { renderWithProviders } from "../utils/test-utils";
 import App from "../../src/App";
 
 describe("Testing App.tsx", () => {
+  it("should render without crashing", () => {
+    renderWithProviders(<App />);
+  });
+
   it("should render app & navigate to Manufacturers", async () => {
     renderWithProviders(<App />);
     const user = userEvent.setup();
