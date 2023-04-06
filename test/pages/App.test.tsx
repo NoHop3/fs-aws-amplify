@@ -25,7 +25,7 @@ describe("Testing App.tsx", () => {
   //   const user = userEvent.setup();
 
   //   expect(screen.getByText("Home page")).toBeInTheDocument();
-  //   await user.click(screen.getByRole("link", { name: /manufacturers/i }));
+  //   await user.click(screen.getByRole("link", { name: "Cars" }));
   //   expect(screen.getByText("Cars page")).toBeInTheDocument();
   // });
 

@@ -3,3 +3,4 @@ src/API.ts
 babel.config.js
 jest.config.ts
 .prettierrc
+data
