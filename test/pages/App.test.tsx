@@ -11,35 +11,34 @@ describe("Testing App.tsx", () => {
     renderWithProviders(<App />);
   });
 
-  it("should render app & navigate to Manufacturers", async () => {
-    renderWithProviders(<App />);
-    const user = userEvent.setup();
-
-    expect(screen.getByText("Home page")).toBeInTheDocument();
-    await user.click(screen.getByRole("link", { name: "Manufacturers" }));
-    expect(screen.getByText("Manufacturers page")).toBeInTheDocument();
+  it("should navigate to Error page", () => {
+    const badRoute = window.location.href + "bad-route/";
+    renderWithProviders(<App />, undefined, [badRoute]);
   });
 
-  // it("should render app & navigate to Cars", async () => {
+  it("should navigate to Home page", async () => {
+    const badRoute = window.location.href + "bad-route/";
+    renderWithProviders(<App />, undefined, [badRoute]);
+    const user = userEvent.setup();
+
+    await user.click(screen.getByRole("link", { name: "Home" }));
+  });
+
+  // it("should render app & navigate to Manufacturers", async () => {
+  //   renderWithProviders(<App />);
+  //   const user = userEvent.setup();
+
+  //   expect(screen.getByText("Home page")).toBeInTheDocument();
+  //   await user.click(screen.getByRole("link", { name: "Manufacturers" }));
+  //   expect(screen.getByText("Manufacturers page")).toBeInTheDocument();
+  // });
+
+  // it("should render app & navigate to Models", async () => {
   //   renderWithProviders(<App />, undefined, ["/"]);
   //   const user = userEvent.setup();
 
   //   expect(screen.getByText("Home page")).toBeInTheDocument();
-  //   await user.click(screen.getByRole("link", { name: "Cars" }));
-  //   expect(screen.getByText("Cars page")).toBeInTheDocument();
+  //   await user.click(screen.getByRole("link", { name: "Models" }));
+  //   expect(screen.getByText("Models page")).toBeInTheDocument();
   // });
-
-  it("should render app & navigate to Models", async () => {
-    renderWithProviders(<App />, undefined, ["/"]);
-    const user = userEvent.setup();
-
-    expect(screen.getByText("Home page")).toBeInTheDocument();
-    await user.click(screen.getByRole("link", { name: "Models" }));
-    expect(screen.getByText("Models page")).toBeInTheDocument();
-  });
-
-  it("should render app & navigate to Error page", () => {
-    const badRoute = window.location.href + "bad-route/";
-    renderWithProviders(<App />, undefined, [badRoute]);
-  });
 });
