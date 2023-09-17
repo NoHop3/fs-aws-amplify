@@ -2,7 +2,7 @@ import { CircularProgress, Grid } from "@mui/material";
 import styled from "styled-components";
 
 export const StyledCarGrid = styled(Grid)`
-  display grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 1rem;
   padding: 1rem;
