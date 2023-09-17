@@ -16,13 +16,12 @@
         "react",
         "@typescript-eslint",
         "prettier"
-
     ],
     "rules": {
-        "react/react-in-jsx-scope": ["off"],
-        "react/jsx-uses-react": ["off"],
-        "react/jsx-props-no-spreading": ["off"],
-        "react/no-unescaped-entities": ["off"],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-uses-react": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/no-unescaped-entities": "off",
         "react/prop-types": "off"
     },
     "overrides": [
@@ -30,21 +29,18 @@
             "files": ["*.ts", "*.tsx"],
             "extends": [
                 "plugin:@typescript-eslint/recommended",
-                "plugin:@typescript-eslint/recommended-requiring-type-checking"
+                "plugin:@typescript-eslint/stylistic"
             ],
-            "parserOptions": {
-                "project": ["./tsconfig.json"]
-            },
             "rules": {  
                 "@typescript-eslint/explicit-function-return-type": "off",
-                "@typescript-eslint/strict-boolean-expressions": ["off"],
-                "@typescript-eslint/no-unsafe-assignment": ["off"],
-                "@typescript-eslint/no-unsafe-member-access": ["off"],
-                "@typescript-eslint/no-unsafe-call": ["off"],
-                "@typescript-eslint/no-unsafe-return": ["off"],
-                "@typescript-eslint/no-explicit-any": ["off"],
-                "@typescript-eslint/consistent-type-imports": ["off"],
-                "@typescript-eslint/restrict-plus-operands": ["off"]
+                "@typescript-eslint/strict-boolean-expressions": "off",
+                "@typescript-eslint/no-unsafe-assignment": "off",
+                "@typescript-eslint/no-unsafe-member-access": "off",
+                "@typescript-eslint/no-unsafe-call": "off",
+                "@typescript-eslint/no-unsafe-return": "off",
+                "@typescript-eslint/no-explicit-any": "off",
+                "@typescript-eslint/consistent-type-imports": "off",
+                "@typescript-eslint/restrict-plus-operands": "off"
             }
         }
     ],
@@ -54,6 +50,6 @@
         },
         "ecmaVersion": "latest",
         "sourceType": "module",
-        "project": ["./tsconfig.json"]
+        "project": true
     }
 }

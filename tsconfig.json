@@ -24,8 +24,8 @@
     "strictNullChecks": true
   },
   "include": [
-    "src", 
-    "data", 
-    "test"
+    "**/*.ts", 
+    "**/*.js",
+    "**/*.tsx"
   ]
 }
