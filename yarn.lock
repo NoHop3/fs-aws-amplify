@@ -3919,14 +3919,13 @@
     prop-types "^15.8.1"
 
 "@mui/styled-engine-sc@^5.14.9":
-  version "5.14.9"
-  resolved "https://registry.yarnpkg.com/@mui/styled-engine-sc/-/styled-engine-sc-5.14.9.tgz#4596cf3dbdd515c779708d7980ce22719cc3916b"
-  integrity sha512-2g/UT/vGaVCazscjhqWqPXgV8miifWiojj5AVZpgknUcmmjCalJ6pIRaqGndAjvC+/WmkfmKD20edc32Z5MfTg==
+  version "5.14.10"
+  resolved "https://registry.yarnpkg.com/@mui/styled-engine-sc/-/styled-engine-sc-5.14.10.tgz#aac2f7e5706254931f3063bebfdb8d2ef3f1debe"
+  integrity sha512-3u02rFGCY4SsPJ4o2Dqo1GafM6l+R1PUgmJTyBljAKFKpUylXoqe7zf9kXFHmzPO9CjNWnjDSR3Y9bG7iKwTCQ==
   dependencies:
     "@babel/runtime" "^7.22.15"
     csstype "^3.1.2"
     prop-types "^15.8.1"
-    react "^18.2.0"
 
 "@mui/styled-engine@^5.14.9":
   version "5.14.9"
